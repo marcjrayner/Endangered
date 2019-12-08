@@ -163,3 +163,18 @@
   further_details: "https://wwf.panda.org/knowledge_hub/endangered_species/cetaceans/about/blue_whale/",
   threats: ["poaching", "climate change", "fishing"]
 },
+{
+  name: "Antarctic Krill",
+  continent: "Antarctica",
+  fun_fact: "Krill travel in swarms so dense they can be seen from space.",
+  image: "http://www.antarctica.gov.au/__data/assets/image/0010/29098/varieties/antarctic.jpg",
+  conservation_status: "Least Concern",
+  number_remaining: 6000000000,
+  locations: ["Southern Oceans"],
+  quiz_question: "How big can krill grow",
+  correct_answer: "6cm",
+  answers: ["6cm","2cm","10cm","20cm"],
+  answer_fact: "Although krill are not currently endangered their numbers are declining, as global warming causes the ice caps which provide their food to melt. Without krill to eat, the majority of life forms in the Antarctic would vanish",
+  further_details: "https://www.nationalgeographic.com/animals/invertebrates/group/krill/",
+  threats: ["climate change"]
+},
