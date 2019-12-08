@@ -223,3 +223,18 @@
   further_details: "http://animalia.bio/orinoco-crocodile",
   threats: ["poaching", "building", "pollution"]
 },
+{
+  name: "European Mink",
+  continent: "Europe",
+  fun_fact: "Mink have webbed feet and fur covered with an oily substance which prevents water soaking through to their skin.",
+  image: "https://dingo.care2.com/pictures/petition_images/petition/282/151209-1556046018-wide.jpg",
+  conservation_status: "Critically Endangered",
+  number_remaining: 30000,
+  locations: ["Russia", "Spain", "France"],
+  quiz_question: "What is a baby mink called?",
+  correct_answer: "A kit",
+  answers: ["A kit","A hatchling","A pup","A chick"],
+  answer_fact: "The conversion of wetlands into agricultural land and degradation of the water quality have resulted in the disappearance of the resting, breeding and feeding areas for mink. They are now listed as a species to be strictly protected.",
+  further_details: "http://animalia.bio/european-mink",
+  threats: ["poaching", "building", "pollution"]
+},
