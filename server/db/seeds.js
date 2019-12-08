@@ -241,17 +241,17 @@
 },
 
 {
-  name: "Marsican brown bear",
+  name: "Marsican Brown Bear",
   continent: "Europe",
-  fun_fact: "",
+  fun_fact: "Marsican brown bears typically give birth to twins.",
   image: "http://www.bearconservation.org.uk/wp-content/uploads/2017/08/1024x768-Marsican_Brown_Bear_jpg1.jpg",
   conservation_status: "Critically Endangered",
   number_remaining: 50,
   locations: ["Italy"],
-  quiz_question: "",
-  correct_answer: "",
-  answers: [],
-  answer_fact: "Abruzzo National Park",
+  quiz_question: "Why has the Marsican brown bear evolved a really powerful lower jaw?",
+  correct_answer: "To crunch nuts",
+  answers: ["To crunch nuts", "Do defend against other bears", "To attack prey", "To look scarier"],
+  answer_fact: "The bears live in Abruzzo National Park in Italy where they are protected, and hopefully can grow in numbers.",
   further_details: "https://theeuropeannaturetrust.com/animal-profile-marsican-brown-bear/",
   threats: ["poaching"]
 }
