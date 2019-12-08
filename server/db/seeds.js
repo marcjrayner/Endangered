@@ -209,7 +209,7 @@
   threats: ["deforestation"]
 },
 {
-  name: "Orinoco crocodile",
+  name: "Orinoco Crocodile",
   continent: "South America",
   fun_fact: "These crocodiles have a highly developed sense of smell, so they can smell their prey at a long distance.",
   image: "http://animalia.bio/uploads/animals/photos/full/1x1/orinoco-crocodile-cocodrilo-del-orinoco-crocodylus-intermedius.jpg",
@@ -237,4 +237,19 @@
   answer_fact: "The conversion of wetlands into agricultural land and degradation of the water quality have resulted in the disappearance of the resting, breeding and feeding areas for mink. They are now listed as a species to be strictly protected.",
   further_details: "http://animalia.bio/european-mink",
   threats: ["poaching", "building", "pollution"]
+},
+{
+  name: "Montseny Brook Newt",
+  continent: "Europe",
+  fun_fact: "Montseny Newts are very small, they grow to no more than 11 centimetres in length",
+  image: "https://www.zoobarcelona.cat/sites/default/files/styles/ps_main_img/public/2019-03/Trito_Montseny.JPG?itok=KqM8waEI",
+  conservation_status: "Critically Endangered",
+  number_remaining: 1500,
+  locations: ["Catalonia"],
+  quiz_question: "Where do Montseny Brook newts live?",
+  correct_answer: "Streams and Rivers",
+  answers: ["Streams and Rivers","Trees and Bushes","Underground Burrows","Sandy Beaches"],
+  answer_fact: "The drying out of mountain streams, human alteration of its original habitat and global warming are all threats to this species, the newts now only survive in the wild in one very small area of Spain.",
+  further_details: "https://ec.europa.eu/easme/en/news/montseny-newt-and-delicate-nature-local-ecosystems",
+  threats: ["climate change", "building"]
 },
