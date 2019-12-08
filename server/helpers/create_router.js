@@ -41,8 +41,24 @@ const createRouter = function (collection) {
     });
   });
 
+  router.put('/:id', (req, res) => {
+    const id = req.params.id;
+    const newData = req.body;
+    collection.findOneAndUpdate(
+      { _id: ObjectID(id) },
+      { $set: newData },
+      { returnOriginal: false }
+    )
+    .then((result) => res.json(result.value))
+    .catch((error) => {
+      console.error(err);
+      res.status(500);
+      res.json({status: 500, error: err});
+    });
+  });
+
   router.delete('/:id', (req, res) => {
-    const id = req.params.id; //can we open up req to see what it looks like?
+    const id = req.params.id;
       collection
       .deleteOne({ _id: ObjectID(id)})
       .then((result) => res.json(result))
@@ -52,6 +68,8 @@ const createRouter = function (collection) {
         res.json({ status: 500, error: err});
     });
   });
+
+
 
 
 
