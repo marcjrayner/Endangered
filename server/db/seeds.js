@@ -1,6 +1,6 @@
 use endangered;
 db.dropDatabase();
 
-db.species.insertOne({
+db.animals.insertOne({
   name: "test"
 })
