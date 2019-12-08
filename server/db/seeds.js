@@ -1,0 +1,257 @@
+{
+  name: "Waldrapp Ibis",
+  continent: "Africa",
+  fun_fact: "Thoth, the ancient Egyptian god of writing, magic and wisdom was drawn with the head of an Ibis and the body of a man.",
+  image: "http://s3.amazonaws.com/mongabay-images/13/1202.baldibis.IMG_3381.600.jpg",
+  conservation_status: "Endangered",
+  number_remaining: 500,
+  locations: ["Morocco", "Syria"],
+  quiz_question: "What does the Waldrapp Ibis like to eat?",
+  correct_answer: "Lizards and beetles",
+  answers: ["Lizards and beetles", "Fruit", "Small mice and rats", "Fish"],
+  answer_fact: "The Waldrapp Ibis lives on cliff ledges and hunts for food in fields. Pesticides sprayed by on fields by farmers to kill insects can also poison the Ibis.",
+  further_details: "https://www.edinburghzoo.org.uk/animals-and-attractions/animals/waldrapp-ibis/",
+  threats: ["farming"]
+},
+
+{
+  name: "Visayan Warty Pig",
+  continent: "Asia",
+  fun_fact: "Males have 3 pairs warts on their face to protect their eyes and faces during fights.",
+  image: "http://michaelnoonanphotography.com/wp-content/uploads/2016/04/Artiodactyla-Suidae-Sus-cebifrons-Visayan-Warty-Pig-1V5Z4045.jpg",
+  conservation_status: "Critically Endangered",
+  number_remaining: null,
+  locations: ["Philippines"],
+  quiz_question: "In the last 40 years, how much of the forests the Visayan Warty Pig lives in have been cut down?",
+  correct_answer: "94%",
+  answers: ["94%", "76%", "52%", "37%"],
+  answer_fact: "Though it used to live in the rainforests of six of the Philippines' West Visayas islands, now the Visayan Warty Pig can be found on only two islands.",
+  further_details: "https://www.nationalgeographic.com/animals/2019/04/endangered-warty-pigs-mohawks-philippines/",
+  threats: ["deforestation"]
+},
+
+{
+  name: "Kakapo",
+  continent: "Australia",
+  fun_fact: "They are the only parrot in the world that can't fly.",
+  image: "https://www.motherjones.com/wp-content/uploads/2019/08/20190818-fat-parrot-2000px-2.jpg?w=990",
+  conservation_status: "Critically Endangered",
+  number_remaining: 213,
+  locations: ["New Zealand"],
+  quiz_question: "How many years does the average Kakapo live for?",
+  correct_answer: "60 years",
+  answers: ["60 years", "30 years", "10 years", "100 years"],
+  answer_fact: "When European settlers came to New Zealand, they brought with them animals like cats and weasles that hunted the Kakapo to near extinction. In the 1990s there were as little as 50 Kakapo left in the world, but thanks to conservation efforts that number has now gone up to 213 in 2019.",
+  further_details: "https://www.doc.govt.nz/kakapo-recovery",
+  threats: ["invasive species"]
+},
+
+{
+  name: "Lehmann's Poison Frog",
+  continent: "South America",
+  fun_fact: "In the wild this frog is poisonous, however in captivity it stops being poisonous because of its change in diet.",
+  image: "https://i.imgur.com/1fGRXiw.jpg",
+  conservation_status: "Critically Endangered",
+  number_remaining: null,
+  locations: ["Colombia"],
+  quiz_question: "Why are some frogs so brightly coloured?",
+  correct_answer: "To warn predators that they're poisonous",
+  answers: ["To warn predators that they're poisonous", "Because they want to stand out from the crowd", "They get their colour from what they eat", "So they blend in with bright flowers in the rainforest"],
+  answer_fact: "Rare frogs in Colombia are under risk from smugglers who want to capture them to sell as pets on the black market. To try and stop this a frog farm has been set up to breed and sell frogs at lower prices than the smuggler's charge.",
+  further_details: "https://amphibiaweb.org/species/1637",
+  threats: ["poaching"]
+
+},
+
+{
+  name: "Pygmy Raccoon",
+  continent: "North America",
+  fun_fact: "Pygmy Raccoons can rotate their back feet by 180 degrees, so that they can climb down trees head-first.",
+  image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Cozumel_Raccoon1.jpg/220px-Cozumel_Raccoon1.jpg",
+  conservation_status: "Critically Endangered",
+  number_remaining: 300,
+  locations: ["Mexico"],
+  quiz_question: "What is the Pygmy Raccoon's favourite food?",
+  correct_answer: "crabs",
+  answers: ["crabs", "fruit", "frogs", "insects"],
+  answer_fact: "The Pygmy Raccoon can only be found on Cozumel Island off the coast of Mexico. Now, because of the expanding tourism industry on the island, the raccoon's habitat is getting smaller and smaller.",
+  further_details: "http://animalia.bio/cozumel-raccoon",
+  threats: [""]
+
+},
+
+{
+  name: "Vaquita",
+  continent: "Oceans",
+  fun_fact: "Vaquita means little cow in Spanish.",
+  image: "https://i0.wp.com/ladyfreethinker.org/wp-content/uploads/2018/04/vaquita.jpg?zoom=2.625&resize=382%2C228&ssl=1",
+  conservation_status: "Critically Endangered",
+  number_remaining: 19,
+  locations: ["Mexico"],
+  quiz_question: "What does a vaquita breathe?",
+  correct_answer: "Air",
+  answers: ["Air", "Water", "It can breathe air and water", "It doesn't need to breathe"],
+  answer_fact: "The biggest problem for the vaquita are gill-nets. When they get caught in these fishing nets they can't get to the surface to breathe, and they drown.",
+  further_details: "https://porpoise.org/save-the-vaquita/?gclid=CjwKCAiAuK3vBRBOEiwA1IMhutqTKF_Fek_vFJKQ1ZO2_BEU41RUAcSfvbRkA2EtT-fPJPoCfZHCKBoCtZ4QAvD_BwE",
+  threats: ["fishing"]
+},
+
+{
+  name: "Iberian Lynx",
+  continent: "Europe",
+  fun_fact: "The word lynx comes from the greek word for bright, because of their shiny eyes.",
+  image: "https://pictures-of-cats.org/wp-content/uploads/2019/05/Iberian-lynx-e1557914279644.jpg",
+  conservation_status: "Endangered",
+  number_remaining: 400,
+  locations: ["Spain", "Portugal"],
+  quiz_question: "About 90% of an Iberian Lynx's diet is made up of what animal?",
+  correct_answer: "Rabbits",
+  answers: ["Rabbits", "Mice", "Birds", "Fish"],
+  answer_fact: "In the last 20 years the Iberian Lynx population has dropped by 80%, because disease killed a lot of their food source. Conservation efforts over the last 10 years have started to help lynx population numbers, going from 100 lynxes in 2005 to about 400 in 2019.",
+  further_details: "https://www.worldwildlife.org/stories/bringing-back-the-iberian-lynx",
+  threats: ["disease"]
+},
+
+{
+  name: "Vancouver Island Marmot",
+  continent: "North America",
+  fun_fact: "When surprised, the Vancouver Island Marmot makes a really loud whistling sound, which has earned them the nickname 'Whistle Pig'.",
+  image: "https://images.glaciermedia.ca/polopoly_fs/1.15164927.1492149428!/fileImage/httpImage/image.jpg_gen/derivatives/landscape_804/v-i-marmot-jpg.jpg",
+  conservation_status: "Critically Endangered",
+  number_remaining: 200,
+  locations: ["Canada"],
+  quiz_question: "Marmots are part of what animal family?",
+  correct_answer: "Squirrel",
+  answers: ["Squirrel", "Cat", "Rat", "Pig"],
+  answer_fact: "Marmots are being hunted by predators more than they used to be, because of a reduced number of prey on the island. With a lot of help, their population has grown in recent years, going from 30 wild marmots left in 2003, to over 200 now.",
+  further_details: "https://marmots.org/",
+  threats: ["deforestation", "disease", "invasive species"]
+},
+
+{
+  name: "Far Eastern Curlew",
+  continent: "Australia",
+  fun_fact: "In its liftime a Far Eastern Curlew flies about 400,000km. That's like flying from earth to the moon!",
+  image: "https://download.ams.birds.cornell.edu/api/v1/asset/117375951/1800",
+  conservation_status: "Endangered",
+  number_remaining: 32000,
+  locations: ["Australia", "China", "Japan", "Mongolia", "Philippines", "Russia"],
+  quiz_question: "Why do curlews have such a long beak?",
+  correct_answer: "To dig in the sand for crabs",
+  answers: ["To dig in the sand for crabs", "As a weapon to protect themselves", "To help them catch fish", "So they can clean each other's feathers"],
+  answer_fact: "Far Eastern Curlews fly from Australia to Northern Asia every year to lay their eggs. Climate change and increased building on the land they normally stop in on the journey mean that many of them can't find the food they need to survive.",
+  further_details: "https://birdlife.org.au/bird-profile/eastern-curlew",
+  threats: ["climate change", "building"]
+},
+
+{
+  name: "Axolotl",
+  continent: "North America",
+  fun_fact: "Even though it's often called the 'Mexican Walking Fish', it's actually a type of salamander.",
+  image: "https://miro.medium.com/max/4000/0*iuIOwN_3ImJ3KLEK.jpg",
+  conservation_status: "Critically Endangered",
+  number_remaining: null,
+  locations: ["Mexico"],
+  quiz_question: "Which of these facts about the Axolotl isn't true?",
+  correct_answer: "They can eat fish twice their size",
+  answers: ["They can re-grow injured limbs and organs", "They are 1000 times more resistent to cancer than mammals", "Legend has it that the Aztec god of death and lightning disguised himself as one to avoid sacrifice", "They can eat fish twice their size"],
+  answer_fact: "Water pollution and being caught to be sold as pets or food are some of the main reasons the number of axolotl are going down. Scientists have started making shelters for the axolotl with clean water pumped in, to help give them better living conditions.",
+  further_details: "https://factanimal.com/axolotl/",
+  threats: ["pollution", "climate change", "poaching" "building", "invasive species"]
+},
+
+{
+  name: "Mary River Turtle",
+  continent: "Australia",
+  fun_fact: "Its green hair is actually made up of growning strands of algae.",
+  image: "https://i1.wp.com/metro.co.uk/wp-content/uploads/2018/04/elusor-macrurus_chris-van-wyk_10-1000x667-e1523524757991.jpg?quality=90&strip=all&zoom=1&resize=644%2C440&ssl=1",
+  conservation_status: "Endangered",
+  number_remaining: null,
+  locations: ["Australia"],
+  quiz_question: "How long can Mary River Turtles stay underwater without coming up for air?",
+  correct_answer: "72 hours",
+  answers: ["72 hours", "24 hours", "10 hours", "120 hours"],
+  answer_fact: "These turtles used to be popular pets in Australia, with about 15000 sent to pet shops every year. This has led to a a decline in numbers in the wild. Today, it's protected by the Australian government.",
+  further_details: "http://www.edgeofexistence.org/species/mary-river-turtle/",
+  threats: ["poaching"]
+},
+
+{
+  name: "Goodfellow's Tree Kangaroo",
+  continent: "Australia",
+  fun_fact: "It's very clumsy on the ground, but can jump up to 30 feet from one tree to another.",
+  image: "https://upload.wikimedia.org/wikipedia/commons/5/56/Tree_kangaroo2.jpg",
+  conservation_status: "Endangered",
+  number_remaining: null,
+  locations: ["Papua New Guinea"],
+  quiz_question: "How do kangaroos carry their babies?",
+  correct_answer: "In their pouch",
+  answers: ["In their pouch", "On their back", "In their arms", "They don't. Baby kangaroos can walk from birth"],
+  answer_fact: "Deforestation and hunting are leading to a drop in the number of Goodfellow's Tree Kangaroos. A charity called the Tenkile Conservation Alliance is teaching local communities to protect tree kangaroos, and trying to stop them being hunted.",
+  further_details: "https://www.waza.org/priorities/conservation/conservation-breeding-programmes/global-species-management-plans/goodfellows-tree-kangaroo/",
+  threats: ["deforestation", "poaching"]
+},
+
+{
+  name: "Okapi",
+  continent: "Africa",
+  fun_fact: "Okapi are related to giraffes. Their long black tongues are about 14 inches long, and they can use them to lick their own ears and eyelids.",
+  image: "http://animalia.bio/uploads/animals/photos/full/1.25x1/okapi.jpg",
+  conservation_status: "Endangered",
+  number_remaining: 4500,
+  locations: ["Democratic Republic of the Congo"],
+  quiz_question: "Why does the Okapi have stripes?",
+  correct_answer: "For camouflage",
+  answers: ["For camouflage", "To blend in with zebras", "To warn predators it's dangerous", "To look pretty"],
+  answer_fact: "Hunting and building in their territory affects the okapi population. About 100 okapi live in zoos accross the world.",
+  further_details: "https://www.discoverwildlife.com/animal-facts/mammals/facts-about-okapi/",
+  threats: ["deforestation", "poaching", "building"]
+},
+
+{
+  name: "New Zealand Sea Lion",
+  continent: "Australia",
+  fun_fact: "Sea Lions flick sand over themselves to keep cool in the sun.",
+  image: "https://greenglobaltravel.com/wp-content/uploads/New-Zealand-Sea-Lion-adult-female-Shaun-T-e1450297112426.jpg",
+  conservation_status: "Endangered",
+  number_remaining: 10000,
+  locations: ["New Zealand"],
+  quiz_question: "What are baby sea lions called?",
+  correct_answer: "Pups",
+  answers: ["Pups", "Cubs", "Calfs", "Kittens"],
+  answer_fact: "Fisheries are a major problem for sea lions. Sea lions can get trapped in fishing nets and drown. A lot of fishing near sea lions can also mean it's harder for sea lions to find good food.",
+  further_details: "https://www.wwf.org.nz/what_we_do/species/sealions2/",
+  threats: ["fishing", "disease"]
+},
+
+{
+  name: "Sandy Mole Rat",
+  continent: "Europe",
+  fun_fact: "Sandy Mole Rats are completely blind.",
+  image: "https://i.imgur.com/uqBJuUq.jpg",
+  conservation_status: "Endangered",
+  number_remaining: 20000,
+  locations: ["Ukraine"],
+  quiz_question: "What senses does the mole rat use to find its way around?",
+  correct_answer: "Hearing and touch",
+  answers: ["Hearing and touch", "Smell and hearing", "Touch and smell", "Sight and touch"],
+  answer_fact: "The Sandy Mole Rat's habitat is being turned into plantations.",
+  further_details: "https://animaldiversity.org/accounts/Spalacinae/",
+  threats: ["farming"]
+},
+
+{
+  name: "Marsican brown bear",
+  continent: "Europe",
+  fun_fact: "",
+  image: "http://www.bearconservation.org.uk/wp-content/uploads/2017/08/1024x768-Marsican_Brown_Bear_jpg1.jpg",
+  conservation_status: "Critically Endangered",
+  number_remaining: 50,
+  locations: ["Italy"],
+  quiz_question: "",
+  correct_answer: "",
+  answers: [],
+  answer_fact: "Abruzzo National Park",
+  further_details: "https://theeuropeannaturetrust.com/animal-profile-marsican-brown-bear/",
+  threats: ["poaching"]
+}
