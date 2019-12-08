@@ -149,17 +149,17 @@
   threats: ["climate change"]
 },
 {
-  name: "Blue Whale",
+  name: "Antarctic Blue Whale",
   continent: "Antarctica",
-  fun_fact: "",
+  fun_fact: "Blue whales are the largest mammal to have ever lived on the Earth, but their main diet is tiny krill, a small aquatic lifeform resembling a prawn",
   image: "https://cdn.britannica.com/90/150290-050-C96E4444/Illustration-blue-whale.jpg",
   conservation_status: "Endangered",
   number_remaining: 25000,
-  locations: [],
+  locations: ["Southern Ocean"],
   quiz_question: "Which of these facts about the Blue Whale is NOT true?",
   correct_answer: "It can swim at 40 miles per hour",
   answers: ["It can swim at 40 miles per hour","It's calls can be heard underwater for hundreds of kilometres","It’s tongue weighs as much as an elephant","It is longer than three buses"],
-  answer_fact: "",
-  further_details: "",
-  threats: []
+  answer_fact: "The world's largest problem, global warming, could mean extinction in the Antarctic for the world's largest animal. Sea ice provides a habitat for algae, which are fed upon by krill, the main food supply for blue whales. As the temperature has increased in recent decades, sea ice has diminished rapidly and thus food supplies for krill are getting scarce.",
+  further_details: "https://wwf.panda.org/knowledge_hub/endangered_species/cetaceans/about/blue_whale/",
+  threats: ["poaching", "climate change", "fishing"]
 },
