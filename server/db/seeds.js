@@ -254,4 +254,20 @@
   answer_fact: "The bears live in Abruzzo National Park in Italy where they are protected, and hopefully can grow in numbers.",
   further_details: "https://theeuropeannaturetrust.com/animal-profile-marsican-brown-bear/",
   threats: ["poaching"]
+},
+
+{
+  name: "Red Wolf",
+  continent: "North America",
+  fun_fact: "Red wolf cubs are raised by the entire pack.",
+  image: "https://live.staticflickr.com/8641/16478011948_6a2eef40e3_b.jpg",
+  conservation_status: "Critically Endangered",
+  number_remaining: 240,
+  locations: ["USA"],
+  quiz_question: "How fast can red wolves run?",
+  correct_answer: "Up to 30mph",
+  answers: ["Up to 30mph", "Up to 20mph", "Up to 15mph", "Up to 40mph"],
+  answer_fact: "Red wolves became extinct in the wild in 1980. There were still some living in zoos, and since then red wolves have been reintroduced to protected areas in North Carolina.",
+  further_details: "https://www.nwf.org/Educational-Resources/Wildlife-Guide/Mammals/Red-Wolf",
+  threats: ["building", "poaching"]
 }
