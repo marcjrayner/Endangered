@@ -270,4 +270,20 @@
   answer_fact: "Red wolves became extinct in the wild in 1980. There were still some living in zoos, and since then red wolves have been reintroduced to protected areas in North Carolina.",
   further_details: "https://www.nwf.org/Educational-Resources/Wildlife-Guide/Mammals/Red-Wolf",
   threats: ["building", "poaching"]
+},
+
+{
+  name: "Smalltooth Sawfish",
+  continent: "Oceans",
+  fun_fact: "Sawfish live by the coast and don't like swimming in water that's more than 8 metres deep.",
+  image: "https://s2r.iucnredlist.org/sis2_images/797123022.jpg",
+  conservation_status: "Critically Endangered",
+  number_remaining: null,
+  locations: ["Atlantic"],
+  quiz_question: "What don't the sawfish use their saws for?",
+  correct_answer: "Cutting through seaweed and nets",
+  answers: ["Cutting through seaweed and nets", "Sensing where fish are in murky water", "Injuring prey to make them easier to eat", "Digging for buried prey"],
+  answer_fact: "Smalltoth sawfish are often accidentally caught by fishing nets, and are then killed instead of being released back into the ocean.",
+  further_details: "https://oceana.org/marine-life/ocean-fishes/smalltooth-sawfish",
+  threats: ["fishing", "climate change", "deforestation"]
 }
