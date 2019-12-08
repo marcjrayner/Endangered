@@ -286,4 +286,20 @@
   answer_fact: "Smalltoth sawfish are often accidentally caught by fishing nets, and are then killed instead of being released back into the ocean.",
   further_details: "https://oceana.org/marine-life/ocean-fishes/smalltooth-sawfish",
   threats: ["fishing", "climate change", "deforestation"]
+},
+
+{
+  name: "Lear's Macaw",
+  continent: "South America",
+  fun_fact: "These birds nest on sandstone cliffs. To make a nest, they use their spit to soften the sandstone and then scrape out the sandstone with their beaks.",
+  image: "https://www.hbw.com/sites/default/files/styles/ibc_1k/public/ibc/p/lears_macaw_44.jpg?itok=1avaeFvg",
+  conservation_status: "Endangered",
+  number_remaining: 1000,
+  locations: ["Brazil"],
+  quiz_question: "Roughly how many nuts does a Lear's macaw eat in one day?",
+  correct_answer: "350",
+  answers: ["350", "100", "500", "750"],
+  answer_fact: "These birds only eat nuts from the Licuri palm tree, which are getting destroyed by increasing numbers of cattle from nearby farms. They are also at risk of being smuggled and sold on the black market as pets.",
+  further_details: "http://animalia.bio/lears-macaw",
+  threats: ["farming", "poaching"]
 }
