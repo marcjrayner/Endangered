@@ -136,7 +136,7 @@
 {
   name: "Emperor penguin",
   continent: "Antarctica",
-  fun_fact: "Emporer penguins are the largest penguins on earth today, but they would be dwarfed by the ancient ‘mega-penguins’. Fossils reveal that a giant species of penguin which lived about 37 million years ago may have stood 2 metres tall!",
+  fun_fact: "Emperor penguins are the largest penguins on earth today, but they would be dwarfed by the ancient ‘mega-penguins’. Fossils reveal that a giant species of penguin which lived about 37 million years ago may have stood 2 metres tall!",
   image: "https://oceanwide-4579.kxcdn.com/uploads/media-dynamic/cache/widen_1100/uploads/media/default/0001/26/thumb_25671_default_900.jpeg",
   conservation_status: "Near Threatened",
   number_remaining: 595000,
@@ -177,4 +177,19 @@
   answer_fact: "Although krill are not currently endangered their numbers are declining, as global warming causes the ice caps which provide their food to melt. Without krill to eat, the majority of life forms in the Antarctic would vanish",
   further_details: "https://www.nationalgeographic.com/animals/invertebrates/group/krill/",
   threats: ["climate change"]
+},
+{
+  name: "Franklin's Bumblebee",
+  continent: "North America",
+  fun_fact: "Bumble bees are very social creatures and live in busy colonies with lots of other bees.",
+  image: "https://media.proprofs.com/images/QM/user_images/2169923/1515649357.jpg",
+  conservation_status: "Critically Endangered",
+  number_remaining: 100,
+  locations: ["Southern Oregon", "California"],
+  quiz_question: "You can recognise a Franklin's bumblebee from other bumblebees because it has a solid black ..... ?",
+  correct_answer: "Abdomen",
+  answers: ["Abdomen","Tail","Neck","Wing"],
+  answer_fact: "Improper use of pesticides on crops, gardens, and lawns can poison bees, especially ground-dwelling colonies of Franklin’s bumble bee.",
+  further_details: "https://www.fs.fed.us/wildflowers/pollinators/pollinator-of-the-month/franklins-bumble-bee.shtml",
+  threats: ["climate change", "pollution", "farming", "disease"]
 },
