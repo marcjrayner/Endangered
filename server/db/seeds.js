@@ -193,3 +193,18 @@
   further_details: "https://www.fs.fed.us/wildflowers/pollinators/pollinator-of-the-month/franklins-bumble-bee.shtml",
   threats: ["climate change", "pollution", "farming", "disease"]
 },
+{
+  name: "Golden Lion Tamarin",
+  continent: "South America",
+  fun_fact: "Lion tamarins take their name from their impressive golden, red and orange manes of hair.",
+  image: "https://www.monkeyworlds.com/wp-content/uploads/golden_lion.jpg",
+  conservation_status: "Endangered",
+  number_remaining: 3200,
+  locations: ["Brazil"],
+  quiz_question: "What does the golden lion tamarin use to get insects out of small crevices to eat?",
+  correct_answer: "Its long fingers",
+  answers: ["Its long fingers", "Its long tongue","Its long nose","Its long tail"],
+  answer_fact: "The tamarinds are under threat as the forest they live in is being cut down by humans for timber and to clear the land to build on. However efforts by conservationists has meant that numbers are slowly increasing again.",
+  further_details: "https://nationalzoo.si.edu/animals/golden-lion-tamarin",
+  threats: ["deforestation"]
+},
