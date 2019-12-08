@@ -208,3 +208,18 @@
   further_details: "https://nationalzoo.si.edu/animals/golden-lion-tamarin",
   threats: ["deforestation"]
 },
+{
+  name: "Orinoco crocodile",
+  continent: "South America",
+  fun_fact: "These crocodiles have a highly developed sense of smell, so they can smell their prey at a long distance.",
+  image: "http://animalia.bio/uploads/animals/photos/full/1x1/orinoco-crocodile-cocodrilo-del-orinoco-crocodylus-intermedius.jpg",
+  conservation_status: "Critically Endangered",
+  number_remaining: 1500,
+  locations: ["Colombia", "Venezuela"],
+  quiz_question: "How long are orinoco crocodiles?",
+  correct_answer: "3 to 4 metres",
+  answers: ["3 to 4 metres","10 to 11 metres","50 cm to 1 metre","5 to 6 metres"],
+  answer_fact: "The Orinoco crocodile is highly endangered due to excessive hunting in the past, and more recently pollution and destruction of its natural habitat. Today it is a protected species and conservationists are working to increase population numbers.",
+  further_details: "http://animalia.bio/orinoco-crocodile",
+  threats: ["poaching", "building", "pollution"]
+},
