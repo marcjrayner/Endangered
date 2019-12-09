@@ -1,0 +1,26 @@
+<template>
+  <div id="passport">
+    <div id="right-page">
+      <h3>{{animal.name}}</h3>
+      <img :src="animal.image" :alt="animal.name">
+      <p>{{animal.fun_fact}}</p>
+    </div>
+    <div id="left-page">
+      <h3>{{animal.quiz_question}}</h3>
+      
+    </div>
+  </div>
+</template>
+
+<script>
+import Continent from "/Continent.vue";
+
+export default {
+  name: "passport",
+  props: ["animal"]
+
+}
+</script>
+
+<style lang="css" scoped>
+</style>
