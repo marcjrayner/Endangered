@@ -11,9 +11,9 @@ const MongoClient = require('mongodb').MongoClient;
 MongoClient.connect('mongodb://localhost:27017')
   .then((client) => {
     const db = client.db('endangered');
-    const animalsCollection = db.collection('animals');
-    const animalsRouter = createRouter(animalsCollection);
-    app.use('/api/animals', animalsRouter)
+    const continentsCollection = db.collection('continents');
+    const continentsRouter = createRouter(continentsCollection);
+    app.use('/api/continents', continentsRouter)
   })
   .catch(console.err);
 

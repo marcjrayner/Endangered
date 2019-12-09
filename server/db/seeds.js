@@ -1,7 +1,7 @@
 use endangered;
 db.dropDatabase();
 
-db.animals.insertMany([
+db.continents.insertMany([
 
   {
     name:"Africa",
@@ -244,7 +244,7 @@ db.animals.insertMany([
   ]
 },
 {
-  name:"Austrailia",
+  name:"Australia",
   animals: [
     {
       name: "Kakapo",
@@ -324,7 +324,7 @@ db.animals.insertMany([
   ]
 },
 {
-  name:"South America",
+  name:"SouthAmerica",
   animals: [
   {
     name: "Lehmann's Poison Frog",
@@ -404,7 +404,7 @@ db.animals.insertMany([
 ]
 },
 {
-  name:"North America",
+  name:"NorthAmerica",
   animals: [
   {
     name: "Pygmy Raccoon",
