@@ -1,7 +1,7 @@
 use endangered;
 db.dropDatabase();
 
-db.animals.insertMany([
+db.continents.insertMany([
 
   {
     name:"Africa",

@@ -1,7 +1,7 @@
-const baseURL = 'http://localhost:3000/api/animals/'
+const baseURL = 'http://localhost:3000/api/continents/'
 
 export default {
-  getAnimals(){
+  getContinents(){
     return fetch(baseURL)
     .then(res => res.json())
   }

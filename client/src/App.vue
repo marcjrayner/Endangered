@@ -2,13 +2,13 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <ul>
-      <li v-for="(continent, index) in continents" :key="index" :continent="continent">{{continent}}</li>
+      <li v-for="(continent, index) in continents" :key="index" :continent="continent">{{continent.animals[0].name}}</li>
     </ul>
   </div>
 </template>
 
 <script>
-import AnimalsService from './services/AnimalsService.js'
+import ContinentsService from './services/ContinentsService.js'
 
 export default {
   name: 'app',
@@ -18,8 +18,9 @@ export default {
     };
   },
   mounted(){
-    AnimalsService.getAnimals()
-    .then(continents => this.continents = continents);
+    ContinentsService.getContinents()
+    .then(continents => this.continents = continents)
+    ;
   }
 }
 </script>
