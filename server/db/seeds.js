@@ -11,8 +11,9 @@
   answers: ["Cloud Forest","Desert","Rainforest","Grassland"],
   answer_fact: "The forests the Mountain Gorillas live in are being cut down so that humans can build on the land. To protect the gorillas we need to make sure thay have enough suitable places to live",
   further_details: "https://www.wwf.org.uk/learn/wildlife/mountain-gorillas",
-  threats: []
+  threats: ["deforestation"]
 },
+
 {
   name: "Giant Otter",
   continent: "South America",
@@ -26,8 +27,9 @@
   answers: ["Fish","Insects","Plants","Snakes"],
   answer_fact: "Water pollution from mining is a serious danger to otters as it leads to an increase of mercury in their main diet of fish",
   further_details: "https://ptes.org/grants/worldwide-projects/giant-otters-peru/",
-  threats: []
+  threats: ["fishing", "pollution"]
 },
+
 {
   name: "Javan Rhinoceros",
   continent: "Asia",
@@ -41,8 +43,9 @@
   answers: ["Ujung Kulon National Park","Cat Tien National Park","Bromo Tengger Semeru National Park","Komodo Island National Park"],
   answer_fact: "Javan rhinos are possibly the rarest large mammal on Earth. The only ones left live in the Ujung Kulon National Park, however the park is under threat from rising sea levels",
   further_details: "https://www.worldwildlife.org/species/javan-rhino",
-  threats: []
+  threats: ["climate change", "farming", "deforestation", "building"]
 },
+
 {
   name: "Amur Leopard",
   continent: "Asia",
@@ -56,10 +59,11 @@
   answers: ["Forests","Mountains","Rivers","Deserts"],
   answer_fact: "The natural forest habitat of the Amur Leopards is being threatened by forest fires and by the construction of new roads.",
   further_details: "https://www.wwf.org.uk/learn/wildlife/amur-leopards",
-  threats: []
+  threats: ["deforestation", "poaching", "building"]
 },
+
 {
-  name: "African penguin",
+  name: "African Penguin",
   continent: "Africa",
   fun_fact: "They can hold their breath for up to 2 and a half minutes when diving",
   image: "https://upload.wikimedia.org/wikipedia/commons/6/63/African_penguin_side_profile.jpg",
@@ -71,8 +75,9 @@
   answers: ["20 km per hour","5 km per hour","10 km per hour","30 km per hour"],
   answer_fact: "The African penguin population is declining rapidly, they suffer from pollution of their habitat by petrochemicals from spills, shipwrecks and cleaning of tankers while at sea",
   further_details: "https://www.britannica.com/animal/African-penguin",
-  threats: []
+  threats: ["fishing", "building"]
 },
+
 {
   name: "Red Panda",
   continent: "Asia",
@@ -86,8 +91,9 @@
   answers: ["At night","In the morning","In the afternoon","At lunchtime"],
   answer_fact: "The red panda population has declined by 50% over the last 20 years as deforestation removes their habitat.",
   further_details: "https://www.nationalgeographic.com/animals/mammals/r/red-panda/",
-  threats: []
+  threats: ["deforestation", "poaching"]
 },
+
 {
   name: "Hawksbill Sea Turtle",
   continent: "Oceans",
@@ -101,8 +107,9 @@
   answers: ["1200","20","500","2000"],
   answer_fact: "It is estimated that there are more than 100 million tonnes of plastic in the ocean, responsible for killing more than 100 million marine animals each year. It is believed that almost all sea turtles will ingest plastic in some form during their life.",
   further_details: "https://www.nationalgeographic.com/animals/reptiles/h/hawksbill-sea-turtle/",
-  threats: []
+  threats: ["fishing", "pollution"]
 },
+
 {
   name: "Sumatran Elephant",
   continent: "Asia",
@@ -118,6 +125,7 @@
   further_details: "https://www.worldwildlife.org/species/sumatran-elephant",
   threats: ["deforestation", "poaching"]
 },
+
 {
   name: "African Wild Dog",
   continent: "Africa",
@@ -133,6 +141,7 @@
   further_details: "https://www.awf.org/wildlife-conservation/african-wild-dog",
   threats: ["disease", "farming", "climate change"]
 },
+
 {
   name: "Emperor penguin",
   continent: "Antarctica",
@@ -148,6 +157,7 @@
   further_details: "https://www.natgeokids.com/uk/discover/animals/birds/emperor-penguins/",
   threats: ["climate change"]
 },
+
 {
   name: "Antarctic Blue Whale",
   continent: "Antarctica",
@@ -163,6 +173,7 @@
   further_details: "https://wwf.panda.org/knowledge_hub/endangered_species/cetaceans/about/blue_whale/",
   threats: ["poaching", "climate change", "fishing"]
 },
+
 {
   name: "Antarctic Krill",
   continent: "Antarctica",
@@ -178,6 +189,7 @@
   further_details: "https://www.nationalgeographic.com/animals/invertebrates/group/krill/",
   threats: ["climate change"]
 },
+
 {
   name: "Franklin's Bumblebee",
   continent: "North America",
@@ -193,6 +205,7 @@
   further_details: "https://www.fs.fed.us/wildflowers/pollinators/pollinator-of-the-month/franklins-bumble-bee.shtml",
   threats: ["climate change", "pollution", "farming", "disease"]
 },
+
 {
   name: "Golden Lion Tamarin",
   continent: "South America",
@@ -208,6 +221,7 @@
   further_details: "https://nationalzoo.si.edu/animals/golden-lion-tamarin",
   threats: ["deforestation"]
 },
+
 {
   name: "Orinoco Crocodile",
   continent: "South America",
@@ -223,6 +237,7 @@
   further_details: "http://animalia.bio/orinoco-crocodile",
   threats: ["poaching", "building", "pollution"]
 },
+
 {
   name: "European Mink",
   continent: "Europe",
@@ -238,6 +253,7 @@
   further_details: "http://animalia.bio/european-mink",
   threats: ["poaching", "building", "pollution"]
 },
+
 {
   name: "Montseny Brook Newt",
   continent: "Europe",
@@ -252,4 +268,20 @@
   answer_fact: "The drying out of mountain streams, human alteration of its original habitat and global warming are all threats to this species, the newts now only survive in the wild in one very small area of Spain.",
   further_details: "https://ec.europa.eu/easme/en/news/montseny-newt-and-delicate-nature-local-ecosystems",
   threats: ["climate change", "building"]
+},
+
+{
+  name: "Polar Bear",
+  continent: "Oceans",
+  fun_fact: "Because they spend most of their lives on the sea ice of the Arctic Ocean depending on the ocean for their food and habitat, polar bears are the only bear species to be considered marine mammals",
+  image: "https://c402277.ssl.cf1.rackcdn.com/photos/2330/images/hero_full/polar-bear-hero.jpg?1345901694",
+  conservation_status: "Vulnerable",
+  number_remaining: 31000,
+  locations: ["Arctic Ocean"],
+  quiz_question: "How large are polar bear cubs when they are first born?",
+  correct_answer: "The size of a guinea pig",
+  answers: ["The size of a guinea pig", "The size of a thimble", "The size of a mouse", "The size of a fox"],
+  answer_fact: "Temperatures in the Arctic are rising at least twice as fast as the global average and sea ice cover is shrinking. This loss of sea ice affects polar bears' ability to find food and safe places to build dens.",
+  further_details: "https://www.worldwildlife.org/species/polar-bear",
+  threats: ["climate change", "pollution"]
 },
