@@ -23,21 +23,20 @@ export default {
   props: ["selectedAnimal"],
   data(){
     return{
-      // answers: shuffle(this.animal.answers),
-
+      answers: "",
       answer_class: "hidden",
     }
   },
   methods: {
-    // shuffle(array){
-    //   for( i = array.length - 1; i > 0; i--){
-    //     const j = Math.floor(Math.random() * i)
-    //     const temp = array[i]
-    //     array[i] = array[j]
-    //     array[j] = temp
-    //   }
-    //   return array
-    // },
+    shuffle(array){
+      for( i = array.length - 1; i > 0; i--){
+        const j = Math.floor(Math.random() * i)
+        const temp = array[i]
+        array[i] = array[j]
+        array[j] = temp
+      }
+      return array
+    },
     checkAnswer(answer){
       if(answer == this.selectedAnimal.correct_answer){
         this.answer_class = "correct"
