@@ -7,7 +7,7 @@
     </div>
     <div id="left-page">
       <h3>{{animal.quiz_question}}</h3>
-      
+
     </div>
   </div>
 </template>
@@ -17,8 +17,18 @@ import Continent from "/Continent.vue";
 
 export default {
   name: "passport",
-  props: ["animal"]
-
+  props: ["animal"],
+  methods: {
+    shuffle(array){
+      for( i = array.length - 1; i > 0; i--){
+        const j = Math.floor(Math.random() * i)
+        const temp = array[i]
+        array[i] = array[j]
+        array[j] = temp
+      }
+      return array
+    }
+  }
 }
 </script>
 
