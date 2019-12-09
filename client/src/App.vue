@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <ul>
+
+<world-map></world-map>
+    <!-- <map></map> -->
+    <!-- <ul>
       <li v-for="(continent, index) in continents" :key="index" :continent="continent">{{continent.animals[0].name}}</li>
-    </ul>
+    </ul> -->
   </div>
 </template>
 
 <script>
-import ContinentsService from './services/ContinentsService.js'
+import ContinentsService from './services/ContinentsService.js';
+import WorldMap from './components/WorldMap.vue';
 
 export default {
   name: 'app',
+  components: {
+    "world-map": WorldMap
+  },
   data(){
     return {
       continents: []
@@ -26,12 +32,12 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+
+body{
+
+background-image: url('./assets/Continents.png');
+background-repeat: no-repeat;
+background-size: 2000px 900px
 }
 </style>

@@ -1,0 +1,148 @@
+<template lang="html">
+  <div id="world_map">
+    <h1>My endangered species</h1>
+
+
+
+
+<!-- <button type="button" name="button" class="button_paw" style="font-size: 3em; background: none; color: Tomato; border: none;"><i class="fas fa-paw icon-large"></i></button> -->
+
+<button type="button" name="button" class="button_au" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button>
+
+<button type="button" name="button" class="button_an" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
+
+<button type="button" name="button" class="button_sa" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
+
+<button type="button" name="button" class="button_oc" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
+
+<button type="button" name="button" class="button_na" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
+
+<button type="button" name="button" class="button_eu" style="font-size: 3em; background: none; color: blue; border: none;"><font-awesome-icon icon="paw"/></i></button>
+
+<button type="button" name="button" class="button_as" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
+
+<button type="button" name="button" class="button_af" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button> --> -->
+
+  </div>
+
+</template>
+
+<script>
+export default {
+  name: "world-map"
+}
+</script>
+
+<style lang="css" scoped>
+.button_sa {
+  /* background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px; */
+  position: absolute;
+  left: 600px;
+  top: 600px;
+
+  }
+  .button_na {
+    /* background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; */
+    position: absolute;
+    left: 400px;
+    top: 300px;
+    }
+
+  .button_eu {
+      /* background-color: red;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px; */
+      position: absolute;
+      left: 950px;
+      top: 300px;
+      }
+
+    .button_oc {
+        /* background-color: red;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px; */
+        position: absolute;
+        left: 150px;
+        top: 700px;
+        }
+
+        .button_af {
+          /* background-color: red;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px; */
+          position: absolute;
+          left: 1000px;
+          top: 500px;
+          }
+
+          .button_as {
+            /* background-color: red;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px; */
+            position: absolute;
+            left: 1300px;
+            top: 300px;
+            }
+            .button_an {
+              /* background-color: red;
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px; */
+              position: absolute;
+              left: 1100px;
+              top: 850px;
+              }
+
+              .button_au {
+                /* background-color: red;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px; */
+                position: absolute;
+                left: 1600px;
+                top: 620px;
+                }
+
+</style>
