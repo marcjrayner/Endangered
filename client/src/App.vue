@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <ul>
-      <li v-for="(animal, index) in animals" :key="index" :animal="animal">{{animal.name}}</li>
+      <li v-for="(continent, index) in continents" :key="index" :continent="continent">{{continent}}</li>
     </ul>
   </div>
 </template>
@@ -14,12 +14,12 @@ export default {
   name: 'app',
   data(){
     return {
-      animals: []
+      continent: []
     };
   },
   mounted(){
     AnimalsService.getAnimals()
-    .then(animals => this.animals = animals);
+    .then(continents => this.continents = continents);
   }
 }
 </script>
