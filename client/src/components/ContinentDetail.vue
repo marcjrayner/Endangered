@@ -6,12 +6,9 @@
           <div class="modal">
             <h1>{{this.continent.name}}</h1>
             <ul v-for="animal in this.continent.animals">
-              <li>{{animal.name}}</li>
+              <li @click="selectAnimal(animal)">{{animal.name}}</li>
             </ul>
-
-
-
-
+            <passport :selectedAnimal="selectedAnimal"></passport>
 
           </div>
         </div>
@@ -23,13 +20,24 @@
 </template>
 
 <script>
-name: 'continent-detail'
+import Passport from "./Passport.vue"
+
 export default {
+  name: 'continent-detail',
   props: ['continent'],
   data() {
     return {
       isOpen: false,
+      selectedAnimal: ""
     }
+  },
+  methods: {
+    selectAnimal(animal){
+      this.selectedAnimal = animal;
+    }
+  },
+  components: {
+    "passport": Passport
   }
 }
 </script>

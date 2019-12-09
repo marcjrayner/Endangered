@@ -6,26 +6,6 @@
       <!-- button type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button> -->
     </ul>
 
-
-
-<!-- <button type="button" name="button" class="button_paw" style="font-size: 3em; background: none; color: Tomato; border: none;"><i class="fas fa-paw icon-large"></i></button> -->
-
-<!-- <button type="button" name="button" class="button_au" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button>
-
-<button type="button" name="button" class="button_an" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
-
-<button type="button" name="button" class="button_sa" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
-
-<button type="button" name="button" class="button_oc" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
-
-<button type="button" name="button" class="button_na" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
-
-<button type="button" name="button" class="button_eu" style="font-size: 3em; background: none; color: blue; border: none;"><font-awesome-icon icon="paw"/></i></button>
-
-<button type="button" name="button" class="button_as" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
-
-<button type="button" name="button" class="button_af" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button> --> --> -->
-
   </div>
 
 </template>
