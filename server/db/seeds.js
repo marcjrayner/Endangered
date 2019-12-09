@@ -65,7 +65,7 @@
 {
   name: "African Penguin",
   continent: "Africa",
-  fun_fact: "They can hold their breath for up to 2 and a half minutes when diving",
+  fun_fact: "Afircan Penguins can hold their breath for up to 2 and a half minutes when diving",
   image: "https://upload.wikimedia.org/wikipedia/commons/6/63/African_penguin_side_profile.jpg",
   conservation_status: "Endangered",
   number_remaining: 21000,
@@ -73,7 +73,7 @@
   quiz_question: "African penguins are clumsy on land but excellent at swinning. How fast do you think they can swim?",
   correct_answer: "20 km per hour",
   answers: ["20 km per hour","5 km per hour","10 km per hour","30 km per hour"],
-  answer_fact: "The African penguin population is declining rapidly, they suffer from pollution of their habitat by petrochemicals from spills, shipwrecks and cleaning of tankers while at sea",
+  answer_fact: "The African Penguin population is declining rapidly, they suffer from pollution of their habitat by petrochemicals from spills, shipwrecks and cleaning of tankers while at sea",
   further_details: "https://www.britannica.com/animal/African-penguin",
   threats: ["fishing", "building"]
 },
@@ -88,7 +88,7 @@
   locations: ["China", "Eastern Himalayas"],
   quiz_question: "What time of day are red pandas most active?",
   correct_answer: "At night",
-  answers: ["At night","In the morning","In the afternoon","At lunchtime"],
+  answers: ["At night", "In the morning", "In the afternoon", "At lunchtime"],
   answer_fact: "The red panda population has declined by 50% over the last 20 years as deforestation removes their habitat.",
   further_details: "https://www.nationalgeographic.com/animals/mammals/r/red-panda/",
   threats: ["deforestation", "poaching"]
@@ -97,7 +97,7 @@
 {
   name: "Hawksbill Sea Turtle",
   continent: "Oceans",
-  fun_fact: "Hawksbill sea turtle shells change colors depending on whether the turtle is in warm or cold wate",
+  fun_fact: "Hawksbill sea turtle shells change colors depending on whether the turtle is in warm or cold water",
   image: "https://media.fromthegrapevine.com/assets/images/2015/2/hawksbill-sea-turtle-eilat-bay.jpg.1145x0_q71_crop-scale.jpg",
   conservation_status: "Critically Endangered",
   number_remaining: 23000,
@@ -105,7 +105,7 @@
   quiz_question: "Hawksbill Turtles main diet is sea sponges and by eating them they help protect the coral reefs. How many sponges do you think a turtle can eat in a year?",
   correct_answer: "1200",
   answers: ["1200","20","500","2000"],
-  answer_fact: "It is estimated that there are more than 100 million tonnes of plastic in the ocean, responsible for killing more than 100 million marine animals each year. It is believed that almost all sea turtles will ingest plastic in some form during their life.",
+  answer_fact: "It is estimated that there are more than 100 million tonnes of plastic in the ocean, responsible for killing millions of marine animals each year. It is believed that almost all sea turtles will ingest plastic in some form during their life.",
   further_details: "https://www.nationalgeographic.com/animals/reptiles/h/hawksbill-sea-turtle/",
   threats: ["fishing", "pollution"]
 },
@@ -137,13 +137,13 @@
   quiz_question: "What is another name for the African Wild Dog",
   correct_answer: "Painted Wolf",
   answers: ["Painted Wolf","Stripey Wolf","Fierce Wolf","Short Haired Wolf"],
-  answer_fact: "The biggest threat to wild dogs is destruction of their habitat, as human populations expand, wild dogs are losing the spaces in which they were once able to roam freely. However organisations are working to create protected areas for these species so they have somewhere to live",
+  answer_fact: "The biggest threat to wild dogs is destruction of their habitat as human populations expand, wild dogs are losing the spaces in which they were once able to roam freely. However organisations are working to create protected areas for these species so they have somewhere to live",
   further_details: "https://www.awf.org/wildlife-conservation/african-wild-dog",
   threats: ["disease", "farming", "climate change"]
 },
 
 {
-  name: "Emperor penguin",
+  name: "Emperor Penguin",
   continent: "Antarctica",
   fun_fact: "Emperor penguins are the largest penguins on earth today, but they would be dwarfed by the ancient ‘mega-penguins’. Fossils reveal that a giant species of penguin which lived about 37 million years ago may have stood 2 metres tall!",
   image: "https://oceanwide-4579.kxcdn.com/uploads/media-dynamic/cache/widen_1100/uploads/media/default/0001/26/thumb_25671_default_900.jpeg",
@@ -169,7 +169,7 @@
   quiz_question: "Which of these facts about the Blue Whale is NOT true?",
   correct_answer: "It can swim at 40 miles per hour",
   answers: ["It can swim at 40 miles per hour","It's calls can be heard underwater for hundreds of kilometres","It’s tongue weighs as much as an elephant","It is longer than three buses"],
-  answer_fact: "The world's largest problem, global warming, could mean extinction in the Antarctic for the world's largest animal. Sea ice provides a habitat for algae, which are fed upon by krill, the main food supply for blue whales. As the temperature has increased in recent decades, sea ice has diminished rapidly and thus food supplies for krill are getting scarce.",
+  answer_fact: "The world's largest problem, global warming, could mean extinction in the Antarctic for the world's largest animal. Sea ice provides a habitat for algae, which are fed upon by krill, the main food supply for blue whales. As the temperature has increased in recent decades, sea ice has diminished rapidly and thus food supplies are getting scarcer.",
   further_details: "https://wwf.panda.org/knowledge_hub/endangered_species/cetaceans/about/blue_whale/",
   threats: ["poaching", "climate change", "fishing"]
 },
@@ -201,7 +201,7 @@
   quiz_question: "You can recognise a Franklin's bumblebee from other bumblebees because it has a solid black ..... ?",
   correct_answer: "Abdomen",
   answers: ["Abdomen","Tail","Neck","Wing"],
-  answer_fact: "Improper use of pesticides on crops, gardens, and lawns can poison bees, especially ground-dwelling colonies of Franklin’s bumble bee.",
+  answer_fact: "Improper use of pesticides on crops, gardens, and lawns can poison bees, especially the ground-dwelling colonies of Franklin’s bumble bee.",
   further_details: "https://www.fs.fed.us/wildflowers/pollinators/pollinator-of-the-month/franklins-bumble-bee.shtml",
   threats: ["climate change", "pollution", "farming", "disease"]
 },
@@ -217,7 +217,7 @@
   quiz_question: "What does the golden lion tamarin use to get insects out of small crevices to eat?",
   correct_answer: "Its long fingers",
   answers: ["Its long fingers", "Its long tongue","Its long nose","Its long tail"],
-  answer_fact: "The tamarinds are under threat as the forest they live in is being cut down by humans for timber and to clear the land to build on. However efforts by conservationists has meant that numbers are slowly increasing again.",
+  answer_fact: "The tamarinds are under threat as the forest they live in is being cut down by humans for timber and to clear the land to build on. However efforts by conservationists means that numbers are slowly increasing again.",
   further_details: "https://nationalzoo.si.edu/animals/golden-lion-tamarin",
   threats: ["deforestation"]
 },
@@ -230,7 +230,7 @@
   conservation_status: "Critically Endangered",
   number_remaining: 1500,
   locations: ["Colombia", "Venezuela"],
-  quiz_question: "How long are orinoco crocodiles?",
+  quiz_question: "How long are Orinoco Crocodiles?",
   correct_answer: "3 to 4 metres",
   answers: ["3 to 4 metres","10 to 11 metres","50 cm to 1 metre","5 to 6 metres"],
   answer_fact: "The Orinoco crocodile is highly endangered due to excessive hunting in the past, and more recently pollution and destruction of its natural habitat. Today it is a protected species and conservationists are working to increase population numbers.",
@@ -241,7 +241,7 @@
 {
   name: "European Mink",
   continent: "Europe",
-  fun_fact: "Mink have webbed feet and fur covered with an oily substance which prevents water soaking through to their skin.",
+  fun_fact: "Mink have webbed feet and fur covered with an oily substance which prevents water soaking through to their skin, making them very comfortable swimming in water.",
   image: "https://dingo.care2.com/pictures/petition_images/petition/282/151209-1556046018-wide.jpg",
   conservation_status: "Critically Endangered",
   number_remaining: 30000,
@@ -249,7 +249,7 @@
   quiz_question: "What is a baby mink called?",
   correct_answer: "A kit",
   answers: ["A kit","A hatchling","A pup","A chick"],
-  answer_fact: "The conversion of wetlands into agricultural land and degradation of the water quality have resulted in the disappearance of the resting, breeding and feeding areas for mink. They are now listed as a species to be strictly protected.",
+  answer_fact: "Converting wetlands into agricultural land has resulted in the disappearance of the resting, breeding and feeding areas for mink. They are now listed as a species to be strictly protected.",
   further_details: "http://animalia.bio/european-mink",
   threats: ["poaching", "building", "pollution"]
 },
@@ -273,7 +273,7 @@
 {
   name: "Polar Bear",
   continent: "Oceans",
-  fun_fact: "Because they spend most of their lives on the sea ice of the Arctic Ocean depending on the ocean for their food and habitat, polar bears are the only bear species to be considered marine mammals",
+  fun_fact: "Because they spend most of their lives on the sea ice of the Arctic Ocean and depend on the ocean for their food and habitat, polar bears are the only bear species to be considered marine mammals",
   image: "https://c402277.ssl.cf1.rackcdn.com/photos/2330/images/hero_full/polar-bear-hero.jpg?1345901694",
   conservation_status: "Vulnerable",
   number_remaining: 31000,
