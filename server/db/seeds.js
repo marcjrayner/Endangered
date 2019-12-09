@@ -162,7 +162,7 @@ db.animals.insertMany([
   answers: ["They can re-grow injured limbs and organs", "They are 1000 times more resistent to cancer than mammals", "Legend has it that the Aztec god of death and lightning disguised himself as one to avoid sacrifice", "They can eat fish twice their size"],
   answer_fact: "Water pollution and being caught to be sold as pets or food are some of the main reasons the number of axolotl are going down. Scientists have started making shelters for the axolotl with clean water pumped in, to help give them better living conditions.",
   further_details: "https://factanimal.com/axolotl/",
-  threats: ["pollution", "climate change", "poaching" "building", "invasive species"]
+  threats: ["pollution", "climate change", "poaching", "building", "invasive species"]
 },
 
 {

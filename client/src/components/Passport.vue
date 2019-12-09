@@ -8,7 +8,7 @@
     <div id="left-page">
       <h3>{{animal.quiz_question}}</h3>
       <ul id="answers" v-for="answer in shuffle(animal.answers)">
-        <li>{{answer}}</li>
+        <li><button type="button">{{answer}}</button></li>
       </ul>
     </div>
   </div>
