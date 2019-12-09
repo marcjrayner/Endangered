@@ -1,3 +1,8 @@
+use endangered;
+db.dropDatabase();
+
+db.animals.insertMany([
+
 {
   name: "Waldrapp Ibis",
   continent: "Africa",
@@ -605,4 +610,5 @@
   answer_fact: "The Balearic Shearwater is under severe threat from the development of holiday resorts near its breeding sites, which can destroy or alter their natural breeding habitat",
   further_details: "",
   threats: ["building"]
-},
+}
+])
