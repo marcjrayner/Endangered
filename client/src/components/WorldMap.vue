@@ -1,13 +1,15 @@
 <template lang="html">
   <div id="world_map">
     <h1>My endangered species</h1>
-
+    <ul>
+      <li v-for="(continent, index) in continents" :key="index" :continent="continent"><button type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button></li>
+    </ul>
 
 
 
 <!-- <button type="button" name="button" class="button_paw" style="font-size: 3em; background: none; color: Tomato; border: none;"><i class="fas fa-paw icon-large"></i></button> -->
 
-<button type="button" name="button" class="button_au" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button>
+<!-- <button type="button" name="button" class="button_au" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button>
 
 <button type="button" name="button" class="button_an" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
 
@@ -21,7 +23,7 @@
 
 <button type="button" name="button" class="button_as" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
 
-<button type="button" name="button" class="button_af" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button> --> -->
+<button type="button" name="button" class="button_af" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button> --> --> -->
 
   </div>
 
@@ -29,12 +31,16 @@
 
 <script>
 export default {
-  name: "world-map"
+  name: "world-map",
+  props: ["continents"]
 }
 </script>
 
 <style lang="css" scoped>
-.button_sa {
+ul {
+  list-style: none;
+}
+.SouthAmerica {
   /* background-color: red;
   border: none;
   color: white;
@@ -48,7 +54,7 @@ export default {
   top: 600px;
 
   }
-  .button_na {
+  .NorthAmerica {
     /* background-color: red;
     border: none;
     color: white;
@@ -62,7 +68,7 @@ export default {
     top: 300px;
     }
 
-  .button_eu {
+  .Europe {
       /* background-color: red;
       border: none;
       color: white;
@@ -76,7 +82,7 @@ export default {
       top: 300px;
       }
 
-    .button_oc {
+    .Oceans {
         /* background-color: red;
         border: none;
         color: white;
@@ -90,7 +96,7 @@ export default {
         top: 700px;
         }
 
-        .button_af {
+        .Africa {
           /* background-color: red;
           border: none;
           color: white;
@@ -104,7 +110,7 @@ export default {
           top: 500px;
           }
 
-          .button_as {
+          .Asia {
             /* background-color: red;
             border: none;
             color: white;
@@ -117,7 +123,7 @@ export default {
             left: 1300px;
             top: 300px;
             }
-            .button_an {
+            .Antarctica {
               /* background-color: red;
               border: none;
               color: white;
@@ -131,7 +137,7 @@ export default {
               top: 850px;
               }
 
-              .button_au {
+              .Australia {
                 /* background-color: red;
                 border: none;
                 color: white;

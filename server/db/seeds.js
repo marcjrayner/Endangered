@@ -244,7 +244,7 @@ db.continents.insertMany([
   ]
 },
 {
-  name:"Austrailia",
+  name:"Australia",
   animals: [
     {
       name: "Kakapo",
@@ -324,7 +324,7 @@ db.continents.insertMany([
   ]
 },
 {
-  name:"South America",
+  name:"SouthAmerica",
   animals: [
   {
     name: "Lehmann's Poison Frog",
@@ -404,7 +404,7 @@ db.continents.insertMany([
 ]
 },
 {
-  name:"North America",
+  name:"NorthAmerica",
   animals: [
   {
     name: "Pygmy Raccoon",

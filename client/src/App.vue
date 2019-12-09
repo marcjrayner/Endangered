@@ -1,8 +1,7 @@
 <template>
   <div id="app">
 
-<world-map></world-map>
-    <!-- <map></map> -->
+<world-map :continents="continents"></world-map>
     <!-- <ul>
       <li v-for="(continent, index) in continents" :key="index" :continent="continent">{{continent.animals[0].name}}</li>
     </ul> -->
