@@ -4,7 +4,8 @@ db.dropDatabase();
 db.animals.insertMany([
 
 {
-  Africa: [
+  Africa: {
+    animals:[
     {
       name: "Waldrapp Ibis",
       continent: "Africa",
@@ -80,9 +81,10 @@ db.animals.insertMany([
       further_details: "https://www.awf.org/wildlife-conservation/african-wild-dog",
       threats: ["disease", "farming", "climate change"]
     },
-  ]},
+  ]}},
   {
-  Europe: [
+  Europe: {
+    animals:[
     {
       name: "Iberian Lynx",
       continent: "Europe",
@@ -158,9 +160,10 @@ db.animals.insertMany([
       further_details: "https://ec.europa.eu/easme/en/news/montseny-newt-and-delicate-nature-local-ecosystems",
       threats: ["climate change", "building"]
     },
-  ]},
+  ]}},
   {
-  Asia: [
+  Asia: {
+    animals: [
     {
       name: "Visayan Warty Pig",
       continent: "Asia",
@@ -236,9 +239,10 @@ db.animals.insertMany([
       further_details: "https://www.worldwildlife.org/species/sumatran-elephant",
       threats: ["deforestation", "poaching"]
     },
-  ]},
+  ]}},
   {
-  Austrailia: [
+  Austrailia: {
+    animals: [
     {
       name: "Kakapo",
       continent: "Australia",
@@ -314,9 +318,10 @@ db.animals.insertMany([
       further_details: "https://www.wwf.org.nz/what_we_do/species/sealions2/",
       threats: ["fishing", "disease"]
     },
-  ]},
+  ]}},
   {
-  SouthAmerica: [
+  SouthAmerica: {
+    animals: [
   {
     name: "Lehmann's Poison Frog",
     continent: "South America",
@@ -392,9 +397,10 @@ db.animals.insertMany([
     further_details: "http://animalia.bio/orinoco-crocodile",
     threats: ["poaching", "building", "pollution"]
   },
-]},
+]}},
 {
-NorthAmerica: [
+NorthAmerica: {
+  animals: [
   {
     name: "Pygmy Raccoon",
     continent: "North America",
@@ -470,9 +476,10 @@ NorthAmerica: [
     further_details: "https://www.fs.fed.us/wildflowers/pollinators/pollinator-of-the-month/franklins-bumble-bee.shtml",
     threats: ["climate change", "pollution", "farming", "disease"]
   },
-]},
+]}},
 {
-Oceans: [
+Oceans: {
+  animals: [
   {
     name: "Vaquita",
     continent: "Oceans",
@@ -548,9 +555,10 @@ Oceans: [
     further_details: "",
     threats: ["building"]
   }
-]},
+]}},
 {
-Antarctica: [
+Antarctica: {
+  animals: [
   {
     name: "Emperor Penguin",
     continent: "Antarctica",
@@ -596,5 +604,5 @@ Antarctica: [
     further_details: "https://www.nationalgeographic.com/animals/invertebrates/group/krill/",
     threats: ["climate change"]
   }
-]}
+]}}
 ])
