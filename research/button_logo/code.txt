@@ -1,0 +1,8 @@
+<i class="fas fa-paw"></i>
+//paw - purple
+<i class="fas fa-fish"></i>
+//fish - blue/purple
+<i class="fas fa-hippo"></i>
+//hippo-green
+<i class="fas fa-kiwi-bird"></i>
+//kiwibird-green
