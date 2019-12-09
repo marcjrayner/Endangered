@@ -1,50 +1,85 @@
 <template lang="html">
-  <div id="world_map">
-    <h1>My endangered species</h1>
-    <ul>
-      <continent-detail v-for="(continent, index) in continents" :key="index" :continent="continent"></continent-detail>
-      <!-- button type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button> -->
-    </ul>
+  <div v-if='continent'>
+    <transition name="modal">
+      <div v-if="isOpen">
+        <div class="overlay" @click.self="isOpen = false;">
+          <div class="modal">
+            <h1>{{this.continent.name}}</h1>
+            <ul v-for="animal in this.continent.animals">
+              <li>{{animal.name}}</li>
+            </ul>
 
 
 
-<!-- <button type="button" name="button" class="button_paw" style="font-size: 3em; background: none; color: Tomato; border: none;"><i class="fas fa-paw icon-large"></i></button> -->
 
-<!-- <button type="button" name="button" class="button_au" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button>
 
-<button type="button" name="button" class="button_an" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
-
-<button type="button" name="button" class="button_sa" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
-
-<button type="button" name="button" class="button_oc" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
-
-<button type="button" name="button" class="button_na" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
-
-<button type="button" name="button" class="button_eu" style="font-size: 3em; background: none; color: blue; border: none;"><font-awesome-icon icon="paw"/></i></button>
-
-<button type="button" name="button" class="button_as" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button>
-
-<button type="button" name="button" class="button_af" style="font-size: 3em; background: none; color: Tomato; border: none;"><font-awesome-icon icon="paw"/></i></button> --> --> -->
-
+          </div>
+        </div>
+      </div>
+    </transition>
+    <button @click="isOpen = !isOpen;" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button>
+    </button>
   </div>
-
 </template>
 
 <script>
-import ContinentDetail from './ContinentDetail.vue'
+name: 'continent-detail'
 export default {
-  name: "world-map",
-  props: ["continents"],
-  components: {
-    'continent-detail': ContinentDetail
+  props: ['continent'],
+  data() {
+    return {
+      isOpen: false,
+    }
   }
 }
 </script>
 
 <style lang="css" scoped>
-ul {
-  list-style: none;
+
+.modal {
+  width: 700px;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px 3px;
+  transition: all 0.2s ease-in;
+  /* font-family: Helvetica, Arial, sans-serif; */
 }
+.fadeIn-enter {
+  opacity: 0;
+}
+.fadeIn-leave-active {
+  opacity: 0;
+  transition: all 0.2s step-end;
+}
+.fadeIn-enter .modal,
+.fadeIn-leave-active.modal {
+  transform: scale(1.1);
+}
+button {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 1.1rem;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #00000094;
+  z-index: 999;
+  transition: opacity 0.2s ease;
+}
+
+
 .SouthAmerica {
   /* background-color: red;
   border: none;
@@ -155,5 +190,7 @@ ul {
                 left: 1600px;
                 top: 620px;
                 }
+
+
 
 </style>
