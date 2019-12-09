@@ -65,7 +65,6 @@ db.animals.insertMany([
   answer_fact: "Rare frogs in Colombia are under risk from smugglers who want to capture them to sell as pets on the black market. To try and stop this a frog farm has been set up to breed and sell frogs at lower prices than the smuggler's charge.",
   further_details: "https://amphibiaweb.org/species/1637",
   threats: ["poaching"]
-
 },
 
 {
@@ -81,8 +80,7 @@ db.animals.insertMany([
   answers: ["crabs", "fruit", "frogs", "insects"],
   answer_fact: "The Pygmy Raccoon can only be found on Cozumel Island off the coast of Mexico. Now, because of the expanding tourism industry on the island, the raccoon's habitat is getting smaller and smaller.",
   further_details: "http://animalia.bio/cozumel-raccoon",
-  threats: [""]
-
+  threats: ["building"]
 },
 
 {
@@ -162,7 +160,7 @@ db.animals.insertMany([
   answers: ["They can re-grow injured limbs and organs", "They are 1000 times more resistent to cancer than mammals", "Legend has it that the Aztec god of death and lightning disguised himself as one to avoid sacrifice", "They can eat fish twice their size"],
   answer_fact: "Water pollution and being caught to be sold as pets or food are some of the main reasons the number of axolotl are going down. Scientists have started making shelters for the axolotl with clean water pumped in, to help give them better living conditions.",
   further_details: "https://factanimal.com/axolotl/",
-  threats: ["pollution", "climate change", "poaching" "building", "invasive species"]
+  threats: ["pollution", "climate change", "poaching", "building", "invasive species"]
 },
 
 {
@@ -611,4 +609,4 @@ db.animals.insertMany([
   further_details: "",
   threats: ["building"]
 }
-])
+]);
