@@ -285,3 +285,19 @@
   further_details: "https://www.worldwildlife.org/species/polar-bear",
   threats: ["climate change", "pollution"]
 },
+
+{
+  name: "Balearic Shearwater",
+  continent: "Oceans",
+  fun_fact: "Shearwaters nest in burrows which are only visited at night to avoid predators like large gulls.",
+  image: "http://www.marine-life.org.uk/media/49390/balearicshearwater4%20brereton%20edit_345x230.jpg",
+  conservation_status: "Critically Endangered",
+  number_remaining: 19000,
+  locations: ["Balearic Islands"],
+  quiz_question: "What is the wingspan of a Balearic Shearwater?",
+  correct_answer: "85–90 cm",
+  answers: ["85–90 cm", "45-50cm", "145-150cm", "10-15cm"],
+  answer_fact: "The Balearic Shearwater is under severe threat from the development of holiday resorts near its breeding sites, which can destroy or alter their natural breeding habitat",
+  further_details: "",
+  threats: ["building"]
+},
