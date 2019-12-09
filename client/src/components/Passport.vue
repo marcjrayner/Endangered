@@ -7,7 +7,9 @@
     </div>
     <div id="left-page">
       <h3>{{animal.quiz_question}}</h3>
-
+      <ul id="answers" v-for="answer in shuffle(animal.answers)">
+        <li>{{answer}}</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -18,6 +20,11 @@ import Continent from "/Continent.vue";
 export default {
   name: "passport",
   props: ["animal"],
+  // data(){
+  //   return{
+  //     answers: shuffle(this.animal.answers)
+  //   }
+  // },
   methods: {
     shuffle(array){
       for( i = array.length - 1; i > 0; i--){
