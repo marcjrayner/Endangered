@@ -3,166 +3,168 @@ db.dropDatabase();
 
 db.animals.insertMany([
 
-{
-  Africa: {
-    animals:[
-    {
-      name: "Waldrapp Ibis",
-      continent: "Africa",
-      fun_fact: "Thoth, the ancient Egyptian god of writing, magic and wisdom was drawn with the head of an Ibis and the body of a man.",
-      image: "http://s3.amazonaws.com/mongabay-images/13/1202.baldibis.IMG_3381.600.jpg",
-      conservation_status: "Endangered",
-      number_remaining: 500,
-      locations: ["Morocco", "Syria"],
-      quiz_question: "What does the Waldrapp Ibis like to eat?",
-      correct_answer: "Lizards and beetles",
-      answers: ["Lizards and beetles", "Fruit", "Small mice and rats", "Fish"],
-      answer_fact: "The Waldrapp Ibis lives on cliff ledges and hunts for food in fields. Pesticides sprayed by on fields by farmers to kill insects can also poison the Ibis.",
-      further_details: "https://www.edinburghzoo.org.uk/animals-and-attractions/animals/waldrapp-ibis/",
-      threats: ["farming"]
-    },
-    {
-      name: "Okapi",
-      continent: "Africa",
-      fun_fact: "Okapi are related to giraffes. Their long black tongues are about 14 inches long, and they can use them to lick their own ears and eyelids.",
-      image: "http://animalia.bio/uploads/animals/photos/full/1.25x1/okapi.jpg",
-      conservation_status: "Endangered",
-      number_remaining: 4500,
-      locations: ["Democratic Republic of the Congo"],
-      quiz_question: "Why does the Okapi have stripes?",
-      correct_answer: "For camouflage",
-      answers: ["For camouflage", "To blend in with zebras", "To warn predators it's dangerous", "To look pretty"],
-      answer_fact: "Hunting and building in their territory affects the okapi population. About 100 okapi live in zoos accross the world.",
-      further_details: "https://www.discoverwildlife.com/animal-facts/mammals/facts-about-okapi/",
-      threats: ["deforestation", "poaching", "building"]
-    },
-    {
-      name: "Mountain Gorilla",
-      continent: "Africa",
-      fun_fact: "Gorillas hate getting wet!",
-      image: "https://ichef.bbci.co.uk/news/320/cpsprodpb/DF62/production/_101868175_hi018106787.jpg",
-      conservation_status: "Endangered",
-      number_remaining: 1000,
-      locations: ["Uganda", "Rwanda"],
-      quiz_question: "What kind of habitat do Mountain Gorillas live in?",
-      correct_answer: "Cloud Forest",
-      answers: ["Cloud Forest","Desert","Rainforest","Grassland"],
-      answer_fact: "The forests the Mountain Gorillas live in are being cut down so that humans can build on the land. To protect the gorillas we need to make sure thay have enough suitable places to live",
-      further_details: "https://www.wwf.org.uk/learn/wildlife/mountain-gorillas",
-      threats: ["deforestation"]
-    },
-    {
-      name: "African Penguin",
-      continent: "Africa",
-      fun_fact: "Afircan Penguins can hold their breath for up to 2 and a half minutes when diving",
-      image: "https://upload.wikimedia.org/wikipedia/commons/6/63/African_penguin_side_profile.jpg",
-      conservation_status: "Endangered",
-      number_remaining: 21000,
-      locations: ["South Africa","Namibia"],
-      quiz_question: "African penguins are clumsy on land but excellent at swinning. How fast do you think they can swim?",
-      correct_answer: "20 km per hour",
-      answers: ["20 km per hour","5 km per hour","10 km per hour","30 km per hour"],
-      answer_fact: "The African Penguin population is declining rapidly, they suffer from pollution of their habitat by petrochemicals from spills, shipwrecks and cleaning of tankers while at sea",
-      further_details: "https://www.britannica.com/animal/African-penguin",
-      threats: ["fishing", "building"]
-    },
-    {
-      name: "African Wild Dog",
-      continent: "Africa",
-      fun_fact: "These long-legged canines have only four toes per foot, unlike other dogs, which have five toes on their forefeet.",
-      image: "https://images.immediate.co.uk/production/volatile/sites/23/2019/11/P6071681-de6c1f1.jpg?webp=true&quality=45&resize=1240%2C826",
-      conservation_status: "Endangered",
-      number_remaining: 6000,
-      locations: ["Botswana", "Namibia", "Zimbabwe"],
-      quiz_question: "What is another name for the African Wild Dog",
-      correct_answer: "Painted Wolf",
-      answers: ["Painted Wolf","Stripey Wolf","Fierce Wolf","Short Haired Wolf"],
-      answer_fact: "The biggest threat to wild dogs is destruction of their habitat as human populations expand, wild dogs are losing the spaces in which they were once able to roam freely. However organisations are working to create protected areas for these species so they have somewhere to live",
-      further_details: "https://www.awf.org/wildlife-conservation/african-wild-dog",
-      threats: ["disease", "farming", "climate change"]
-    },
-  ]}},
   {
-  Europe: {
+    name:"Africa",
     animals:[
-    {
-      name: "Iberian Lynx",
-      continent: "Europe",
-      fun_fact: "The word lynx comes from the greek word for bright, because of their shiny eyes.",
-      image: "https://pictures-of-cats.org/wp-content/uploads/2019/05/Iberian-lynx-e1557914279644.jpg",
-      conservation_status: "Endangered",
-      number_remaining: 400,
-      locations: ["Spain", "Portugal"],
-      quiz_question: "About 90% of an Iberian Lynx's diet is made up of what animal?",
-      correct_answer: "Rabbits",
-      answers: ["Rabbits", "Mice", "Birds", "Fish"],
-      answer_fact: "In the last 20 years the Iberian Lynx population has dropped by 80%, because disease killed a lot of their food source. Conservation efforts over the last 10 years have started to help lynx population numbers, going from 100 lynxes in 2005 to about 400 in 2019.",
-      further_details: "https://www.worldwildlife.org/stories/bringing-back-the-iberian-lynx",
-      threats: ["disease"]
-    },
-    {
-      name: "Sandy Mole Rat",
-      continent: "Europe",
-      fun_fact: "Sandy Mole Rats are completely blind.",
-      image: "https://i.imgur.com/uqBJuUq.jpg",
-      conservation_status: "Endangered",
-      number_remaining: 20000,
-      locations: ["Ukraine"],
-      quiz_question: "What senses does the mole rat use to find its way around?",
-      correct_answer: "Hearing and touch",
-      answers: ["Hearing and touch", "Smell and hearing", "Touch and smell", "Sight and touch"],
-      answer_fact: "The Sandy Mole Rat's habitat is being turned into plantations.",
-      further_details: "https://animaldiversity.org/accounts/Spalacinae/",
-      threats: ["farming"]
-    },
-    {
-      name: "Marsican Brown Bear",
-      continent: "Europe",
-      fun_fact: "Marsican brown bears typically give birth to twins.",
-      image: "http://www.bearconservation.org.uk/wp-content/uploads/2017/08/1024x768-Marsican_Brown_Bear_jpg1.jpg",
-      conservation_status: "Critically Endangered",
-      number_remaining: 50,
-      locations: ["Italy"],
-      quiz_question: "Why has the Marsican brown bear evolved a really powerful lower jaw?",
-      correct_answer: "To crunch nuts",
-      answers: ["To crunch nuts", "Do defend against other bears", "To attack prey", "To look scarier"],
-      answer_fact: "The bears live in Abruzzo National Park in Italy where they are protected, and hopefully can grow in numbers.",
-      further_details: "https://theeuropeannaturetrust.com/animal-profile-marsican-brown-bear/",
-      threats: ["poaching"]
-    },
-    {
-      name: "European Mink",
-      continent: "Europe",
-      fun_fact: "Mink have webbed feet and fur covered with an oily substance which prevents water soaking through to their skin, making them very comfortable swimming in water.",
-      image: "https://dingo.care2.com/pictures/petition_images/petition/282/151209-1556046018-wide.jpg",
-      conservation_status: "Critically Endangered",
-      number_remaining: 30000,
-      locations: ["Russia", "Spain", "France"],
-      quiz_question: "What is a baby mink called?",
-      correct_answer: "A kit",
-      answers: ["A kit","A hatchling","A pup","A chick"],
-      answer_fact: "Converting wetlands into agricultural land has resulted in the disappearance of the resting, breeding and feeding areas for mink. They are now listed as a species to be strictly protected.",
-      further_details: "http://animalia.bio/european-mink",
-      threats: ["poaching", "building", "pollution"]
-    },
-    {
-      name: "Montseny Brook Newt",
-      continent: "Europe",
-      fun_fact: "Montseny Newts are very small, they grow to no more than 11 centimetres in length",
-      image: "https://www.zoobarcelona.cat/sites/default/files/styles/ps_main_img/public/2019-03/Trito_Montseny.JPG?itok=KqM8waEI",
-      conservation_status: "Critically Endangered",
-      number_remaining: 1500,
-      locations: ["Catalonia"],
-      quiz_question: "Where do Montseny Brook newts live?",
-      correct_answer: "Streams and Rivers",
-      answers: ["Streams and Rivers","Trees and Bushes","Underground Burrows","Sandy Beaches"],
-      answer_fact: "The drying out of mountain streams, human alteration of its original habitat and global warming are all threats to this species, the newts now only survive in the wild in one very small area of Spain.",
-      further_details: "https://ec.europa.eu/easme/en/news/montseny-newt-and-delicate-nature-local-ecosystems",
-      threats: ["climate change", "building"]
-    },
-  ]}},
+      {
+        name: "Waldrapp Ibis",
+        continent: "Africa",
+        fun_fact: "Thoth, the ancient Egyptian god of writing, magic and wisdom was drawn with the head of an Ibis and the body of a man.",
+        image: "http://s3.amazonaws.com/mongabay-images/13/1202.baldibis.IMG_3381.600.jpg",
+        conservation_status: "Endangered",
+        number_remaining: 500,
+        locations: ["Morocco", "Syria"],
+        quiz_question: "What does the Waldrapp Ibis like to eat?",
+        correct_answer: "Lizards and beetles",
+        answers: ["Lizards and beetles", "Fruit", "Small mice and rats", "Fish"],
+        answer_fact: "The Waldrapp Ibis lives on cliff ledges and hunts for food in fields. Pesticides sprayed by on fields by farmers to kill insects can also poison the Ibis.",
+        further_details: "https://www.edinburghzoo.org.uk/animals-and-attractions/animals/waldrapp-ibis/",
+        threats: ["farming"]
+      },
+      {
+        name: "Okapi",
+        continent: "Africa",
+        fun_fact: "Okapi are related to giraffes. Their long black tongues are about 14 inches long, and they can use them to lick their own ears and eyelids.",
+        image: "http://animalia.bio/uploads/animals/photos/full/1.25x1/okapi.jpg",
+        conservation_status: "Endangered",
+        number_remaining: 4500,
+        locations: ["Democratic Republic of the Congo"],
+        quiz_question: "Why does the Okapi have stripes?",
+        correct_answer: "For camouflage",
+        answers: ["For camouflage", "To blend in with zebras", "To warn predators it's dangerous", "To look pretty"],
+        answer_fact: "Hunting and building in their territory affects the okapi population. About 100 okapi live in zoos accross the world.",
+        further_details: "https://www.discoverwildlife.com/animal-facts/mammals/facts-about-okapi/",
+        threats: ["deforestation", "poaching", "building"]
+      },
+      {
+        name: "Mountain Gorilla",
+        continent: "Africa",
+        fun_fact: "Gorillas hate getting wet!",
+        image: "https://ichef.bbci.co.uk/news/320/cpsprodpb/DF62/production/_101868175_hi018106787.jpg",
+        conservation_status: "Endangered",
+        number_remaining: 1000,
+        locations: ["Uganda", "Rwanda"],
+        quiz_question: "What kind of habitat do Mountain Gorillas live in?",
+        correct_answer: "Cloud Forest",
+        answers: ["Cloud Forest","Desert","Rainforest","Grassland"],
+        answer_fact: "The forests the Mountain Gorillas live in are being cut down so that humans can build on the land. To protect the gorillas we need to make sure thay have enough suitable places to live",
+        further_details: "https://www.wwf.org.uk/learn/wildlife/mountain-gorillas",
+        threats: ["deforestation"]
+      },
+      {
+        name: "African Penguin",
+        continent: "Africa",
+        fun_fact: "Afircan Penguins can hold their breath for up to 2 and a half minutes when diving",
+        image: "https://upload.wikimedia.org/wikipedia/commons/6/63/African_penguin_side_profile.jpg",
+        conservation_status: "Endangered",
+        number_remaining: 21000,
+        locations: ["South Africa","Namibia"],
+        quiz_question: "African penguins are clumsy on land but excellent at swinning. How fast do you think they can swim?",
+        correct_answer: "20 km per hour",
+        answers: ["20 km per hour","5 km per hour","10 km per hour","30 km per hour"],
+        answer_fact: "The African Penguin population is declining rapidly, they suffer from pollution of their habitat by petrochemicals from spills, shipwrecks and cleaning of tankers while at sea",
+        further_details: "https://www.britannica.com/animal/African-penguin",
+        threats: ["fishing", "building"]
+      },
+      {
+        name: "African Wild Dog",
+        continent: "Africa",
+        fun_fact: "These long-legged canines have only four toes per foot, unlike other dogs, which have five toes on their forefeet.",
+        image: "https://images.immediate.co.uk/production/volatile/sites/23/2019/11/P6071681-de6c1f1.jpg?webp=true&quality=45&resize=1240%2C826",
+        conservation_status: "Endangered",
+        number_remaining: 6000,
+        locations: ["Botswana", "Namibia", "Zimbabwe"],
+        quiz_question: "What is another name for the African Wild Dog",
+        correct_answer: "Painted Wolf",
+        answers: ["Painted Wolf","Stripey Wolf","Fierce Wolf","Short Haired Wolf"],
+        answer_fact: "The biggest threat to wild dogs is destruction of their habitat as human populations expand, wild dogs are losing the spaces in which they were once able to roam freely. However organisations are working to create protected areas for these species so they have somewhere to live",
+        further_details: "https://www.awf.org/wildlife-conservation/african-wild-dog",
+        threats: ["disease", "farming", "climate change"]
+      },
+    ]
+  },
   {
-  Asia: {
+    name:"Europe",
+    animals:[
+      {
+        name: "Iberian Lynx",
+        continent: "Europe",
+        fun_fact: "The word lynx comes from the greek word for bright, because of their shiny eyes.",
+        image: "https://pictures-of-cats.org/wp-content/uploads/2019/05/Iberian-lynx-e1557914279644.jpg",
+        conservation_status: "Endangered",
+        number_remaining: 400,
+        locations: ["Spain", "Portugal"],
+        quiz_question: "About 90% of an Iberian Lynx's diet is made up of what animal?",
+        correct_answer: "Rabbits",
+        answers: ["Rabbits", "Mice", "Birds", "Fish"],
+        answer_fact: "In the last 20 years the Iberian Lynx population has dropped by 80%, because disease killed a lot of their food source. Conservation efforts over the last 10 years have started to help lynx population numbers, going from 100 lynxes in 2005 to about 400 in 2019.",
+        further_details: "https://www.worldwildlife.org/stories/bringing-back-the-iberian-lynx",
+        threats: ["disease"]
+      },
+      {
+        name: "Sandy Mole Rat",
+        continent: "Europe",
+        fun_fact: "Sandy Mole Rats are completely blind.",
+        image: "https://i.imgur.com/uqBJuUq.jpg",
+        conservation_status: "Endangered",
+        number_remaining: 20000,
+        locations: ["Ukraine"],
+        quiz_question: "What senses does the mole rat use to find its way around?",
+        correct_answer: "Hearing and touch",
+        answers: ["Hearing and touch", "Smell and hearing", "Touch and smell", "Sight and touch"],
+        answer_fact: "The Sandy Mole Rat's habitat is being turned into plantations.",
+        further_details: "https://animaldiversity.org/accounts/Spalacinae/",
+        threats: ["farming"]
+      },
+      {
+        name: "Marsican Brown Bear",
+        continent: "Europe",
+        fun_fact: "Marsican brown bears typically give birth to twins.",
+        image: "http://www.bearconservation.org.uk/wp-content/uploads/2017/08/1024x768-Marsican_Brown_Bear_jpg1.jpg",
+        conservation_status: "Critically Endangered",
+        number_remaining: 50,
+        locations: ["Italy"],
+        quiz_question: "Why has the Marsican brown bear evolved a really powerful lower jaw?",
+        correct_answer: "To crunch nuts",
+        answers: ["To crunch nuts", "Do defend against other bears", "To attack prey", "To look scarier"],
+        answer_fact: "The bears live in Abruzzo National Park in Italy where they are protected, and hopefully can grow in numbers.",
+        further_details: "https://theeuropeannaturetrust.com/animal-profile-marsican-brown-bear/",
+        threats: ["poaching"]
+      },
+      {
+        name: "European Mink",
+        continent: "Europe",
+        fun_fact: "Mink have webbed feet and fur covered with an oily substance which prevents water soaking through to their skin, making them very comfortable swimming in water.",
+        image: "https://dingo.care2.com/pictures/petition_images/petition/282/151209-1556046018-wide.jpg",
+        conservation_status: "Critically Endangered",
+        number_remaining: 30000,
+        locations: ["Russia", "Spain", "France"],
+        quiz_question: "What is a baby mink called?",
+        correct_answer: "A kit",
+        answers: ["A kit","A hatchling","A pup","A chick"],
+        answer_fact: "Converting wetlands into agricultural land has resulted in the disappearance of the resting, breeding and feeding areas for mink. They are now listed as a species to be strictly protected.",
+        further_details: "http://animalia.bio/european-mink",
+        threats: ["poaching", "building", "pollution"]
+      },
+      {
+        name: "Montseny Brook Newt",
+        continent: "Europe",
+        fun_fact: "Montseny Newts are very small, they grow to no more than 11 centimetres in length",
+        image: "https://www.zoobarcelona.cat/sites/default/files/styles/ps_main_img/public/2019-03/Trito_Montseny.JPG?itok=KqM8waEI",
+        conservation_status: "Critically Endangered",
+        number_remaining: 1500,
+        locations: ["Catalonia"],
+        quiz_question: "Where do Montseny Brook newts live?",
+        correct_answer: "Streams and Rivers",
+        answers: ["Streams and Rivers","Trees and Bushes","Underground Burrows","Sandy Beaches"],
+        answer_fact: "The drying out of mountain streams, human alteration of its original habitat and global warming are all threats to this species, the newts now only survive in the wild in one very small area of Spain.",
+        further_details: "https://ec.europa.eu/easme/en/news/montseny-newt-and-delicate-nature-local-ecosystems",
+        threats: ["climate change", "building"]
+      },
+    ]
+  },
+  {
+    name:"Asia",
     animals: [
     {
       name: "Visayan Warty Pig",
@@ -239,10 +241,11 @@ db.animals.insertMany([
       further_details: "https://www.worldwildlife.org/species/sumatran-elephant",
       threats: ["deforestation", "poaching"]
     },
-  ]}},
-  {
-  Austrailia: {
-    animals: [
+  ]
+},
+{
+  name:"Austrailia",
+  animals: [
     {
       name: "Kakapo",
       continent: "Australia",
@@ -318,10 +321,11 @@ db.animals.insertMany([
       further_details: "https://www.wwf.org.nz/what_we_do/species/sealions2/",
       threats: ["fishing", "disease"]
     },
-  ]}},
-  {
-  SouthAmerica: {
-    animals: [
+  ]
+},
+{
+  name:"South America",
+  animals: [
   {
     name: "Lehmann's Poison Frog",
     continent: "South America",
@@ -397,9 +401,10 @@ db.animals.insertMany([
     further_details: "http://animalia.bio/orinoco-crocodile",
     threats: ["poaching", "building", "pollution"]
   },
-]}},
+]
+},
 {
-NorthAmerica: {
+  name:"North America",
   animals: [
   {
     name: "Pygmy Raccoon",
@@ -476,9 +481,10 @@ NorthAmerica: {
     further_details: "https://www.fs.fed.us/wildflowers/pollinators/pollinator-of-the-month/franklins-bumble-bee.shtml",
     threats: ["climate change", "pollution", "farming", "disease"]
   },
-]}},
+]
+},
 {
-Oceans: {
+  name:"Oceans",
   animals: [
   {
     name: "Vaquita",
@@ -555,9 +561,10 @@ Oceans: {
     further_details: "",
     threats: ["building"]
   }
-]}},
+]
+},
 {
-Antarctica: {
+  name:"Antarctica",
   animals: [
   {
     name: "Emperor Penguin",
@@ -604,5 +611,6 @@ Antarctica: {
     further_details: "https://www.nationalgeographic.com/animals/invertebrates/group/krill/",
     threats: ["climate change"]
   }
-]}}
+]
+}
 ])
