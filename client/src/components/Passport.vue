@@ -7,7 +7,7 @@
     </div>
     <div id="left-page">
       <h3>{{selectedAnimal.quiz_question}}</h3>
-        <ul v-for="answer in selectedAnimal.answers">
+        <ul id="quiz" v-for="answer in selectedAnimal.answers">
           <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
         </ul>
         <p :class="answer_class">{{selectedAnimal.answer_fact}}</p>
@@ -39,11 +39,11 @@ export default {
     //   return array
     // },
     checkAnswer(answer){
-      if(answer == selectedAnimal.correct_answer){
-        this.answer_class = correct
+      if(answer == this.selectedAnimal.correct_answer){
+        this.answer_class = "correct"
       }
       else {
-        this.answer_class = incorrect
+        this.answer_class = "incorrect"
       }
     }
   }
@@ -53,15 +53,19 @@ export default {
 <style lang="css" scoped>
 
   #passport {
-    display: grid;
+    /* display: grid; */
   }
 
+
   ul {
+    display: grid;
     list-style: none;
+    grid-template-columns: 1fr 1fr;
   }
 
   li {
     padding: 5px;
+    margin: 5px;
   }
 
   p.hidden {
@@ -77,14 +81,14 @@ export default {
   }
 
   li.hidden {
-    border: 2px solid black
+    border: 5px solid black
   }
 
   li.correct {
-    border: 2px solid green
+    border: 5px solid green
   }
 
   li.incorrect {
-    border: 2px solid red
+    border: 5px solid red
   }
 </style>
