@@ -6,7 +6,7 @@
           <div class="modal">
             <h1>{{this.continent.name}}</h1>
             <ul v-for="animal in this.continent.animals">
-              <li @click="selectAnimal(animal)">{{animal.name}}</li>
+              <img @click="selectAnimal(animal)" :src="animal.image" height="90" width="90" class="circularImg" >
             </ul>
             <passport :selectedAnimal="selectedAnimal"></passport>
             <div v-if="answer_class === 'correct'">
@@ -76,12 +76,27 @@ export default {
 
 <style lang="css" scoped>
 
+.circularImg{
+
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  display:block;
+  float: left;
+  margin: 10px;
+  padding-left: 10px;
+}
+
 .modal {
   width: 700px;
+  height: 400;
   margin: 0px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #FFFDD1;
   border-radius: 2px;
+  border-style: solid;
+  border-color: #FFFBF3;
   box-shadow: 0 2px 8px 3px;
   transition: all 0.2s ease-in;
   /* font-family: Helvetica, Arial, sans-serif; */
