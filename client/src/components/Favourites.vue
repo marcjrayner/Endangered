@@ -18,10 +18,10 @@ data(){
 },
 methods: {
   clearFavourites() {
-    eventBus.$emit("animal-favourites")
+    eventBus.$emit("clear-animals")
   },
   moreInfo() {
-
+    eventBus.$emit("xx")
   }
 }
 }

@@ -36,7 +36,7 @@ mounted(){
       this.favouriteAnimals.splice(this.favouriteAnimals.indexOf(animal, 1))
   })
 
-  eventBus.$on("animal-favourites", () => {
+  eventBus.$on("clear-animals", () => {
     this.favouriteAnimals = []
   })
 },
