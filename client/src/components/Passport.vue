@@ -20,33 +20,27 @@
 
 <script>
 import ContinentDetail from "./ContinentDetail.vue";
+import {eventBus} from "../main.js";
 
 export default {
   name: "passport",
   props: ["selectedAnimal"],
   data(){
     return{
-      answers: "",
-      answer_class: "hidden",
+      answers: ""
     }
   },
   methods: {
-    shuffle(array){
-      for( i = array.length - 1; i > 0; i--){
-        const j = Math.floor(Math.random() * i)
-        const temp = array[i]
-        array[i] = array[j]
-        array[j] = temp
-      }
-      return array
-    },
+
     checkAnswer(answer){
+      let answer_class = "";
       if(answer == this.selectedAnimal.correct_answer){
-        this.answer_class = "correct"
+        answer_class = "correct"
       }
       else {
-        this.answer_class = "incorrect"
+        answer_class = "incorrect"
       }
+      eventBus.$emit("check-answer", answer_class)
     }
   }
 }
@@ -118,19 +112,17 @@ export default {
     visibility: visible;
   }
 
-  p.incorrect {
-    visibility: visible;
-  }
 
-  li.hidden {
-    border: 5px solid black
-  }
+ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr;
+}
 
-  li.correct {
-    border: 5px solid green
-  }
+li {
+  padding: 5px;
+  margin: 5px;
+  border: 5px solid black
+}
 
-  li.incorrect {
-    border: 5px solid red
-  }
 </style>
