@@ -14,20 +14,11 @@ export default {
 name: "favourites",
 data(){
   return {
-  // favouriteAnimals: []
 }
 },
-// mounted(){
-//   eventBus.$on("select-fav", (animal) => {
-//       if (this.favouriteAnimals.length < 3 && !this.favouriteAnimals.includes(animal))
-//       this.favouriteAnimals.push(animal)
-//       else if (this.favouriteAnimals.includes(animal))
-//       this.favouriteAnimals.splice(this.favouriteAnimals.indexOf(animal))
-//   })
-// },
 methods: {
   clearFavourites() {
-    this.favouriteAnimals = []
+    eventBus.$emit("animal-favourites")
   },
   moreInfo() {
 

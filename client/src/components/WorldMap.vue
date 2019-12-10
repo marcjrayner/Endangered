@@ -35,7 +35,16 @@ mounted(){
       else if (this.favouriteAnimals.includes(animal))
       this.favouriteAnimals.splice(this.favouriteAnimals.indexOf(animal, 1))
   })
+
+  eventBus.$on("animal-favourites", () => {
+    this.favouriteAnimals = []
+  })
 },
+methods: {
+  clearFavourites() {
+    this.favouriteAnimals = []
+  }
+}
 }
 </script>
 
