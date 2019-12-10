@@ -1,5 +1,5 @@
 <template>
-  <div id="passport">
+  <div v-if="selectedAnimal"id="passport">
     <section class="trivia">
 
       <div class="right-page">
@@ -25,12 +25,12 @@ import {eventBus} from "../main.js";
 
 export default {
   name: "passport",
-  props: ["selectedAnimal", "favAnimals"],
+  props: ["selectedAnimal", "favouriteAnimals"],
   data(){
     return{
       answers: "",
       answer_class: "",
-      fav_heart: ""
+      fav_heart: "black"
     }
   },
   methods: {
@@ -46,21 +46,22 @@ export default {
       eventBus.$emit("check-answer", answer_class)
     },
     selectFav(){
+      this.isFavourited();
       eventBus.$emit("select-fav", this.selectedAnimal)
     },
     isFavourited(){
-      const favourited = this.favAnimals.filter(animal => {
-        animal.name === this.selectedAnimal.name
-      })
-      if(!favourited.length()){
-        this.fav_heart = "hotpink"
-      }
-      else {
+      const favourited = (element) => element.name === this.selectedAnimal.name
+      const heart = this.favouriteAnimals.some(favourited)
+      if(heart){
         this.fav_heart = "pink"
       }
+      else{
+        this.fav_heart = "black"
+      }
+    }
     }
   }
-}
+
 </script>
 
 <style lang="css" scoped>
