@@ -12,7 +12,7 @@
         <ul id="quiz" v-for="answer in selectedAnimal.answers">
           <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
         </ul>
-        <p :class="answer_class">{{selectedAnimal.answer_fact}}</p>
+        
       </div>
     </section>
   </div>

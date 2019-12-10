@@ -8,6 +8,7 @@
             <ul v-for="animal in this.continent.animals">
               <img @click="selectAnimal(animal)" :src="animal.image" height="90" width="90" class="circularImg" >
             </ul>
+            <div v-if="selectedAnimal !== ''">
             <passport :selectedAnimal="selectedAnimal"></passport>
             <div v-if="answer_class === 'correct'">
               <font-awesome-icon icon="check-circle" color="green"/>
@@ -18,6 +19,7 @@
             </div>
           </div>
           </div>
+        </div>
       </div>
     </transition>
     <div >

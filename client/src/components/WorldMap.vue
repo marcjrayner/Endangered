@@ -1,8 +1,9 @@
 <template lang="html">
   <div id="world_map">
     <h1>My Endangered Wildlife</h1>
+    <research-profile :profile="profile"></research-profile>
     <ul>
-      <li v-for="(continent, index) in continents" :key="index" :continent="continent"><button type="button" v-on:click="handleClick" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button></li>
+      <continent-detail v-for="(continent, index) in continents" :key="index" :continent="continent"></continent-detail>
     </ul>
 
   </div>
