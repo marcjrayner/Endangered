@@ -1,6 +1,6 @@
 <template lang="html">
   <div id="world_map">
-    <h1>My endangered species</h1>
+    <h1>My Endangered Wildlife</h1>
     <ul>
       <continent-detail v-for="(continent, index) in continents" :key="index" :continent="continent"></continent-detail>
       <!-- button type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button> -->
@@ -22,6 +22,22 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+h1{
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 30px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-decoration: underline;
+
+}
+
 ul {
   list-style: none;
 }
