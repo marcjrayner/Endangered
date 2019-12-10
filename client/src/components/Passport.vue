@@ -1,49 +1,45 @@
 <template>
   <div id="passport">
+
     <div id="right-page">
-      <h3>{{animal.name}}</h3>
-      <img :src="animal.image" :alt="animal.name">
-      <p>{{animal.fun_fact}}</p>
+      <h3>{{selectedAnimal.name}}</h3>
+      <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name">
+      <p>{{selectedAnimal.fun_fact}}</p>
     </div>
+
     <div id="left-page">
-      <h3>{{animal.quiz_question}}</h3>
-        <ul v-for="answer in shuffle(animal.answers)">
-          <li><button @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</button></li>
-        </ul>
-        <p :class="answer_class">{{animal.answer.fact}}</p>
+      <h3>{{selectedAnimal.quiz_question}}</h3>
+      <ul id="quiz" v-for="answer in selectedAnimal.answers">
+        <li @click="checkAnswer(answer)" type="button"> {{answer}}</li>
+      </ul>
+
     </div>
   </div>
 </template>
 
 <script>
-import Continent from "/Continent.vue";
+import ContinentDetail from "./ContinentDetail.vue";
+import {eventBus} from "../main.js";
 
 export default {
   name: "passport",
-  props: ["animal"],
+  props: ["selectedAnimal"],
   data(){
     return{
-      // answers: shuffle(this.animal.answers)
-      answer_class: "hidden"
+      answers: ""
     }
   },
   methods: {
-    shuffle(array){
-      for( i = array.length - 1; i > 0; i--){
-        const j = Math.floor(Math.random() * i)
-        const temp = array[i]
-        array[i] = array[j]
-        array[j] = temp
-      }
-      return array
-    },
+
     checkAnswer(answer){
-      if(answer == this.animal.correct_answer){
-        this.answer_class = correct
+      let answer_class = "";
+      if(answer == this.selectedAnimal.correct_answer){
+        answer_class = "correct"
       }
       else {
-        this.answer_class = incorrect
+        answer_class = "incorrect"
       }
+      eventBus.$emit("check-answer", answer_class)
     }
   }
 }
@@ -51,27 +47,21 @@ export default {
 
 <style lang="css" scoped>
 
-  p.hidden {
-    visibility: hidden;
-  }
+#passport {
+  /* display: grid; */
+}
 
-  p.correct {
-    visibility: visible;
-  }
 
-  p.incorrect {
-    visibility: visible;
-  }
+ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr;
+}
 
-  li.hidden {
-    border: 2px solid black
-  }
+li {
+  padding: 5px;
+  margin: 5px;
+  border: 5px solid black
+}
 
-  li.correct {
-    border: 2px solid green
-  }
-
-  li.incorrect {
-    border: 2px solid red
-  }
 </style>
