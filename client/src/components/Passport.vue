@@ -10,6 +10,12 @@
         <ul id="quiz" v-for="answer in selectedAnimal.answers">
           <li @click="checkAnswer(answer)" :class="answer_class" type="button"> {{answer}}</li>
         </ul>
+        <div v-if="answer_class === 'correct'">
+        <font-awesome-icon icon="check-circle" color="green"/>
+        </div>
+        <div v-if="answer_class === 'incorrect'">
+        <font-awesome-icon icon="times-circle" color="red"/>
+      </div>
         <p :class="answer_class">{{selectedAnimal.answer_fact}}</p>
     </div>
   </div>
@@ -24,19 +30,10 @@ export default {
   data(){
     return{
       answers: "",
-      answer_class: "hidden",
+      answer_class: null,
     }
   },
   methods: {
-    // shuffle(array){
-    //   for( i = array.length - 1; i > 0; i--){
-    //     const j = Math.floor(Math.random() * i)
-    //     const temp = array[i]
-    //     array[i] = array[j]
-    //     array[j] = temp
-    //   }
-    //   return array
-    // },
     checkAnswer(answer){
       if(answer == this.selectedAnimal.correct_answer){
         this.answer_class = "correct"
