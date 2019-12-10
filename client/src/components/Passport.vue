@@ -1,17 +1,20 @@
 <template>
   <div id="passport">
-    <div id="right-page">
-      <h3>{{selectedAnimal.name}}</h3>
-      <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name">
-      <p>{{selectedAnimal.fun_fact}}</p>
-    </div>
-    <div id="left-page">
-      <h3>{{selectedAnimal.quiz_question}}</h3>
+    <section class="trivia">
+
+      <div class="right-page">
+        <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
+        <h3>{{selectedAnimal.name}}</h3>
+        <p>{{selectedAnimal.fun_fact}}</p>
+      </div>
+      <div class="left-page">
+        <h3>{{selectedAnimal.quiz_question}}</h3>
         <ul id="quiz" v-for="answer in selectedAnimal.answers">
           <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
         </ul>
         <p :class="answer_class">{{selectedAnimal.answer_fact}}</p>
-    </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -50,6 +53,43 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+/* .right-page{
+  position: fixed;
+    bottom: 500;
+    right: 70;
+    width: 300px;
+    border: 3px solid #73AD21;
+
+} */
+
+/* .left-page{
+  position: right;
+  right: 30px;
+  border: 3px solid #73AD21;
+
+} */
+  .trivia{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .right-page{
+    width: 50%;
+    float: left;
+  }
+
+  .left-page{
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  .recImg{
+    height: 150px;
+    width: 100px;
+
+  }
 
   #passport {
     /* display: grid; */
