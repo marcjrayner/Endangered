@@ -4,6 +4,13 @@
       <div v-if="isOpen">
         <div class="overlay" @click.self="isOpen = false;">
           <div class="modal">
+            <img src="../assets/logo.png" alt="">
+            <h2>Reasearcher Profile</h2>
+            <ol>Favourite Animals
+              <li>Animal</li>
+              <li>Animal</li>
+              <li>Animal</li>
+            </ol>
 
           </div>
         </div>
