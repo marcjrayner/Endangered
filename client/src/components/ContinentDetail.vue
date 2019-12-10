@@ -9,7 +9,9 @@
               <li @click="selectAnimal(animal)">{{animal.name}}</li>
             </ul>
             <passport :selectedAnimal="selectedAnimal"></passport>
-
+            <div v-if="answer_class === 'correct'">
+            <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
+          </div>
           </div>
         </div>
       </div>
@@ -21,6 +23,8 @@
 
 <script>
 import Passport from "./Passport.vue"
+import AnimalFact from "./AnimalFact.vue"
+import {eventBus} from "../main.js"
 
 export default {
   name: 'continent-detail',
@@ -28,8 +32,8 @@ export default {
   data() {
     return {
       isOpen: false,
-      selectedAnimal: ""
-
+      selectedAnimal: "",
+      answer_class: "hidden"
     }
   },
   methods: {
@@ -43,13 +47,20 @@ export default {
       return array
     },
     selectAnimal(animal){
+      this.answer_class = "hidden";
       this.selectedAnimal = animal;
       this.shuffle(animal.answers)
 
     }
   },
+  mounted(){
+    eventBus.$on("check-answer", answer => {
+      this.answer_class = answer
+    })
+  },
   components: {
-    "passport": Passport
+    "passport": Passport,
+    "animal-fact": AnimalFact
   }
 }
 </script>

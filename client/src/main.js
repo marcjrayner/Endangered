@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 Vue.config.productionTip = false
 library.add(faPaw, faCheckCircle, faTimesCircle)
 
-
+export const eventBus = new Vue();
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
