@@ -1,55 +1,108 @@
 <template>
   <div id="passport">
-    <div id="right-page">
-      <h3>{{animal.name}}</h3>
-      <img :src="animal.image" :alt="animal.name">
-      <p>{{animal.fun_fact}}</p>
-    </div>
-    <div id="left-page">
-      <h3>{{animal.quiz_question}}</h3>
-        <ul v-for="answer in shuffle(animal.answers)">
-          <li><button @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</button></li>
+    <section class="trivia">
+
+      <div class="right-page">
+        <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
+        <h3>{{selectedAnimal.name}}</h3>
+        <p>{{selectedAnimal.fun_fact}}</p>
+      </div>
+      <div class="left-page">
+        <h3>{{selectedAnimal.quiz_question}}</h3>
+        <ul id="quiz" v-for="answer in selectedAnimal.answers">
+          <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
         </ul>
-        <p :class="answer_class">{{animal.answer.fact}}</p>
-    </div>
+        
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-import Continent from "/Continent.vue";
+import ContinentDetail from "./ContinentDetail.vue";
+import {eventBus} from "../main.js";
 
 export default {
   name: "passport",
-  props: ["animal"],
+  props: ["selectedAnimal"],
   data(){
     return{
-      // answers: shuffle(this.animal.answers)
-      answer_class: "hidden"
+      answers: ""
     }
   },
   methods: {
-    shuffle(array){
-      for( i = array.length - 1; i > 0; i--){
-        const j = Math.floor(Math.random() * i)
-        const temp = array[i]
-        array[i] = array[j]
-        array[j] = temp
-      }
-      return array
-    },
+
     checkAnswer(answer){
-      if(answer == this.animal.correct_answer){
-        this.answer_class = correct
+      let answer_class = "";
+      if(answer == this.selectedAnimal.correct_answer){
+        answer_class = "correct"
       }
       else {
-        this.answer_class = incorrect
+        answer_class = "incorrect"
       }
+      eventBus.$emit("check-answer", answer_class)
     }
   }
 }
 </script>
 
 <style lang="css" scoped>
+
+/* .right-page{
+  position: fixed;
+    bottom: 500;
+    right: 70;
+    width: 300px;
+    border: 3px solid #73AD21;
+
+} */
+
+/* .left-page{
+  position: right;
+  right: 30px;
+  border: 3px solid #73AD21;
+
+} */
+  .trivia{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .right-page{
+    width: 50%;
+    float: left;
+    border-right: solid;
+  }
+
+  .left-page{
+    padding: 10px;
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  .recImg{
+    height: 150px;
+    width: 100px;
+    border-style: solid;
+    border-color: blue;
+  }
+
+  #passport {
+    /* display: grid; */
+  }
+
+
+  ul {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  li {
+    padding: 5px;
+    margin: 5px;
+  }
 
   p.hidden {
     visibility: hidden;
@@ -59,19 +112,17 @@ export default {
     visibility: visible;
   }
 
-  p.incorrect {
-    visibility: visible;
-  }
 
-  li.hidden {
-    border: 2px solid black
-  }
+ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr;
+}
 
-  li.correct {
-    border: 2px solid green
-  }
+li {
+  padding: 5px;
+  margin: 5px;
+  border: 5px solid black
+}
 
-  li.incorrect {
-    border: 2px solid red
-  }
 </style>
