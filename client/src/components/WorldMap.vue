@@ -3,7 +3,7 @@
     <h1>My endangered species</h1>
     <ul>
       <continent-detail v-for="(continent, index) in continents" :key="index" :continent="continent"></continent-detail>
-      <!-- button type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button> -->
+  
     </ul>
 
   </div>
