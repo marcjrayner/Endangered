@@ -6,7 +6,7 @@
           <div class="modal">
             <h1>{{this.continent.name}}</h1>
             <ul v-for="animal in this.continent.animals">
-              <img @click="selectAnimal(animal)" :src="animal.image" height="90" width="90" class="circularImg" >
+              <img @click="selectAnimal(animal)" :src="animal.image"  class="circularImg" >
             </ul>
             <div v-if="selectedAnimal !== ''">
             <passport :selectedAnimal="selectedAnimal"></passport>
@@ -97,11 +97,15 @@ export default {
   float: left;
   margin: 10px;
   padding-left: 10px;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
 }
 
 .modal {
   width: 700px;
-  height: 400;
+  position: absolute;
+  top: 0px;
   margin: 0px auto;
   padding: 20px;
   background-color: #FFFDD1;

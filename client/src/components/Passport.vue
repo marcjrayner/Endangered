@@ -30,7 +30,7 @@ export default {
     return{
       answers: "",
       answer_class: "",
-      fav_heart: ""
+      fav_heart: "#F8D1E3"
     }
   },
   methods: {
@@ -53,10 +53,10 @@ export default {
         animal.name === this.selectedAnimal.name
       })
       if(!favourited.length()){
-        this.fav_heart = "hotpink"
+        this.fav_heart = "#D90368"
       }
       else {
-        this.fav_heart = "pink"
+        this.fav_heart = "#F8D1E3"
       }
     }
   }
