@@ -10,11 +10,15 @@
             </ul>
             <passport :selectedAnimal="selectedAnimal"></passport>
             <div v-if="answer_class === 'correct'">
+            <font-awesome-icon icon="check-circle" color="green"/>
             <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
           </div>
+          <div v-if="answer_class === 'incorrect'">
+            <font-awesome-icon icon="times-circle" color="red"/>
           </div>
         </div>
       </div>
+    </div>
     </transition>
     <button @click="isOpen = !isOpen;" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button>
     </button>
