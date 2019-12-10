@@ -58,7 +58,8 @@ export default {
       this.shuffle(animal.answers)
     },
     noSelection(){
-        this.answer_class = null
+        this.answer_class = null;
+        this.selectedAnimal = ""
       }
     },
   mounted(){
