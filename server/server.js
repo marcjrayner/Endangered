@@ -12,8 +12,11 @@ MongoClient.connect('mongodb://localhost:27017')
   .then((client) => {
     const db = client.db('endangered');
     const continentsCollection = db.collection('continents');
+    const threatsCollection = db.collection('threats');
     const continentsRouter = createRouter(continentsCollection);
+    const threatsRouter = createRouter(threatsCollection);
     app.use('/api/continents', continentsRouter)
+    app.use('/api/threats', threatsRouter)
   })
   .catch(console.err);
 
