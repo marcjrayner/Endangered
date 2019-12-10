@@ -29,8 +29,7 @@ export default {
   data(){
     return{
       answers: "",
-      answer_class: "",
-      fav_heart: "#F8D1E3"
+      answer_class: ""
     }
   },
   methods: {
@@ -47,17 +46,6 @@ export default {
     },
     selectFav(){
       eventBus.$emit("select-fav", this.selectedAnimal)
-    },
-    isFavourited(){
-      const favourited = this.favAnimals.filter(animal => {
-        animal.name === this.selectedAnimal.name
-      })
-      if(!favourited.length()){
-        this.fav_heart = "#D90368"
-      }
-      else {
-        this.fav_heart = "#F8D1E3"
-      }
     }
   }
 }
@@ -99,10 +87,11 @@ export default {
   }
 
   .recImg{
-    height: 150px;
-    width: 100px;
+    height: 225px;
+    width: 175px;
     border-style: solid;
     border-color: blue;
+    object-fit: cover;
   }
 
   #passport {
