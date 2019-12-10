@@ -2,7 +2,7 @@
   <div id="app">
 
 <world-map :continents="continents"></world-map>
-    
+
   </div>
 </template>
 
@@ -17,12 +17,15 @@ export default {
   },
   data(){
     return {
-      continents: []
+      continents: [],
+      threats:[]
     };
   },
   mounted(){
     ContinentsService.getContinents()
     .then(continents => this.continents = continents)
+    ThreatsService.getThreats()
+    .then(threats => this.threats = threats)
     ;
   }
 }

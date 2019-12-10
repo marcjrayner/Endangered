@@ -615,14 +615,12 @@ db.continents.insertMany([
 }
 ])
 db.threats.insertMany([
-
   {
     name: "deforestation",
     info: "chopping down trees"
   },
   {
     name: "fishing",
-    info: "catching too many fish"  
+    info: "catching too many fish"
   }
-
 ])
