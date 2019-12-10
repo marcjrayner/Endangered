@@ -2,13 +2,13 @@
   <div id="passport">
     <section class="trivia">
 
-      <div class="right-page">
+      <div class="left-page">
         <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
-        <font-awesome-icon @click="selectFav" icon="heart" :color="fav_heart" size="2x"/>
+        <font-awesome-icon @click="selectFav" icon="heart" :color="fav_heart" size="2x" class="heart"/>
         <h3>{{selectedAnimal.name}}</h3>
         <p>{{selectedAnimal.fun_fact}}</p>
       </div>
-      <div class="left-page">
+      <div class="right-page">
         <h3>{{selectedAnimal.quiz_question}}</h3>
         <ul id="quiz" v-for="answer in selectedAnimal.answers">
           <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
@@ -53,35 +53,49 @@ export default {
 
 <style lang="css" scoped>
 
+  #passport{
+    font-family: sans-serif;
+    font-size: 20px;
+    /* background-image: url("../../public/passport_page.jpeg"); */
+  }
+
+  .heart{
+    padding: 10px;
+  }
   .trivia{
     width: 90%;
     margin: auto;
     padding: 10px;
   }
 
-  .right-page{
+  .left-page{
     width: 50%;
     float: left;
     border-right: solid;
   }
 
-  .left-page{
+  .right-page{
+    float: right;
     display: grid;
     padding: 10px;
     width: 45%;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto 1fr 1fr;
+    align-items: stretch;
+    font-size: 20px;
   }
-  .left-page h3{
+  .right-page h3{
     grid-column: 1 / span 2;
 
   }
-  .left-page li{
+  .right-page li{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
-    align-self: stretch;
+    padding: 5px;
+    margin: 5px;
+    border: 4px solid black;
   }
 
   .recImg{
@@ -94,8 +108,7 @@ export default {
 
   ul {
     list-style: none;
-    padding: none;
-    align-self: stretch;
+    padding: 0;
   }
 
   p.hidden {
@@ -106,12 +119,8 @@ export default {
     visibility: visible;
   }
 
-li {
-  padding: 5px;
-  padding-top: auto;
-  padding-bottom: auto;
-  margin: 5px;
-  border: 5px solid black
+li:hover{
+  border: 4px solid grey;
 }
 
 </style>

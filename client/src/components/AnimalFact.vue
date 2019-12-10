@@ -13,4 +13,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+p{
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
 </style>

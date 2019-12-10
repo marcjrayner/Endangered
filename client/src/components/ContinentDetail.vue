@@ -3,30 +3,36 @@
     <transition name="modal">
       <div v-if="isOpen">
         <div class="overlay" @click.self="isOpen = false;">
+
           <div class="modal">
             <h1>{{this.continent.name}}</h1>
             <ul v-for="animal in this.continent.animals">
               <img @click="selectAnimal(animal)" :src="animal.image"  class="circularImg" >
             </ul>
+
             <div v-if="selectedAnimal !== ''">
-            <passport :selectedAnimal="selectedAnimal"></passport>
-            <div v-if="answer_class === 'correct'">
-              <font-awesome-icon icon="check-circle" color="green"/>
-              <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
-            </div>
-            <div v-if="answer_class === 'incorrect'">
-              <font-awesome-icon icon="times-circle" color="red"/>
+              <passport :selectedAnimal="selectedAnimal"></passport>
+
+              <div v-if="answer_class === 'correct'" class="tick">
+                <font-awesome-icon icon="check-circle" color="green" size="2x"/>
+                <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
+              </div>
+              <div v-if="answer_class === 'incorrect'" class="cross">
+                <font-awesome-icon icon="times-circle" color="red" size="2x"/>
+              </div>
+
             </div>
           </div>
-          </div>
+
         </div>
       </div>
     </transition>
-    <div >
-    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
-  </button>
+
+    <div>
+      <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
+    </div>
+
   </div>
-</div>
 </template>
 
 <script>
@@ -60,10 +66,10 @@ export default {
       this.shuffle(animal.answers)
     },
     noSelection(){
-        this.answer_class = null;
-        this.selectedAnimal = ""
-      }
-    },
+      this.answer_class = null;
+      this.selectedAnimal = ""
+    }
+  },
   mounted(){
     eventBus.$on("check-answer", answer => {
       this.answer_class = answer
@@ -78,17 +84,16 @@ export default {
 
 <style lang="css" scoped>
 
+.cross{
 
-
+}
 .pawH:hover {
   background-color: yellow;
   cursor: pointer;
 
 }
 
-
 .circularImg{
-
   border-top-left-radius: 50% 50%;
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
@@ -109,12 +114,12 @@ export default {
   margin: 0px auto;
   padding: 20px;
   background-color: #FFFDD1;
+  background-repeat: no-repeat;
   border-radius: 2px;
   border-style: solid;
   border-color: #FFFBF3;
   box-shadow: 0 2px 8px 3px;
   transition: all 0.2s ease-in;
-  /* font-family: Helvetica, Arial, sans-serif; */
 }
 .fadeIn-enter {
   opacity: 0;
@@ -149,12 +154,10 @@ button {
   transition: opacity 0.2s ease;
 }
 
-
 .SouthAmerica {
   position: absolute;
   left: 600px;
   top: 600px;
-
 }
 .NorthAmerica {
   position: absolute;
