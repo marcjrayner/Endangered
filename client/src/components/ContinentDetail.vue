@@ -23,7 +23,7 @@
       </div>
     </transition>
     <div >
-    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button>
+    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
   </button>
   </div>
 </div>
@@ -77,6 +77,13 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+.pawH:hover {
+  background-color: yellow;
+  cursor: pointer;
+
+}
+
 
 .circularImg{
 
