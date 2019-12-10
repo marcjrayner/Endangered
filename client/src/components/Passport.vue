@@ -46,11 +46,12 @@ export default {
       eventBus.$emit("check-answer", answer_class)
     },
     selectFav(){
-      this.isFavourited();
       eventBus.$emit("select-fav", this.selectedAnimal)
+      this.isFavourited();
     },
     isFavourited(){
-      const favourited = (element) => element.name === this.selectedAnimal.name
+      // debugger;
+      const favourited = (favElement) => favElement.name === this.selectedAnimal.name
       const heart = this.favouriteAnimals.some(favourited)
       if(heart){
         this.fav_heart = "pink"
