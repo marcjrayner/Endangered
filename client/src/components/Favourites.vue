@@ -4,14 +4,17 @@
       <div v-if="isOpen">
         <div class="overlay" @click.self="isOpen = false;">
           <div class="modal">
-            <img src="../assets/logo.png" alt="">
-            <h2>Reasearcher Profile</h2>
-            <ol>Favourite Animals
-              <li>Animal</li>
-              <li>Animal</li>
-              <li>Animal</li>
-            </ol>
-            <p>Generate Profile Doc</p>
+            <h2>My Favourite Animals</h2>
+          <!-- <img :src="animal.image" >   -->
+          <ul id="favImg">
+            <li v-if="animal"     v-for="animals in favouriteAnimals">
+              {{ animal.image }}
+            </li>
+          </ul>
+            <div class="button_class">
+            <button type="button" name="Reset">Reset</button>
+            <button type="button" name="top issue">Top Issue</button>
+                </div>
           </div>
         </div>
       </div>
@@ -35,14 +38,24 @@ export default {
 
 <style lang="css" scoped>
 
+
+
+li {
+  float: left;
+}
+
 .modal {
-  width: 1200px;
+  width: 400px;
+  height: 100px;
   margin: 0px auto;
   padding: 20px;
   background-color: #fff;
   border-radius: 2px;
   box-shadow: 0 2px 8px 3px;
   transition: all 0.2s ease-in;
+  position: absolute;
+  left: 1480px;
+  top: 5px;
   /* font-family: Helvetica, Arial, sans-serif; */
 }
 .fadeIn-enter {
