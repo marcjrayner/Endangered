@@ -78,6 +78,8 @@ export default {
 
 <style lang="css" scoped>
 
+
+
 .pawH:hover {
   background-color: yellow;
   cursor: pointer;

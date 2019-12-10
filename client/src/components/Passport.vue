@@ -4,6 +4,7 @@
 
       <div class="right-page">
         <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
+        <font-awesome-icon @click="selectFav" icon="heart" :color="fav_heart" size="2x"/>
         <h3>{{selectedAnimal.name}}</h3>
         <p>{{selectedAnimal.fun_fact}}</p>
       </div>
@@ -12,7 +13,7 @@
         <ul id="quiz" v-for="answer in selectedAnimal.answers">
           <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
         </ul>
-        
+
       </div>
     </section>
   </div>
@@ -24,10 +25,12 @@ import {eventBus} from "../main.js";
 
 export default {
   name: "passport",
-  props: ["selectedAnimal"],
+  props: ["selectedAnimal", "favAnimals"],
   data(){
     return{
-      answers: ""
+      answers: "",
+      answer_class: "",
+      fav_heart: ""
     }
   },
   methods: {
@@ -41,6 +44,20 @@ export default {
         answer_class = "incorrect"
       }
       eventBus.$emit("check-answer", answer_class)
+    },
+    selectFav(){
+      eventBus.$emit("select-fav", this.selectedAnimal)
+    },
+    isFavourited(){
+      const favourited = this.favAnimals.filter(animal => {
+        animal.name === this.selectedAnimal.name
+      })
+      if(!favourited.length()){
+        this.fav_heart = "hotpink"
+      }
+      else {
+        this.fav_heart = "pink"
+      }
     }
   }
 }

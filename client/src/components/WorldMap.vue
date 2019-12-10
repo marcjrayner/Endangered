@@ -12,7 +12,7 @@
 
 <script>
 import ContinentDetail from './ContinentDetail.vue'
-import ResearchProfile from './ResearchProfile.vue'
+import ResearchProfile from './Favourites.vue'
 export default {
   name: "world-map",
   props: ["continents"],
