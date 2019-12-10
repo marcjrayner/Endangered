@@ -151,116 +151,50 @@ button {
 
 
 .SouthAmerica {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px; */
   position: absolute;
   left: 600px;
   top: 600px;
 
 }
 .NorthAmerica {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 400px;
   top: 300px;
 }
 
 .Europe {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 950px;
   top: 300px;
 }
 
 .Oceans {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 150px;
   top: 700px;
 }
 
 .Africa {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 1000px;
   top: 500px;
 }
 
 .Asia {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 1300px;
   top: 300px;
 }
 .Antarctica {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 1100px;
   top: 850px;
 }
 
 .Australia {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 1600px;
   top: 620px;
 }
-
-
 
 </style>

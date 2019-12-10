@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <div id="passport">
     <section class="trivia">
 
@@ -53,23 +53,8 @@ export default {
 
 <style lang="css" scoped>
 
-/* .right-page{
-  position: fixed;
-    bottom: 500;
-    right: 70;
-    width: 300px;
-    border: 3px solid #73AD21;
-
-} */
-
-/* .left-page{
-  position: right;
-  right: 30px;
-  border: 3px solid #73AD21;
-
-} */
   .trivia{
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 10px;
   }
@@ -81,9 +66,22 @@ export default {
   }
 
   .left-page{
+    display: grid;
     padding: 10px;
-    width: 50%;
-    margin-left: 50%;
+    width: 45%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 1fr 1fr;
+  }
+  .left-page h3{
+    grid-column: 1 / span 2;
+
+  }
+  .left-page li{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    align-self: stretch;
   }
 
   .recImg{
@@ -94,20 +92,10 @@ export default {
     object-fit: cover;
   }
 
-  #passport {
-    /* display: grid; */
-  }
-
-
   ul {
-    display: grid;
     list-style: none;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  li {
-    padding: 5px;
-    margin: 5px;
+    padding: none;
+    align-self: stretch;
   }
 
   p.hidden {
@@ -118,15 +106,10 @@ export default {
     visibility: visible;
   }
 
-
-ul {
-  display: grid;
-  list-style: none;
-  grid-template-columns: 1fr 1fr;
-}
-
 li {
   padding: 5px;
+  padding-top: auto;
+  padding-bottom: auto;
   margin: 5px;
   border: 5px solid black
 }

@@ -1,8 +1,8 @@
-<template>
+<template lang="html">
   <div id="app">
 
 <world-map :continents="continents"></world-map>
-    
+
   </div>
 </template>
 

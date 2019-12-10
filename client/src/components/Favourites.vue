@@ -38,8 +38,6 @@ export default {
 
 <style lang="css" scoped>
 
-
-
 li {
   float: left;
 }
@@ -56,8 +54,8 @@ li {
   position: absolute;
   left: 1480px;
   top: 5px;
-  /* font-family: Helvetica, Arial, sans-serif; */
 }
+
 .fadeIn-enter {
   opacity: 0;
 }
