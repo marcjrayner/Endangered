@@ -7,7 +7,7 @@
             <h2>My Favourite Animals</h2>
           <!-- <img :src="animal.image" >   -->
           <ul id="favImg">
-            <li v-if="animal"     v-for="animals in favouriteAnimals">
+            <li  v-for="animals in favouriteAnimals">
               {{ animal.image }}
             </li>
           </ul>
