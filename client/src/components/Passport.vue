@@ -8,7 +8,7 @@
     <div id="left-page">
       <h3>{{selectedAnimal.quiz_question}}</h3>
         <ul id="quiz" v-for="answer in selectedAnimal.answers">
-          <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
+          <li @click="checkAnswer(answer)" :class="answer_class" type="button"> {{answer}}</li>
         </ul>
         <p :class="answer_class">{{selectedAnimal.answer_fact}}</p>
     </div>
@@ -28,15 +28,15 @@ export default {
     }
   },
   methods: {
-    shuffle(array){
-      for( i = array.length - 1; i > 0; i--){
-        const j = Math.floor(Math.random() * i)
-        const temp = array[i]
-        array[i] = array[j]
-        array[j] = temp
-      }
-      return array
-    },
+    // shuffle(array){
+    //   for( i = array.length - 1; i > 0; i--){
+    //     const j = Math.floor(Math.random() * i)
+    //     const temp = array[i]
+    //     array[i] = array[j]
+    //     array[j] = temp
+    //   }
+    //   return array
+    // },
     checkAnswer(answer){
       if(answer == this.selectedAnimal.correct_answer){
         this.answer_class = "correct"
@@ -83,11 +83,11 @@ export default {
     border: 5px solid black
   }
 
-  li.correct {
+  /* li.correct {
     border: 5px solid green
   }
 
   li.incorrect {
     border: 5px solid red
-  }
+  } */
 </style>
