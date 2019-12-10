@@ -3,7 +3,7 @@
     <h1>My Endangered Wildlife</h1>
     <favourites :profile="profile"></favourites
     <ul>
-      <continent-detail v-for="(continent, index) in continents" :key="index" :continent="continent"></continent-detail>
+      <continent-detail v-for="(continent, index) in continents" :key="index" :continent="continent" :favouriteAnimals="favouriteAnimals"></continent-detail>
     </ul>
 
   </div>
@@ -13,6 +13,8 @@
 <script>
 import ContinentDetail from './ContinentDetail.vue'
 import Favourites from './Favourites.vue'
+import {eventBus} from "../main.js";
+
 export default {
   name: "world-map",
   props: ["continents"],
@@ -22,9 +24,18 @@ export default {
   },
   data() {
      return {
-       profile: "false"
+       profile: "false",
+       favouriteAnimals: []
   }
-}
+},
+mounted(){
+  eventBus.$on("select-fav", (animal) => {
+      if (this.favouriteAnimals.length < 3 && !this.favouriteAnimals.includes(animal))
+      this.favouriteAnimals.push(animal)
+      else if (this.favouriteAnimals.includes(animal))
+      this.favouriteAnimals.splice(this.favouriteAnimals.indexOf(animal, 1))
+  })
+},
 }
 </script>
 

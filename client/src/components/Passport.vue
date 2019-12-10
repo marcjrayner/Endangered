@@ -65,11 +65,6 @@ export default {
 
 <style lang="css" scoped>
 
-#passport {
-  background-image: url('../assets/passport.jpg');
-  background-size: 700px 400px;
-  background-repeat: no-repeat;
-}
 /* .right-page{
   position: fixed;
     bottom: 500;
