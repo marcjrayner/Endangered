@@ -6,7 +6,8 @@
           <div class="modal">
             <h1>{{this.continent.name}}</h1>
             <ul v-for="animal in this.continent.animals">
-              <li @click="selectAnimal(animal)">{{animal.name}}</li>
+              <img :src="animal.image" height="90" width="90" class="circularImg" >
+              <!-- <li @click="selectAnimal(animal)">{{animal.name}}</li> -->
             </ul>
             <passport :selectedAnimal="selectedAnimal"></passport>
 
@@ -44,8 +45,23 @@ export default {
 
 <style lang="css" scoped>
 
+
+
+
+.circularImg{
+
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  display:block;
+  float: left;
+  margin: 20px;
+}
+
 .modal {
   width: 700px;
+  height: 400;
   margin: 0px auto;
   padding: 20px;
   background-color: #fff;
