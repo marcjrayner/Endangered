@@ -1,6 +1,7 @@
 <template lang="html">
   <div>
   <p>Favourites</p>
+  
   <button @click="clearFavourites()" type="button">Reset</button>
   <button @click="moreInfo()"  type="button">More Info</button>
   </div>
