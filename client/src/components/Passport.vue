@@ -13,14 +13,6 @@
         <li @click="checkAnswer(answer)" type="button"> {{answer}}</li>
       </ul>
 
-      <!-- <div v-if="answer_class === 'correct'" class="check">
-        <font-awesome-icon icon="check-circle" color="green"/>
-      </div>
-      <div v-if="answer_class === 'incorrect'" class="check">
-        <font-awesome-icon icon="times-circle" color="red"/>
-      </div> -->
-
-      <!-- <p v-if="answer_class === 'correct'">{{selectedAnimal.answer_fact}}</p> -->
     </div>
   </div>
 </template>
@@ -72,24 +64,4 @@ li {
   border: 5px solid black
 }
 
-p.hidden {
-  visibility: hidden;
-}
-
-p.correct {
-  visibility: visible;
-}
-
-p.incorrect {
-  visibility: visible;
-}
-
-
-/* li.correct {
-border: 5px solid green
-}
-
-li.incorrect {
-border: 5px solid red
-} */
 </style>
