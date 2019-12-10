@@ -4,6 +4,7 @@
 
       <div class="right-page">
         <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
+        <font-awesome-icon icon="heart" color="pink" size="2x"/>
         <h3>{{selectedAnimal.name}}</h3>
         <p>{{selectedAnimal.fun_fact}}</p>
       </div>
@@ -12,7 +13,7 @@
         <ul id="quiz" v-for="answer in selectedAnimal.answers">
           <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
         </ul>
-        
+
       </div>
     </section>
   </div>
