@@ -2,6 +2,7 @@
   <div>
   <p>Favourites</p>
   <button @click="clearFavourites()" type="button">Reset</button>
+  <button @click="moreInfo()"  type="button">More Info</button>
   </div>
 </template>
 
@@ -12,12 +13,12 @@ export default {
 name: "favourites",
 data(){
   return {
-  favouriteAnimals: ["test"]
+  favouriteAnimals: []
 }
 },
 mounted(){
   eventBus.$on("select-fav", (animal) => {
-      if (this.favouriteAnimals.length <= 3 && !this.favouriteAnimals.includes(animal))
+      if (this.favouriteAnimals.length < 3 && !this.favouriteAnimals.includes(animal))
       this.favouriteAnimals.push(animal)
       else if (this.favouriteAnimals.includes(animal))
       this.favouriteAnimals.splice(this.favouriteAnimals.indexOf(animal))
@@ -26,6 +27,9 @@ mounted(){
 methods: {
   clearFavourites() {
     this.favouriteAnimals = []
+  },
+  moreInfo() {
+
   }
 }
 }
