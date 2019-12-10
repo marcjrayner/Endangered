@@ -8,11 +8,6 @@
             <ul v-for="animal in this.continent.animals">
               <li>{{animal.name}}</li>
             </ul>
-
-
-
-
-
           </div>
         </div>
       </div>
