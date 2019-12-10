@@ -17,11 +17,13 @@
               <font-awesome-icon icon="times-circle" color="red"/>
             </div>
           </div>
-        </div>
+          </div>
       </div>
     </transition>
-    <button @click="isOpen = !isOpen; selectedAnimal = ''" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button>
+    <div >
+    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw"/></i></button>
   </button>
+  </div>
 </div>
 </template>
 
@@ -54,9 +56,11 @@ export default {
       this.answer_class = "hidden";
       this.selectedAnimal = animal;
       this.shuffle(animal.answers)
-
-    }
-  },
+    },
+    noSelection(){
+        this.answer_class = null
+      }
+    },
   mounted(){
     eventBus.$on("check-answer", answer => {
       this.answer_class = answer
