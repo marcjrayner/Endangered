@@ -4,7 +4,7 @@
 
       <div class="right-page">
         <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
-        <font-awesome-icon icon="heart" color="pink" size="2x"/>
+        <font-awesome-icon @click="selectFav" icon="heart" color="pink" size="2x"/>
         <h3>{{selectedAnimal.name}}</h3>
         <p>{{selectedAnimal.fun_fact}}</p>
       </div>
@@ -28,7 +28,8 @@ export default {
   props: ["selectedAnimal"],
   data(){
     return{
-      answers: ""
+      answers: "",
+      answer_class: ""
     }
   },
   methods: {
@@ -42,6 +43,9 @@ export default {
         answer_class = "incorrect"
       }
       eventBus.$emit("check-answer", answer_class)
+    },
+    selectFav(){
+      eventBus.$emit("select-fav", this.selectedAnimal)
     }
   }
 }
