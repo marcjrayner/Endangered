@@ -21,7 +21,7 @@ methods: {
     eventBus.$emit("clear-animals")
   },
   moreInfo() {
-    eventBus.$emit("xx")
+    eventBus.$emit("more-info")
   }
 }
 }

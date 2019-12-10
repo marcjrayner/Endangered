@@ -25,7 +25,9 @@ export default {
   data() {
      return {
        profile: "false",
-       favouriteAnimals: []
+       favouriteAnimals: [],
+       threats: [],
+       biggestThreat: ""
   }
 },
 mounted(){
@@ -38,14 +40,34 @@ mounted(){
 
   eventBus.$on("clear-animals", () => {
     this.favouriteAnimals = []
+    this.threats = []
   })
+
+  eventBus.$on("more-info", () => {
+    this.biggestThreats()
+  })
+
 },
 methods: {
   clearFavourites() {
     this.favouriteAnimals = []
+  },
+  biggestThreats(){
+    this.threats = []
+    this.favouriteAnimals.forEach(animal => this.threats.push(animal.threats))
+    const newArray = [].concat.apply([], this.threats)
+    this.biggestThreat = this.findThreat(newArray);
+
+  },
+  findThreat(array){
+    return array.sort((a,b) =>
+    array.filter(v => v===a).length
+    - array.filter(v => v===b).length
+  ).pop();
   }
 }
 }
+
 </script>
 
 <style lang="css" scoped>
