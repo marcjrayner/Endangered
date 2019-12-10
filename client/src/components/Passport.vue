@@ -4,7 +4,7 @@
 
       <div class="right-page">
         <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
-        <font-awesome-icon @click="selectFav" icon="heart" color="pink" size="2x"/>
+        <font-awesome-icon @click="selectFav" icon="heart" :color="fav_heart" size="2x"/>
         <h3>{{selectedAnimal.name}}</h3>
         <p>{{selectedAnimal.fun_fact}}</p>
       </div>
@@ -25,11 +25,12 @@ import {eventBus} from "../main.js";
 
 export default {
   name: "passport",
-  props: ["selectedAnimal"],
+  props: ["selectedAnimal", "favAnimals"],
   data(){
     return{
       answers: "",
-      answer_class: ""
+      answer_class: "",
+      fav_heart: ""
     }
   },
   methods: {
@@ -46,6 +47,17 @@ export default {
     },
     selectFav(){
       eventBus.$emit("select-fav", this.selectedAnimal)
+    },
+    isFavourited(){
+      const favourited = this.favAnimals.filter(animal => {
+        animal.name === this.selectedAnimal.name
+      })
+      if(!favourited.length()){
+        this.fav_heart = "hotpink"
+      }
+      else {
+        this.fav_heart = "pink"
+      }
     }
   }
 }
