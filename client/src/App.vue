@@ -8,6 +8,7 @@
 
 <script>
 import ContinentsService from './services/ContinentsService.js';
+import ThreatsService from './services/ThreatsService.js';
 import WorldMap from './components/WorldMap.vue';
 
 export default {
