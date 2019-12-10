@@ -78,9 +78,11 @@ export default {
   .right-page{
     width: 50%;
     float: left;
+    border-right: solid;
   }
 
   .left-page{
+    padding: 10px;
     width: 50%;
     margin-left: 50%;
   }
@@ -88,7 +90,8 @@ export default {
   .recImg{
     height: 150px;
     width: 100px;
-
+    border-style: solid;
+    border-color: blue;
   }
 
   #passport {
