@@ -5,27 +5,27 @@
         <div class="overlay" @click.self="isOpen = false;">
           <div class="modal">
             <h1>{{this.continent.display_name}}</h1>
-            <ul v-for="animal in this.continent.animals">
-              <img @click="selectAnimal(animal)" :src="animal.image" height="90" width="90" class="circularImg" >
-            </ul>
+              <ul v-for="animal in this.continent.animals">
+                <img @click="selectAnimal(animal)" :src="animal.image" height="90" width="90" class="circularImg" >
+              </ul>
             <div v-if="selectedAnimal !== ''">
-            <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
-            <div v-if="answer_class === 'correct'">
-              <font-awesome-icon icon="check-circle" color="green"/>
-              <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
+              <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
+              <div v-if="answer_class === 'correct'">
+                <font-awesome-icon icon="check-circle" color="green"/>
+                <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
+              </div>
+              <div v-if="answer_class === 'incorrect'">
+                <font-awesome-icon icon="times-circle" color="red"/>
+              </div>
             </div>
-            <div v-if="answer_class === 'incorrect'">
-              <font-awesome-icon icon="times-circle" color="red"/>
-            </div>
-          </div>
           </div>
         </div>
       </div>
     </transition>
     <div >
-    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
-  </button>
-  </div>
+      <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
+      </button>
+    </div>
 </div>
 </template>
 
@@ -64,15 +64,15 @@ export default {
         this.selectedAnimal = ""
       }
     },
-  mounted(){
-    eventBus.$on("check-answer", answer => {
+    mounted(){
+      eventBus.$on("check-answer", answer => {
       this.answer_class = answer
     })
-  },
-  components: {
+    },
+    components: {
     "passport": Passport,
     "animal-fact": AnimalFact
-  }
+    }
 }
 </script>
 
@@ -83,9 +83,7 @@ export default {
 .pawH:hover {
   background-color: yellow;
   cursor: pointer;
-
 }
-
 
 .circularImg{
 
@@ -146,113 +144,49 @@ button {
   transition: opacity 0.2s ease;
 }
 
-
 .SouthAmerica {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px; */
   position: absolute;
   left: 600px;
   top: 600px;
-
 }
+
 .NorthAmerica {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 400px;
   top: 300px;
 }
 
 .Europe {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 950px;
   top: 300px;
 }
 
 .Oceans {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 150px;
   top: 700px;
 }
 
 .Africa {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 1000px;
   top: 500px;
 }
 
 .Asia {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 1300px;
   top: 300px;
 }
+
 .Antarctica {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 1100px;
   top: 850px;
 }
 
 .Australia {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 1600px;
   top: 620px;
