@@ -112,14 +112,14 @@ p {
     float: left;
     margin: 5px;
     padding-left: 0px;
-    height: 45px;
-    width: 65px;
+    height: 55px;
+    width: 55px;
     border-style: solid;
     object-fit: cover;
 }
 
 .sidenav {
-  height: 360px;
+  height: 380px;
   width: 127px;
   position: absolute;
   z-index: 1;
