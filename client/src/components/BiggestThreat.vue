@@ -8,11 +8,14 @@
 import {eventBus} from "../main.js";
 
 export default {
+  name: "biggest-threat"
+  props: ["continents", "threatObjects"],
   methods: {
     moreInfo() {
       eventBus.$emit("more-info")
     }
-  }
+  },
+
 }
 </script>
 

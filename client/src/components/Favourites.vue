@@ -2,9 +2,8 @@
 
   <div>
   <p>Favourites</p>
-
   <button @click="clearFavourites()" type="button">Reset</button>
-  <biggest-threat></biggest-threat>
+  <biggest-threat :biggestThreatObject="biggestThreatObject" ></biggest-threat>
   </div>
 </template>
 
@@ -14,6 +13,7 @@ import BiggestThreat from "./BiggestThreat.vue"
 
 export default {
 name: "favourites",
+props: ["biggestThreatObject", "favouriteAnimals"],
 data(){
   return {
 }
