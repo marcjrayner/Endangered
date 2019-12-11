@@ -7,7 +7,7 @@
       <div class="left-page">
         <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
 
-        <div>
+        <div class="heart">
           <font-awesome-icon @click="selectFav" icon="heart" :color="fav_heart" size="2x"/>
         </div>
 
@@ -82,6 +82,7 @@ export default {
 
   .heart{
     padding: 10px;
+    cursor: pointer;
   }
   .trivia{
     width: 90%;
@@ -142,6 +143,7 @@ export default {
 
 li:hover{
   border: 4px solid grey;
+  cursor: pointer;
 }
 
 </style>

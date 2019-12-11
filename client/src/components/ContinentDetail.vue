@@ -6,7 +6,7 @@
           <div class="modal">
             <h1>{{this.continent.display_name}}</h1>
             <ul v-for="animal in this.continent.animals">
-              <img @click="selectAnimal(animal)" :src="animal.image" height="90" width="90" class="circularImg" >
+              <img @click="selectAnimal(animal)" :src="animal.image" height="100" width="100" class="circularImg" >
             </ul>
             <div v-if="selectedAnimal !== ''">
             <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
@@ -23,7 +23,7 @@
       </div>
     </transition>
     <div >
-    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
+    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: #274769; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
   </button>
   </div>
 </div>
@@ -81,11 +81,10 @@ export default {
 
 
 .pawH:hover {
-  background-color: yellow;
+  color: #DAF2CB;
   cursor: pointer;
 
 }
-
 
 .circularImg{
 
@@ -96,8 +95,9 @@ export default {
   display:block;
   float: left;
   margin: 10px;
-  padding-left: 10px;
+  padding-left: 0px;;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .modal {
@@ -112,6 +112,7 @@ export default {
   box-shadow: 0 2px 8px 3px;
   transition: all 0.2s ease-in;
   /* font-family: Helvetica, Arial, sans-serif; */
+
 }
 .fadeIn-enter {
   opacity: 0;
