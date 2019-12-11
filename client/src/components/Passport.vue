@@ -85,14 +85,14 @@ export default {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    /* background-image: url("../../public/passport_page.jpeg"); */
   }
 
   .heart{
     padding: 10px;
     cursor: pointer;
+    position: relative;
+    left: 11em;
+    top: 3em;
   }
   .trivia{
     width: 100%;
@@ -103,14 +103,14 @@ export default {
   .left-page{
     width: 50%;
     box-sizing: border-box;
-    /* border-right: solid; */
     font-family: 'Josefin Sans', sans-serif;
+    padding-right: 15px;
   }
 
   .right-page{
     display: grid;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 15px;
     width: 50%;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto 1fr 1fr;
@@ -130,15 +130,18 @@ export default {
     text-align: center;
     align-items: center;
     padding: 3px;
-    border: 4px solid black;
+    border: 2px solid #A4B8C4;
+    border-radius: 10px;
   }
 
   .recImg{
-    height: 225px;
-    width: 175px;
-    /* border-style: solid; */
-    /* border-color: blue; */
+    height: 275px;
+    width: 225px;
     object-fit: cover;
+    position: relative;
+    left: 0.5em;
+    top: 1.25em;
+    filter: drop-shadow(1px 1px 2px #4B545A);
   }
 
   ul {
@@ -146,17 +149,8 @@ export default {
     padding: 0;
   }
 
-  p {
-    /* display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px; */
-  }
-
-
 li:hover{
-  border: 4px solid grey;
+  border: 2px solid #4B545A;
   cursor: pointer;
 }
 

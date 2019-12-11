@@ -115,16 +115,12 @@ p {
 }
 
 .navImg {
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 50%;
-    border-bottom-right-radius: 50% 50%;
-    border-bottom-left-radius: 50% 50%;
+    border-radius: 50%;
     display:block;
-    float: left;
     margin: 5px;
     padding-left: 0px;
-    height: 55px;
-    width: 55px;
+    height: 80px;
+    width: 80px;
     border-style: solid;
     object-fit: cover;
 }
@@ -146,7 +142,7 @@ p {
   padding-top: 20px;
   padding-left: 5px;
   color: #black;
-  background-color: #5B84B1FF;
+  /* background-color: ##74ADD2; */
 }
 
 .sidenav a {

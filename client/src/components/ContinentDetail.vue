@@ -115,6 +115,7 @@ export default {
 #top-bar h1 {
   text-align: center;
   font-size: 35px;
+  margin: 10px;
 }
 
 #passport-section {
@@ -128,11 +129,17 @@ export default {
 .circularImg{
   border-radius: 50%;
   display:block;
-  margin: 10px;
+  margin: 20px;
   padding-left: 0px;
   object-fit: cover;
   cursor: pointer;
   filter: drop-shadow(1px 2px 3px #808788);
+}
+
+ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0px;
 }
 
 .modal > section {
