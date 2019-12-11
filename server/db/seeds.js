@@ -5,6 +5,7 @@ db.continents.insertMany([
 
   {
     name:"Africa",
+    display_name: "Africa",
     animals:[
       {
         name: "Waldrapp Ibis",
@@ -85,6 +86,7 @@ db.continents.insertMany([
   },
   {
     name:"Europe",
+    display_name: "Europe",
     animals:[
       {
         name: "Iberian Lynx",
@@ -165,6 +167,7 @@ db.continents.insertMany([
   },
   {
     name:"Asia",
+    display_name: "Asia",
     animals: [
     {
       name: "Visayan Warty Pig",
@@ -245,6 +248,7 @@ db.continents.insertMany([
 },
 {
   name:"Australia",
+  display_name: "Australia",
   animals: [
     {
       name: "Kakapo",
@@ -325,6 +329,7 @@ db.continents.insertMany([
 },
 {
   name:"SouthAmerica",
+  display_name: "South America",
   animals: [
   {
     name: "Lehmann's Poison Frog",
@@ -405,6 +410,7 @@ db.continents.insertMany([
 },
 {
   name:"NorthAmerica",
+  display_name: "North America",
   animals: [
   {
     name: "Pygmy Raccoon",
@@ -419,7 +425,7 @@ db.continents.insertMany([
     answers: ["crabs", "fruit", "frogs", "insects"],
     answer_fact: "The Pygmy Raccoon can only be found on Cozumel Island off the coast of Mexico. Now, because of the expanding tourism industry on the island, the raccoon's habitat is getting smaller and smaller.",
     further_details: "http://animalia.bio/cozumel-raccoon",
-    threats: [""]
+    threats: ["building"]
   },
   {
     name: "Vancouver Island Marmot",
@@ -485,6 +491,7 @@ db.continents.insertMany([
 },
 {
   name:"Oceans",
+  display_name: "Oceans",
   animals: [
   {
     name: "Vaquita",
@@ -565,6 +572,7 @@ db.continents.insertMany([
 },
 {
   name:"Antarctica",
+  display_name: "Antarctica",
   animals: [
   {
     name: "Emperor Penguin",
