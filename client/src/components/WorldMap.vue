@@ -1,7 +1,7 @@
 <template lang="html">
   <div id="world_map">
     <h1>My Endangered Wildlife</h1>
-    <favourites :profile="profile"></favourites
+    <favourites :profile="profile" :biggestThreatObject="biggestThreatObject"></favourites
     <ul>
       <continent-detail v-for="(continent, index) in continents" :key="index" :continent="continent" :favouriteAnimals="favouriteAnimals"></continent-detail>
     </ul>
@@ -27,7 +27,9 @@ export default {
        profile: "false",
        favouriteAnimals: [],
        threats: [],
-       biggestThreat: ""
+       biggestThreat: "",
+       biggestThreatObject: null
+
   }
 },
 mounted(){
@@ -56,17 +58,21 @@ methods: {
     this.threats = []
     this.favouriteAnimals.forEach(animal => this.threats.push(animal.threats))
     const newArray = [].concat.apply([], this.threats)
-    this.biggestThreat = this.findThreat(newArray);
-
+    this.biggestThreat = this.findThreat(newArray)
+    this.findThreatObject(this.biggestThreat);
   },
   findThreat(array){
     return array.sort((a,b) =>
     array.filter(v => v===a).length
     - array.filter(v => v===b).length
   ).pop();
+  },
+  findThreatObject(threat) {
+    this.biggestThreatObject = this.threatObjects.find(threatObject => threatObject.name = threat)
   }
 }
 }
+
 
 </script>
 
