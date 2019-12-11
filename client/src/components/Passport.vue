@@ -1,16 +1,20 @@
-<template>
+
+<template lang="html">
   <div v-if="selectedAnimal"id="passport">
+
     <section class="trivia">
 
-      <div class="right-page">
+      <div class="left-page">
         <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
+
         <div>
           <font-awesome-icon @click="selectFav" icon="heart" :color="fav_heart" size="2x"/>
         </div>
+
         <h3>{{selectedAnimal.name}}</h3>
         <p>{{selectedAnimal.fun_fact}}</p>
       </div>
-      <div class="left-page">
+      <div class="right-page">
         <h3>{{selectedAnimal.quiz_question}}</h3>
         <ul id="quiz" v-for="answer in selectedAnimal.answers">
           <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
@@ -31,7 +35,7 @@ export default {
   data(){
     return{
       answers: "",
-      answer_class: "",
+      answer_class: ""
     }
   },
   computed: {
@@ -51,18 +55,6 @@ export default {
     },
     selectFav(){
       eventBus.$emit("select-fav", this.selectedAnimal)
-      this.isFavourited();
-    },
-    isFavourited(){
-      // debugger;
-      const favourited = (favElement) => favElement.name === this.selectedAnimal.name
-      const heart = this.favouriteAnimals.some(favourited)
-      if(heart){
-        return "pink"
-      }
-      else{
-        return "black"
-      }
     }
     }
   }
@@ -71,38 +63,49 @@ export default {
 
 <style lang="css" scoped>
 
+  #passport{
+    font-family: sans-serif;
+    font-size: 20px;
+    /* background-image: url("../../public/passport_page.jpeg"); */
+  }
 
-/* .right-page{
-  position: fixed;
-    bottom: 500;
-    right: 70;
-    width: 300px;
-    border: 3px solid #73AD21;
-
-} */
-
-/* .left-page{
-  position: right;
-  right: 30px;
-  border: 3px solid #73AD21;
-
-} */
+  .heart{
+    padding: 10px;
+  }
   .trivia{
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 10px;
   }
 
-  .right-page{
+  .left-page{
     width: 50%;
     float: left;
     border-right: solid;
   }
 
-  .left-page{
+  .right-page{
+    float: right;
+    display: grid;
     padding: 10px;
-    width: 50%;
-    margin-left: 50%;
+    width: 45%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 1fr 1fr;
+    align-items: stretch;
+    font-size: 20px;
+  }
+  .right-page h3{
+    grid-column: 1 / span 2;
+
+  }
+  .right-page li{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding: 5px;
+    margin: 5px;
+    border: 4px solid black;
   }
 
   .recImg{
@@ -113,20 +116,9 @@ export default {
     object-fit: cover;
   }
 
-  #passport {
-    /* display: grid; */
-  }
-
-
   ul {
-    display: grid;
     list-style: none;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  li {
-    padding: 5px;
-    margin: 5px;
+    padding: 0;
   }
 
   p.hidden {
@@ -137,17 +129,8 @@ export default {
     visibility: visible;
   }
 
-
-ul {
-  display: grid;
-  list-style: none;
-  grid-template-columns: 1fr 1fr;
-}
-
-li {
-  padding: 5px;
-  margin: 5px;
-  border: 5px solid black
+li:hover{
+  border: 4px solid grey;
 }
 
 </style>
