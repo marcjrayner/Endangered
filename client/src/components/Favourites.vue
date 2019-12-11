@@ -1,13 +1,15 @@
 <template lang="html">
 
 <div class="">
+<div class="navB">
+
 
   <button @click="clearFavourites()" class="myButton"type="button">Reset</button>
   <biggest-threat :biggestThreatObject="biggestThreatObject" ></biggest-threat>
-  <p>Favourites</p>
+</div>
 
   <div class="sidenav">
-
+  <p>Favourites</p>
      <img class="navImg" :src="favPic" alt="">
      <img class="navImg" :src="favPic1" alt="">
      <img class="navImg" :src="favPic2" alt="">
@@ -127,12 +129,18 @@ p {
     object-fit: cover;
 }
 
+.navB {
+  position: absolute;
+  top: 800px;
+  left: 0;
+
+}
 .sidenav {
-  height: 380px;
+  height: 300px;
   width: 127px;
   position: absolute;
   z-index: 1;
-  top: 500px;
+  top: 480px;
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;

@@ -1,6 +1,6 @@
 <template lang="html">
 <div>
-  <button @click="moreInfo(); isOpen = true;"  type="button">Biggest Threat</button>
+  <button class="myButton" @click="moreInfo(); isOpen = true;"  type="button">Biggest Threat</button>
   <div id="threat-window" v-if="biggestThreatObject && isOpen">
     <button @click="isOpen = false" type="button" name="button">Close</button>
     {{biggestThreatObject.name}}
@@ -18,7 +18,7 @@ export default {
   props: ["biggestThreatObject"],
   data() {
     return {
-        isOpen: null,
+        isOpen: true,
     }
   },
   methods: {
@@ -31,9 +31,25 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+
+.myButton {
+	background-color:#FC766AFF;
+	border-radius:15px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:5px 20px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #2f6627;
+}
+
 #threat-window {
     width: 300px;
-    height: 500px;
+    height: 200px;
     margin: 0px;
     padding: 20px;
     background-color: #FFFDD1;
@@ -41,7 +57,7 @@ export default {
     border-style: solid;
     border-color: #FFFBF3;
     position: absolute;
-    top: 500px;
-    left: 200px;
+    top: -280px;
+    left: 133px;
 }
 </style>
