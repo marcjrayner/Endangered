@@ -24,7 +24,6 @@ export default {
   },
   data() {
      return {
-       profile: "false",
        favouriteAnimals: [],
        threats: [],
        biggestThreat: "",
