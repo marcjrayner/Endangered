@@ -1,6 +1,6 @@
 <template lang="html">
 <div>
-  <button @click="moreInfo(); isOpen = true;"  type="button">More Info</button>
+  <button @click="moreInfo(); isOpen = true;"  type="button">Biggest Threat</button>
   <div id="threat-window" v-if="biggestThreatObject && isOpen">
     <button @click="isOpen = false" type="button" name="button">Close</button>
     {{biggestThreatObject.name}}
@@ -18,7 +18,7 @@ export default {
   props: ["biggestThreatObject"],
   data() {
     return {
-        isOpen: true,
+        isOpen: null,
     }
   },
   methods: {
