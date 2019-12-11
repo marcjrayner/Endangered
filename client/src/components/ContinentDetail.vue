@@ -4,18 +4,18 @@
       <div v-if="isOpen">
         <div class="overlay" @click.self="isOpen = false;">
           <div class="modal">
-            <h1>{{this.continent.display_name}}</h1>
+            <h1 class="name">{{this.continent.display_name}}</h1>
             <ul v-for="animal in this.continent.animals">
-              <img @click="selectAnimal(animal)" :src="animal.image" height="90" width="90" class="circularImg" >
+              <img @click="selectAnimal(animal)" :src="animal.image" height="150em" width="150em" class="circularImg" >
             </ul>
             <div v-if="selectedAnimal !== ''">
             <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
             <div v-if="answer_class === 'correct'">
-              <font-awesome-icon icon="check-circle" color="green"/>
-              <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
+              <font-awesome-icon id="tick" icon="check-circle" color="green" size="6x"/>
+              <animal-fact id="answer-fact" :selectedAnimal="selectedAnimal"></animal-fact>
             </div>
             <div v-if="answer_class === 'incorrect'">
-              <font-awesome-icon icon="times-circle" color="red"/>
+              <font-awesome-icon id="cross" icon="times-circle" color="red" size="6x"/>
             </div>
           </div>
           </div>
@@ -89,10 +89,7 @@ export default {
 
 .circularImg{
 
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  border-bottom-left-radius: 50% 50%;
+  border-radius: 50% 50%;
   display:block;
   float: left;
   margin: 10px;
@@ -101,12 +98,12 @@ export default {
 }
 
 .modal {
-  width: 700px;
-  height: 400;
+  width: 1000px;
+  /* height: 400; */
   margin: 0px auto;
   padding: 20px;
   background-color: #FFFDD1;
-  border-radius: 2px;
+  border-radius: 10px;
   border-style: solid;
   border-color: #FFFBF3;
   box-shadow: 0 2px 8px 3px;
@@ -146,113 +143,71 @@ button {
   transition: opacity 0.2s ease;
 }
 
+h1 {
+  text-align: center;
+}
+
+#tick {
+  position: relative;
+  left: 300px;
+  top: -500px;
+}
+
+#cross {
+  position: relative;
+  left: 300px;
+  top: -500px;
+}
+
+#answer-fact {
+  font-size: 25px;
+  position: relative;
+
+  top: -100px;
+}
 
 .SouthAmerica {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px; */
   position: absolute;
   left: 600px;
   top: 600px;
 
 }
 .NorthAmerica {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 400px;
   top: 300px;
 }
 
 .Europe {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 950px;
   top: 300px;
 }
 
 .Oceans {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 150px;
   top: 700px;
 }
 
 .Africa {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 1000px;
   top: 500px;
 }
 
 .Asia {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 1300px;
   top: 300px;
 }
 .Antarctica {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 1100px;
   top: 850px;
 }
 
 .Australia {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
   left: 1600px;
   top: 620px;

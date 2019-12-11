@@ -5,14 +5,21 @@
     <section class="trivia">
 
       <div class="left-page">
-        <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
-
         <div>
-          <font-awesome-icon @click="selectFav" icon="heart" :color="fav_heart" size="2x"/>
+
+
+        <img :src="selectedAnimal.image" :alt="selectedAnimal.name" class="recImg">
+        <font-awesome-icon @click="selectFav" icon="heart" class="heart" :color="fav_heart" size="3x"/>
+</div>
+          <h4>{{selectedAnimal.name}}</h4>
+
+
+        <div class="fact">
+          <h2>Fun Fact:</h2>
+          <p>{{selectedAnimal.fun_fact}}</p>
         </div>
 
-        <h3>{{selectedAnimal.name}}</h3>
-        <p>{{selectedAnimal.fun_fact}}</p>
+
       </div>
       <div class="right-page">
         <h3>{{selectedAnimal.quiz_question}}</h3>
@@ -76,55 +83,105 @@ export default {
 
   #passport{
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     /* background-image: url("../../public/passport_page.jpeg"); */
+    /* background-color: green; */
   }
 
   .heart{
-    padding: 10px;
+    padding: 20px;
+    position: relative;
+    top: 0px;
+    left: 150px;
   }
+
+  .heart:hover {
+    cursor: pointer;
+  }
+
+  h4  {
+    position: relative;
+    top: 50px;
+    left: -30px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+.fact {
+  grid-column: 1 ;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  font-size: 22px
+}
+
   .trivia{
-    width: 90%;
-    margin: auto;
-    padding: 10px;
-  }
-
-  .left-page{
-    width: 50%;
-    float: left;
-    border-right: solid;
-  }
-
-  .right-page{
-    float: right;
     display: grid;
-    padding: 10px;
-    width: 45%;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto 1fr 1fr;
-    align-items: stretch;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: blue;
+    border-radius: 5%;
+    background-image: url("../../public/passport_page.jpeg");
+    object-fit: fill;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+  }
+
+ .left-page{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  }
+
+ .right-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: none;
     font-size: 20px;
   }
+
   .right-page h3{
     grid-column: 1 / span 2;
-
+    /* border: 2px solid black;
+    border-radius: 5%; */
+    height: 160px;
+    width: 330px;
+    text-align: center;
+    position: relative;
+    left: 18%;
+    top: 15%;
   }
-  .right-page li{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    padding: 5px;
-    margin: 5px;
-    border: 4px solid black;
+
+ .right-page li{
+    /* padding: 3px;
+    margin: 3px;
+    border: 2px solid; */
+    height: 160px;
+    width: 150px;
+    border-radius: 5%;
+    text-align: center;
+    position: relative;
+    left: 40px;
+    top: -50px;
   }
 
   .recImg{
     height: 225px;
     width: 175px;
     border-style: solid;
-    border-color: blue;
+    border-color: black;
     object-fit: cover;
+    position: relative;
+    left: 20px;
+    top: 50px;
   }
 
   ul {
@@ -141,7 +198,8 @@ export default {
   }
 
 li:hover{
-  border: 4px solid grey;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 </style>
