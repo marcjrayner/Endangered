@@ -67,7 +67,7 @@ methods: {
   ).pop();
   },
   findThreatObject(threat) {
-    this.biggestThreatObject = this.threatObjects.find(threatObject => threatObject.name = threat)
+    this.biggestThreatObject = this.threatObjects.find(threatObject => threatObject.name === threat)
   }
 }
 }
