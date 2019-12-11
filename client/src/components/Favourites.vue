@@ -1,21 +1,28 @@
 <template lang="html">
 
-  <div class="sidenav">
-     <p>Favourites</p>
-     <img class="navImg" :src="favPic" alt="">
-     <img class="navImg" :src="favPic1" alt="">
-     <img class="navImg" :src="favPic2" alt="">
+<div class="">
+<div class="navB">
 
 
   <button @click="clearFavourites()" class="myButton"type="button">Reset</button>
-  <button @click="moreInfo()" class="myButton" type="button">More Info</button>
+  <biggest-threat :biggestThreatObject="biggestThreatObject" ></biggest-threat>
+</div>
+
+  <div class="sidenav">
+  <p>Favourites</p>
+     <img class="navImg" :src="favPic" alt="">
+     <img class="navImg" :src="favPic1" alt="">
+     <img class="navImg" :src="favPic2" alt="">
+  <!-- <button @click="moreInfo()" class="myButton" type="button">More Info</button> -->
   </div>
+</div>
 
 
 </template>
 
 <script>
 import {eventBus} from "../main.js";
+import BiggestThreat from "./BiggestThreat.vue"
 import WorldMap from "./WorldMap.vue"
 
 export default {
@@ -28,10 +35,10 @@ data(){
 methods: {
   clearFavourites() {
     eventBus.$emit("clear-animals")
-  },
-  moreInfo() {
-    eventBus.$emit("more-info")
   }
+},
+components: {
+  'biggest-threat': BiggestThreat
 },
   computed: {
     favPic(){
@@ -73,6 +80,10 @@ methods: {
 </script>
 
 <style lang="css" scoped>
+
+biggest-threat {
+  position: inherit;
+}
 
 p {
   text-align: center;
@@ -118,12 +129,18 @@ p {
     object-fit: cover;
 }
 
+.navB {
+  position: absolute;
+  top: 800px;
+  left: 0;
+
+}
 .sidenav {
-  height: 380px;
+  height: 300px;
   width: 127px;
   position: absolute;
   z-index: 1;
-  top: 500px;
+  top: 480px;
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
