@@ -17,7 +17,7 @@ import {eventBus} from "../main.js";
 
 export default {
   name: "world-map",
-  props: ["continents"],
+  props: ["continents", "threatObjects"],
   components: {
     'continent-detail': ContinentDetail,
     'favourites': Favourites
