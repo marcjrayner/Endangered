@@ -71,6 +71,7 @@ export default {
 
 <style lang="css" scoped>
 
+
 /* .right-page{
   position: fixed;
     bottom: 500;
