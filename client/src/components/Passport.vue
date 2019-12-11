@@ -64,7 +64,7 @@ export default {
        return "#FF879D"
       }
       else{
-       return "#FFE9ED"
+       return "#E5DEDF"
      }
     }
     }
@@ -93,7 +93,7 @@ export default {
     position: relative;
     left: 14em;
     top: 3.2em;
-    filter: drop-shadow(1px 1px 1px #BA6373);
+    filter: drop-shadow(1px 1px 1px #AB9397);
   }
   .trivia{
     width: 100%;

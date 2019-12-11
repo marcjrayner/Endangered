@@ -121,7 +121,7 @@ p {
     padding-left: 0px;
     height: 80px;
     width: 80px;
-    border-style: solid;
+    border: solid 3px black;
     object-fit: cover;
 }
 
