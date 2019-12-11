@@ -13,10 +13,6 @@
 </div>
 
 
-
-<<<<<<< HEAD
-<world-map :continents="continents"></world-map>
-=======
 <world-map :continents="continents" :threatObjects="threatObjects"></world-map>
 >>>>>>> develop
 
@@ -36,24 +32,16 @@ export default {
   data(){
     return {
       continents: [],
-<<<<<<< HEAD
-      defaultImgPath: "assets/white.png"
-=======
+
       threatObjects:[]
->>>>>>> develop
+
     };
   },
   mounted(){
     ContinentsService.getContinents()
     .then(continents => this.continents = continents)
-<<<<<<< HEAD
-    ;}
-=======
     ThreatsService.getThreats()
     .then(threats => this.threatObjects = threats)
-    ;
-  }
->>>>>>> develop
 }
 
 
