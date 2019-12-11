@@ -9,7 +9,7 @@
               <img @click="selectAnimal(animal)" :src="animal.image" height="90" width="90" class="circularImg" >
             </ul>
             <div v-if="selectedAnimal !== ''">
-            <passport :selectedAnimal="selectedAnimal"></passport>
+            <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
             <div v-if="answer_class === 'correct'">
               <font-awesome-icon icon="check-circle" color="green"/>
               <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
@@ -36,7 +36,7 @@ import {eventBus} from "../main.js"
 
 export default {
   name: 'continent-detail',
-  props: ['continent'],
+  props: ['continent', 'favouriteAnimals'],
   data() {
     return {
       isOpen: false,
@@ -97,6 +97,7 @@ export default {
   float: left;
   margin: 10px;
   padding-left: 10px;
+  object-fit: cover;
 }
 
 .modal {

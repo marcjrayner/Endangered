@@ -1,4 +1,5 @@
 <template lang="html">
+<<<<<<< HEAD
   <div v-if='profile'>
     <transition name="modal">
       <div v-if="isOpen">
@@ -21,75 +22,35 @@
     </transition>
     <button @click="isOpen = !isOpen;" type="button" name="button">Reasearcher Profile</button>
   </div>
+=======
+  <div>
+  <p>Favourites</p>
+>>>>>>> develop
 
+  <button @click="clearFavourites()" type="button">Reset</button>
+  <button @click="moreInfo()"  type="button">More Info</button>
+  </div>
 </template>
 
 <script>
-name: 'researcher-profile'
+import {eventBus} from "../main.js";
+
 export default {
-  props: ['profile'],
-  data() {
-    return {
-      isOpen: false,
-    }
+name: "favourites",
+data(){
+  return {
+}
+},
+methods: {
+  clearFavourites() {
+    eventBus.$emit("clear-animals")
+  },
+  moreInfo() {
+    eventBus.$emit("more-info")
   }
+}
 }
 </script>
 
 <style lang="css" scoped>
-
-
-
-li {
-  float: left;
-}
-
-.modal {
-  width: 400px;
-  height: 100px;
-  margin: 0px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px 3px;
-  transition: all 0.2s ease-in;
-  position: absolute;
-  left: 1480px;
-  top: 5px;
-  /* font-family: Helvetica, Arial, sans-serif; */
-}
-.fadeIn-enter {
-  opacity: 0;
-}
-.fadeIn-leave-active {
-  opacity: 0;
-  transition: all 0.2s step-end;
-}
-.fadeIn-enter .modal,
-.fadeIn-leave-active.modal {
-  transform: scale(1.1);
-}
-button {
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 5px;
-  background-color: dodgerblue;
-  color: white;
-  font-size: 1.1rem;
-}
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: #00000094;
-  z-index: 999;
-  transition: opacity 0.2s ease;
-}
-
-
 </style>

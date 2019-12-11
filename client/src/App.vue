@@ -14,13 +14,18 @@
 
 
 
+<<<<<<< HEAD
 <world-map :continents="continents"></world-map>
+=======
+<world-map :continents="continents" :threatObjects="threatObjects"></world-map>
+>>>>>>> develop
 
   </div>
 </template>
 
 <script>
 import ContinentsService from './services/ContinentsService.js';
+import ThreatsService from './services/ThreatsService.js';
 import WorldMap from './components/WorldMap.vue';
 
 export default {
@@ -31,13 +36,24 @@ export default {
   data(){
     return {
       continents: [],
+<<<<<<< HEAD
       defaultImgPath: "assets/white.png"
+=======
+      threatObjects:[]
+>>>>>>> develop
     };
   },
   mounted(){
     ContinentsService.getContinents()
     .then(continents => this.continents = continents)
+<<<<<<< HEAD
     ;}
+=======
+    ThreatsService.getThreats()
+    .then(threats => this.threatObjects = threats)
+    ;
+  }
+>>>>>>> develop
 }
 
 

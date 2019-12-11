@@ -614,3 +614,37 @@ db.continents.insertMany([
 ]
 }
 ])
+db.threats.insertMany([
+  {
+    name: "farming",
+    issue: "As the human population of Earth has grown, so has our appetite. Farming, the source of all of our food and much of our clothing, takes up more and more land each year leaving less room for wildlife."
+  },
+  {
+    name: "deforestation",
+    issue: "Wood is a crucial material for all sorts of things from buildings to furniture. Since it's easy to chop a tree down, wood is cheap. Deforestation can sometimes be closely related to farming, as jungles and forest lands are cleared to make way for farmland. "
+  },
+  {
+    name: "fishing",
+    issue: "Overfishing occurs due to large fishing trawler boats dragging huge nets along the sea floor, the size of a football pitch. This upsets the balance of the seas as the fish don't have time to reproduce offspring before they get swept up in the huge nets, so the fish population declines. That leaves less food for Sharks and many Whales too. "
+  },
+  {
+    name: "poaching",
+    issue: "Perhaps the cruelest threat to many species of the world, is caused directly by the hands of cruel poachers. They selfishly kill animals to take their skins or horns to sell for money."
+  },
+  {
+    name: "building",
+    issue: "With human population growth, everyone needs a house, school, hospitals etc - all the things we have in our towns. But those towns and cities can expand construction out of control to become ever-growing giant cities."
+  },
+  {
+    name: "disease",
+    issue: "Not all threats to Earth's endangered species come from humankind. Diseases are always evolving around the world, in different strains for different animals, sometimes they can morph into more serious illnesses that spread quickly through an animal population. They can even morph again and become a threat to humans!"
+  },
+  {
+    name: "climate change",
+    issue: "Earth's climate always changes, it never stays the same, it always gets hotter or colder, like the Ice Age. But today, the climate is warming up, leading to big changes in the environment for many animals (and humans too). Climate change is partially caused by humans producing carbon dioxide and other greenhouse gases."
+  },
+  {
+    name: "pollution",
+    issue: "Pollution is not just about the greenhouse gases like carbon dioxide, pollution is when humans throw away any waste into the environment. Like Plastic Pollution or toxic chemical waste from factories or power stations."
+  }
+])

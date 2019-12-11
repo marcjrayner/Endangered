@@ -1,9 +1,9 @@
 <template lang="html">
   <div id="world_map">
     <h1>My Endangered Wildlife</h1>
-    <research-profile :profile="profile"></research-profile>
+    <favourites :biggestThreatObject="biggestThreatObject" :favouriteAnimals="favouriteAnimals"></favourites
     <ul>
-      <continent-detail v-for="(continent, index) in continents" :key="index" :continent="continent"></continent-detail>
+      <continent-detail v-for="(continent, index) in continents" :key="index" :continent="continent" :favouriteAnimals="favouriteAnimals"></continent-detail>
     </ul>
 
   </div>
@@ -12,20 +12,67 @@
 
 <script>
 import ContinentDetail from './ContinentDetail.vue'
-import ResearchProfile from './Favourites.vue'
+import Favourites from './Favourites.vue'
+import {eventBus} from "../main.js";
+
 export default {
   name: "world-map",
-  props: ["continents"],
+  props: ["continents", "threatObjects"],
   components: {
     'continent-detail': ContinentDetail,
-    'research-profile': ResearchProfile
+    'favourites': Favourites
   },
   data() {
      return {
-       profile: "false"
+       favouriteAnimals: [],
+       threats: [],
+       biggestThreat: "",
+       biggestThreatObject: null
+
+  }
+},
+mounted(){
+  eventBus.$on("select-fav", (animal) => {
+      if (this.favouriteAnimals.length < 3 && !this.favouriteAnimals.includes(animal))
+      this.favouriteAnimals.push(animal)
+      else if (this.favouriteAnimals.includes(animal))
+      this.favouriteAnimals.splice(this.favouriteAnimals.indexOf(animal, 1))
+  })
+
+  eventBus.$on("clear-animals", () => {
+    this.favouriteAnimals = []
+    this.threats = []
+  })
+
+  eventBus.$on("more-info", () => {
+    this.biggestThreats()
+  })
+
+},
+methods: {
+  clearFavourites() {
+    this.favouriteAnimals = []
+  },
+  biggestThreats(){
+    this.threats = []
+    this.favouriteAnimals.forEach(animal => this.threats.push(animal.threats))
+    const newArray = [].concat.apply([], this.threats)
+    this.biggestThreat = this.findThreat(newArray)
+    this.findThreatObject(this.biggestThreat);
+  },
+  findThreat(array){
+    return array.sort((a,b) =>
+    array.filter(v => v===a).length
+    - array.filter(v => v===b).length
+  ).pop();
+  },
+  findThreatObject(threat) {
+    this.biggestThreatObject = this.threatObjects.find(threatObject => threatObject.name = threat)
   }
 }
 }
+
+
 </script>
 
 <style lang="css" scoped>
