@@ -4,7 +4,9 @@
 
       <div class="right-page">
         <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
-        <font-awesome-icon @click="selectFav" icon="heart" :color="fav_heart" size="2x"/>
+        <div>
+          <font-awesome-icon @click="selectFav" icon="heart" :color="fav_heart" size="2x"/>
+        </div>
         <h3>{{selectedAnimal.name}}</h3>
         <p>{{selectedAnimal.fun_fact}}</p>
       </div>
@@ -30,7 +32,7 @@ export default {
     return{
       answers: "",
       answer_class: "",
-      fav_heart: "black"
+      fav_heart: this.isFavourited()
     }
   },
   methods: {
