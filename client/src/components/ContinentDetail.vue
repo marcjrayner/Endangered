@@ -9,7 +9,7 @@
               <h1>{{this.continent.display_name}}</h1>
               <div id="continent-animals">
               <ul v-for="animal in this.continent.animals">
-                <img @click="selectAnimal(animal)" :src="animal.image" height="100" width="100" class="circularImg" >
+                <img @click="selectAnimal(animal)" :src="animal.image" height="130" width="130" class="circularImg" >
               </ul>
               </div>
             </section>
@@ -27,6 +27,7 @@
                   <font-awesome-icon class="fact-icon" icon="times-circle" color="red" size="3x"/>
                   <div class="fact">
                     <p>Incorrect answer</p>
+                    <br>
                   </div>
                 </div>
               </div>
@@ -37,7 +38,7 @@
       </div>
     </transition>
     <div >
-      <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: #274769; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
+      <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 4em; background: none; color: #274769; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
     </button>
   </div>
 </div>
@@ -92,7 +93,7 @@ export default {
 
 <style lang="css" scoped>
 
-
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
 .pawH:hover {
   color: #DAF2CB;
@@ -113,36 +114,35 @@ export default {
 
 #top-bar h1 {
   text-align: center;
+  font-size: 35px;
 }
 
 #passport-section {
   width: 700px;
   margin: 20px auto 0;
-  background-image: url('https://img.freepik.com/free-photo/cardboard-sheet-paper-abstract-texture-background_7182-2191.jpg?size=626&ext=jpg');
+  background: url('../assets/istockphoto.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  padding: 20px;
+  padding: 15px;
 }
 
 .circularImg{
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  border-bottom-left-radius: 50% 50%;
+  border-radius: 50%;
   display:block;
   margin: 10px;
   padding-left: 0px;
   object-fit: cover;
   cursor: pointer;
+  filter: drop-shadow(1px 2px 3px #808788);
 }
 
 .modal > section {
-  background-color: #FFFDD1;
+  background-color: #F5F7F7;
   padding: 10px;
-  border-radius: 2px;
+  border-radius: 10px;
   border-style: solid;
-  border-color: #FFFBF3;
-  box-shadow: 0 2px 8px 3px;
+  border-color: #F5F7F7;
+  box-shadow: 0 1px 4px 2px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .fact {
@@ -151,11 +151,8 @@ export default {
 
 .modal {
   min-width: 700px;
-  /* height: 400px; */
   margin: 0px auto;
   transition: all 0.2s ease-in;
-  /* font-family: Helvetica, Arial, sans-serif; */
-
 }
 .fadeIn-enter {
   opacity: 0;
@@ -192,114 +189,52 @@ button {
 
 
 .SouthAmerica {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px; */
   position: absolute;
-  left: 600px;
-  top: 600px;
+  left: 23%;
+  top: 800%;
 
 }
 .NorthAmerica {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
-  left: 400px;
-  top: 300px;
+  left: 8%;
+  top: 450%;
 }
 
 .Europe {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
-  left: 950px;
-  top: 300px;
+  left: 48%;
+  top: 370%;
 }
 
 .Oceans {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
-  left: 150px;
-  top: 700px;
+  left: 70%;
+  top: 800%;
 }
 
 .Africa {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
-  left: 1000px;
-  top: 500px;
+  left: 51%;
+  top: 650%;
 }
 
 .Asia {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
-  left: 1300px;
-  top: 300px;
+  left: 75%;
+  top: 340%;
 }
+
 .Antarctica {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
-  left: 1100px;
-  top: 850px;
+  left: 45%;
+  top: 1170%;
 }
 
 .Australia {
-  /* background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px; */
   position: absolute;
-  left: 1600px;
-  top: 620px;
+  left: 91%;
+  top: 890%;
 }
+
 
 </style>

@@ -40,12 +40,13 @@ export default {
 
 <style>
 
+html {
+  position: relative;
+}
 
 body{
-
-background-image: url('./assets/continent.png');
-background-repeat: no-repeat;
-background-size: 2000px 900px
+  background: url('./assets/continent.png') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .main {

@@ -103,7 +103,8 @@ export default {
   .left-page{
     width: 50%;
     box-sizing: border-box;
-    border-right: solid;
+    /* border-right: solid; */
+    font-family: 'Josefin Sans', sans-serif;
   }
 
   .right-page{
@@ -116,6 +117,7 @@ export default {
     align-items: stretch;
     font-size: 20px;
     grid-gap: 1em;
+    font-family: 'Josefin Sans', sans-serif;
   }
   .right-page h3{
     grid-column: 1 / span 2;
