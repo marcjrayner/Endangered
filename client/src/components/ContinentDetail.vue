@@ -97,6 +97,7 @@ export default {
   float: left;
   margin: 10px;
   padding-left: 10px;
+  object-fit: cover;
 }
 
 .modal {

@@ -1,10 +1,12 @@
 <template>
-  <div id="passport">
+  <div v-if="selectedAnimal"id="passport">
     <section class="trivia">
 
       <div class="right-page">
         <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
-        <font-awesome-icon @click="selectFav" icon="heart" :color="fav_heart" size="2x"/>
+        <div>
+          <font-awesome-icon @click="selectFav" icon="heart" :color="fav_heart" size="2x"/>
+        </div>
         <h3>{{selectedAnimal.name}}</h3>
         <p>{{selectedAnimal.fun_fact}}</p>
       </div>
@@ -25,13 +27,15 @@ import {eventBus} from "../main.js";
 
 export default {
   name: "passport",
-  props: ["selectedAnimal", "favAnimals"],
+  props: ["selectedAnimal", "favouriteAnimals"],
   data(){
     return{
       answers: "",
       answer_class: "",
-      fav_heart: ""
     }
+  },
+  computed: {
+    fav_heart() { return this.isFavourited() }
   },
   methods: {
 
@@ -47,20 +51,22 @@ export default {
     },
     selectFav(){
       eventBus.$emit("select-fav", this.selectedAnimal)
+      this.isFavourited();
     },
     isFavourited(){
-      const favourited = this.favAnimals.filter(animal => {
-        animal.name === this.selectedAnimal.name
-      })
-      if(!favourited.length()){
-        this.fav_heart = "hotpink"
+      // debugger;
+      const favourited = (favElement) => favElement.name === this.selectedAnimal.name
+      const heart = this.favouriteAnimals.some(favourited)
+      if(heart){
+        return "pink"
       }
-      else {
-        this.fav_heart = "pink"
+      else{
+        return "black"
       }
     }
+    }
   }
-}
+
 </script>
 
 <style lang="css" scoped>
@@ -100,10 +106,11 @@ export default {
   }
 
   .recImg{
-    height: 150px;
-    width: 100px;
+    height: 225px;
+    width: 175px;
     border-style: solid;
     border-color: blue;
+    object-fit: cover;
   }
 
   #passport {
