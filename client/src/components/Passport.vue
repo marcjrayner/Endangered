@@ -61,10 +61,10 @@ export default {
       const favourited = (favElement) => favElement.name === this.selectedAnimal.name
       const heart = this.favouriteAnimals.some(favourited)
       if(heart){
-       return "pink"
+       return "#FF879D"
       }
       else{
-       return "black"
+       return "#FFE9ED"
      }
     }
     }
@@ -91,8 +91,9 @@ export default {
     padding: 10px;
     cursor: pointer;
     position: relative;
-    left: 11em;
-    top: 3em;
+    left: 14em;
+    top: 3.2em;
+    filter: drop-shadow(1px 1px 1px #BA6373);
   }
   .trivia{
     width: 100%;
@@ -105,6 +106,10 @@ export default {
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
     padding-right: 15px;
+  }
+
+  .left-page p {
+    padding: 5px;
   }
 
   .right-page{
