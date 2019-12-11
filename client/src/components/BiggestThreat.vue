@@ -1,7 +1,7 @@
 <template lang="html">
 <div>
   <button @click="moreInfo()"  type="button">More Info</button>
-  <div v-if="biggestThreatObject">
+  <div id="threat-window" v-if="biggestThreatObject">
     {{biggestThreatObject.name}}
     <hr>
     {{biggestThreatObject.issue}}
@@ -25,4 +25,15 @@ export default {
 </script>
 
 <style lang="css" scoped>
+#threat-window {
+    width: 300px;
+    height: 500px;
+    margin: 0px;
+    padding: 20px;
+    background-color: #FFFDD1;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: #FFFBF3;
+    position: inherit;
+}
 </style>

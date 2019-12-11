@@ -30,4 +30,7 @@ components: {
 </script>
 
 <style lang="css" scoped>
+biggest-threat {
+  position: inherit;
+}
 </style>
