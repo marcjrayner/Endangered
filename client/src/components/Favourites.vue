@@ -119,8 +119,8 @@ p {
     display:block;
     margin: 5px;
     padding-left: 0px;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border: solid 3px black;
     object-fit: cover;
 }

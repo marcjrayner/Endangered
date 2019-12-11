@@ -197,13 +197,13 @@ button {
 
 .SouthAmerica {
   position: absolute;
-  left: 23%;
+  left: 30%;
   top: 800%;
 
 }
 .NorthAmerica {
   position: absolute;
-  left: 8%;
+  left: 19%;
   top: 450%;
 }
 
@@ -215,7 +215,7 @@ button {
 
 .Oceans {
   position: absolute;
-  left: 70%;
+  left: 65%;
   top: 800%;
 }
 
@@ -227,7 +227,7 @@ button {
 
 .Asia {
   position: absolute;
-  left: 75%;
+  left: 68%;
   top: 340%;
 }
 
@@ -239,7 +239,7 @@ button {
 
 .Australia {
   position: absolute;
-  left: 91%;
+  left: 80%;
   top: 890%;
 }
 
