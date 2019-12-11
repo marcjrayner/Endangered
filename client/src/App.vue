@@ -1,13 +1,11 @@
 <template>
   <div id="app">
     <div class="sidenav">
-<div class="">
+
+<img class="navImg" src="./assets/white.png" alt="">
+<img class="navImg" src="./assets/white.png" alt="">
 
 
-<img src="" alt="./assets/white.png">
-<img src="" alt="./assets/white.png">
-<img src="" alt="./assets/white.png">
-</div>
 <button type="button" name="button">Reset</button>
 <button type="button" name="button">Issues</button>
 
@@ -32,28 +30,14 @@ export default {
   },
   data(){
     return {
-      continents: []
+      continents: [],
+      defaultImgPath: "assets/white.png"
     };
   },
   mounted(){
     ContinentsService.getContinents()
     .then(continents => this.continents = continents)
-    ;},
-     NavPop() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-  // ,
-  // methods: {
-  //    openSlideMenu() {
-  //     document.getElementById('menu').style.width='250px';
-  //     document.getElementById('content').style.marginLeft = '250px';
-  //   },
-  //    closeSlideMenu() {
-  //     document.getElementById('menu').style.width='0';
-  //     document.getElementById('content').style.marginLeft = '0';
-  //   }
-  // }
+    ;}
 }
 
 
@@ -70,7 +54,19 @@ background-repeat: no-repeat;
 background-size: 2000px 900px
 }
 
+.navImg {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    display:block;
+    float: left;
+    margin: 2px;
+    padding-left: 2px;
+    height: 45px;
+    width: 45px;
 
+}
 
 .sidenav {
   height: auto%;
