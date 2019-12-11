@@ -4,12 +4,13 @@
   <p>Favourites</p>
 
   <button @click="clearFavourites()" type="button">Reset</button>
-  <button @click="moreInfo()"  type="button">More Info</button>
+  <biggest-threat></biggest-threat>
   </div>
 </template>
 
 <script>
 import {eventBus} from "../main.js";
+import BiggestThreat from "./BiggestThreat.vue"
 
 export default {
 name: "favourites",
@@ -20,10 +21,10 @@ data(){
 methods: {
   clearFavourites() {
     eventBus.$emit("clear-animals")
-  },
-  moreInfo() {
-    eventBus.$emit("more-info")
   }
+},
+components: {
+  'biggest-threat': BiggestThreat
 }
 }
 </script>
