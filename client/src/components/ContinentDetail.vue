@@ -6,7 +6,7 @@
           <div class="modal">
             <h1>{{this.continent.display_name}}</h1>
             <ul v-for="animal in this.continent.animals">
-              <img @click="selectAnimal(animal)" :src="animal.image" height="90" width="90" class="circularImg" >
+              <img @click="selectAnimal(animal)" :src="animal.image" height="120" width="120" class="circularImg" >
             </ul>
             <div v-if="selectedAnimal !== ''">
             <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
@@ -23,7 +23,7 @@
       </div>
     </transition>
     <div >
-    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
+    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 4em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
   </button>
   </div>
 </div>
@@ -78,31 +78,36 @@ export default {
 
 <style lang="css" scoped>
 
-
+h1 {
+  text-align: center;
+}
 
 .pawH:hover {
-  background-color: yellow;
+  color: yellow;
   cursor: pointer;
+
 
 }
 
 
 .circularImg{
-
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  border-bottom-left-radius: 50% 50%;
+  border-radius: 50%;
   display:block;
   float: left;
   margin: 10px;
-  padding-left: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
   object-fit: cover;
+  cursor: pointer;
+  opacity: 90%
+}
+.circularImg:hover {
+  opacity: 100%;
 }
 
 .modal {
-  width: 700px;
-  height: 400;
+  width: 55vw;
+  max-height: 85vh;
   margin: 0px auto;
   padding: 20px;
   background-color: #FFFDD1;
@@ -186,7 +191,7 @@ button {
   font-size: 16px; */
   position: absolute;
   left: 950px;
-  top: 300px;
+  top: 245px;
 }
 
 .Oceans {

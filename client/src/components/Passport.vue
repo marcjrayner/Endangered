@@ -3,7 +3,6 @@
   <div v-if="selectedAnimal"id="passport">
 
     <section class="trivia">
-
       <div class="left-page">
         <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
 
@@ -16,10 +15,11 @@
       </div>
       <div class="right-page">
         <h3>{{selectedAnimal.quiz_question}}</h3>
-        <ul id="quiz" v-for="answer in selectedAnimal.answers">
-          <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
-        </ul>
-
+        <div id="answers-grid">
+          <ul id="quiz" v-for="answer in selectedAnimal.answers">
+            <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
+          </ul>
+        </div>
       </div>
     </section>
   </div>
@@ -80,6 +80,14 @@ export default {
     /* background-image: url("../../public/passport_page.jpeg"); */
   }
 
+  #answers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto auto;
+    /* align-items: stretch;
+    justify-content: stretch; */
+  }
+
   .heart{
     padding: 10px;
   }
@@ -87,22 +95,22 @@ export default {
     width: 90%;
     margin: auto;
     padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .left-page{
-    width: 50%;
-    float: left;
     border-right: solid;
   }
 
   .right-page{
-    float: right;
     display: grid;
     padding: 10px;
-    width: 45%;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto 1fr 1fr;
-    align-items: stretch;
+    /* grid-template-columns: 50% 50%; */
+    grid-template-rows: auto 1fr;
+    /* align-items: stretch; */
+    grid-gap: 1em;
+    /* justify-content: stretch; */
     font-size: 20px;
   }
   .right-page h3{
@@ -110,20 +118,25 @@ export default {
 
   }
   .right-page li{
-    grid-column-start: 1;
+    /* grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-end: 4; */
     padding: 5px;
     margin: 5px;
     border: 4px solid black;
+    height: 100%;
+    box-sizing: border-box;
   }
 
   .recImg{
-    height: 225px;
-    width: 175px;
-    border-style: solid;
-    border-color: blue;
+    max-height: 325px;
+    /* width: 175px; */
+    margin: 0 5px;
+    width: calc(100% - 10px);
+    height: 40%;
+    /* border-style: solid;
+    border-color: blue; */
     object-fit: cover;
   }
 

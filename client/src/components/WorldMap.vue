@@ -1,11 +1,10 @@
 <template lang="html">
   <div id="world_map">
     <h1>My Endangered Wildlife</h1>
-    <favourites :biggestThreatObject="biggestThreatObject" :favouriteAnimals="favouriteAnimals"></favourites
+    <favourites :biggestThreatObject="biggestThreatObject" :favouriteAnimals="favouriteAnimals"></favourites>
     <ul>
       <continent-detail v-for="(continent, index) in continents" :key="index" :continent="continent" :favouriteAnimals="favouriteAnimals"></continent-detail>
     </ul>
-
   </div>
 
 </template>
