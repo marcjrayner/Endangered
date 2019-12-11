@@ -4,27 +4,38 @@
       <div v-if="isOpen">
         <div class="overlay" @click.self="isOpen = false;">
           <div class="modal">
-            <h1>{{this.continent.display_name}}</h1>
-            <ul v-for="animal in this.continent.animals">
-              <img @click="selectAnimal(animal)" :src="animal.image" height="100" width="100" class="circularImg" >
-            </ul>
-            <div v-if="selectedAnimal !== ''">
-            <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
-            <div v-if="answer_class === 'correct'">
-              <font-awesome-icon icon="check-circle" color="green"/>
-              <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
-            </div>
-            <div v-if="answer_class === 'incorrect'">
-              <font-awesome-icon icon="times-circle" color="red"/>
-            </div>
-          </div>
+
+            <section id="top-bar">
+              <h1>{{this.continent.display_name}}</h1>
+              <div id="continent-animals">
+              <ul v-for="animal in this.continent.animals">
+                <img @click="selectAnimal(animal)" :src="animal.image" height="100" width="100" class="circularImg" >
+              </ul>
+              </div>
+            </section>
+
+            <section id="passport-section">
+              <div v-if="selectedAnimal !== ''">
+                <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
+                <div v-if="answer_class === 'correct'">
+                  <font-awesome-icon icon="check-circle" color="green"/>
+                  <div id="fact">
+                    <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
+                  </div>
+                </div>
+                <div v-if="answer_class === 'incorrect'">
+                  <font-awesome-icon icon="times-circle" color="red"/>
+                </div>
+              </div>
+            </section>
+
           </div>
         </div>
       </div>
     </transition>
     <div >
-    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: #274769; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
-  </button>
+      <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: #274769; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
+    </button>
   </div>
 </div>
 </template>
@@ -60,10 +71,10 @@ export default {
       this.shuffle(animal.answers)
     },
     noSelection(){
-        this.answer_class = null;
-        this.selectedAnimal = ""
-      }
-    },
+      this.answer_class = null;
+      this.selectedAnimal = ""
+    }
+  },
   mounted(){
     eventBus.$on("check-answer", answer => {
       this.answer_class = answer
@@ -86,26 +97,39 @@ export default {
 
 }
 
-.circularImg{
+#continent-animals {
+  display: flex;
+}
 
+#top-bar h1 {
+  text-align: center;
+}
+
+#passport-section {
+  width: 700px;
+}
+
+.circularImg{
   border-top-left-radius: 50% 50%;
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
   border-bottom-left-radius: 50% 50%;
   display:block;
-  float: left;
   margin: 10px;
-  padding-left: 0px;;
+  padding-left: 0px;
   object-fit: cover;
   cursor: pointer;
 }
 
-.modal {
-  width: 700px;
-  height: 400;
-  margin: 0px auto;
-  padding: 20px;
+.modal > section {
   background-color: #FFFDD1;
+  padding: 10px;
+}
+
+.modal {
+  min-width: 700px;
+  /* height: 400px; */
+  margin: 0px auto;
   border-radius: 2px;
   border-style: solid;
   border-color: #FFFBF3;

@@ -1,8 +1,8 @@
 
 <template lang="html">
-  <div v-if="selectedAnimal"id="passport">
+  <section v-if="selectedAnimal" id="passport">
 
-    <section class="trivia">
+    <div class="trivia">
 
       <div class="left-page">
         <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
@@ -21,8 +21,8 @@
         </ul>
 
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -74,9 +74,14 @@ export default {
 
 <style lang="css" scoped>
 
-  #passport{
+  .trivia {
     font-family: sans-serif;
     font-size: 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     /* background-image: url("../../public/passport_page.jpeg"); */
   }
 
@@ -133,13 +138,14 @@ export default {
     padding: 0;
   }
 
-  p.hidden {
-    visibility: hidden;
+  p {
+    /* display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
   }
 
-  p.correct {
-    visibility: visible;
-  }
 
 li:hover{
   border: 4px solid grey;
