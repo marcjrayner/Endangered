@@ -55,12 +55,12 @@ db.continents.insertMany([
       {
         name: "African Penguin",
         continent: "Africa",
-        fun_fact: "Afircan Penguins can hold their breath for up to 2 and a half minutes when diving",
+        fun_fact: "African Penguins can hold their breath for up to 2 and a half minutes when diving",
         image: "https://upload.wikimedia.org/wikipedia/commons/6/63/African_penguin_side_profile.jpg",
         conservation_status: "Endangered",
         number_remaining: 21000,
         locations: ["South Africa","Namibia"],
-        quiz_question: "African penguins are clumsy on land but excellent at swinning. How fast do you think they can swim?",
+        quiz_question: "African penguins are clumsy on land but excellent at swimming. How fast do you think they can swim?",
         correct_answer: "20 km per hour",
         answers: ["20 km per hour","5 km per hour","10 km per hour","30 km per hour"],
         answer_fact: "The African Penguin population is declining rapidly, they suffer from pollution of their habitat by petrochemicals from spills, shipwrecks and cleaning of tankers while at sea",
@@ -128,7 +128,7 @@ db.continents.insertMany([
         locations: ["Italy"],
         quiz_question: "Why has the Marsican brown bear evolved a really powerful lower jaw?",
         correct_answer: "To crunch nuts",
-        answers: ["To crunch nuts", "Do defend against other bears", "To attack prey", "To look scarier"],
+        answers: ["To crunch nuts", "To defend against other bears", "To attack prey", "To look scarier"],
         answer_fact: "The bears live in Abruzzo National Park in Italy where they are protected, and hopefully can grow in numbers.",
         further_details: "https://theeuropeannaturetrust.com/animal-profile-marsican-brown-bear/",
         threats: ["poaching"]
@@ -172,7 +172,7 @@ db.continents.insertMany([
     {
       name: "Visayan Warty Pig",
       continent: "Asia",
-      fun_fact: "Males have 3 pairs warts on their face to protect their eyes and faces during fights.",
+      fun_fact: "Males have 3 pairs of warts on their face to protect their eyes and faces during fights.",
       image: "http://michaelnoonanphotography.com/wp-content/uploads/2016/04/Artiodactyla-Suidae-Sus-cebifrons-Visayan-Warty-Pig-1V5Z4045.jpg",
       conservation_status: "Critically Endangered",
       number_remaining: null,
@@ -253,7 +253,7 @@ db.continents.insertMany([
     {
       name: "Kakapo",
       continent: "Australia",
-      fun_fact: "They are the only parrot in the world that can't fly.",
+      fun_fact: "Kakapo are the only parrot in the world that can't fly.",
       image: "https://www.motherjones.com/wp-content/uploads/2019/08/20190818-fat-parrot-2000px-2.jpg?w=990",
       conservation_status: "Critically Endangered",
       number_remaining: 213,
@@ -283,7 +283,7 @@ db.continents.insertMany([
     {
       name: "Mary River Turtle",
       continent: "Australia",
-      fun_fact: "Its green hair is actually made up of growning strands of algae.",
+      fun_fact: "Its green hair is actually made up of growing strands of algae.",
       image: "https://i1.wp.com/metro.co.uk/wp-content/uploads/2018/04/elusor-macrurus_chris-van-wyk_10-1000x667-e1523524757991.jpg?quality=90&strip=all&zoom=1&resize=644%2C440&ssl=1",
       conservation_status: "Endangered",
       number_remaining: null,
@@ -291,14 +291,14 @@ db.continents.insertMany([
       quiz_question: "How long can Mary River Turtles stay underwater without coming up for air?",
       correct_answer: "72 hours",
       answers: ["72 hours", "24 hours", "10 hours", "120 hours"],
-      answer_fact: "These turtles used to be popular pets in Australia, with about 15000 sent to pet shops every year. This has led to a a decline in numbers in the wild. Today, it's protected by the Australian government.",
+      answer_fact: "These turtles used to be popular pets in Australia, with about 15000 sent to pet shops every year. This has led to a a decline in numbers in the wild. Today, it is protected by the Australian government.",
       further_details: "http://www.edgeofexistence.org/species/mary-river-turtle/",
       threats: ["poaching"]
     },
     {
       name: "Goodfellow's Tree Kangaroo",
       continent: "Australia",
-      fun_fact: "It's very clumsy on the ground, but can jump up to 30 feet from one tree to another.",
+      fun_fact: "It is very clumsy on the ground, but can jump up to 30 feet from one tree to another.",
       image: "https://upload.wikimedia.org/wikipedia/commons/5/56/Tree_kangaroo2.jpg",
       conservation_status: "Endangered",
       number_remaining: null,
@@ -321,7 +321,7 @@ db.continents.insertMany([
       quiz_question: "What are baby sea lions called?",
       correct_answer: "Pups",
       answers: ["Pups", "Cubs", "Calfs", "Kittens"],
-      answer_fact: "Fisheries are a major problem for sea lions. Sea lions can get trapped in fishing nets and drown. A lot of fishing near sea lions can also mean it's harder for sea lions to find good food.",
+      answer_fact: "Fisheries are a major problem for sea lions. Sea lions can get trapped in fishing nets and drown. A lot of fishing near sea lions can also mean it is harder for sea lions to find good food.",
       further_details: "https://www.wwf.org.nz/what_we_do/species/sealions2/",
       threats: ["fishing", "disease"]
     },
@@ -340,8 +340,8 @@ db.continents.insertMany([
     number_remaining: null,
     locations: ["Colombia"],
     quiz_question: "Why are some frogs so brightly coloured?",
-    correct_answer: "To warn predators that they're poisonous",
-    answers: ["To warn predators that they're poisonous", "Because they want to stand out from the crowd", "They get their colour from what they eat", "So they blend in with bright flowers in the rainforest"],
+    correct_answer: "To warn predators that they are poisonous",
+    answers: ["To warn predators that they are poisonous", "Because they want to stand out from the crowd", "They get their colour from what they eat", "So they blend in with bright flowers in the rainforest"],
     answer_fact: "Rare frogs in Colombia are under risk from smugglers who want to capture them to sell as pets on the black market. To try and stop this a frog farm has been set up to breed and sell frogs at lower prices than the smuggler's charge.",
     further_details: "https://amphibiaweb.org/species/1637",
     threats: ["poaching"]
@@ -421,8 +421,8 @@ db.continents.insertMany([
     number_remaining: 300,
     locations: ["Mexico"],
     quiz_question: "What is the Pygmy Raccoon's favourite food?",
-    correct_answer: "crabs",
-    answers: ["crabs", "fruit", "frogs", "insects"],
+    correct_answer: "Crabs",
+    answers: ["Crabs", "Fruit", "Frogs", "Insects"],
     answer_fact: "The Pygmy Raccoon can only be found on Cozumel Island off the coast of Mexico. Now, because of the expanding tourism industry on the island, the raccoon's habitat is getting smaller and smaller.",
     further_details: "http://animalia.bio/cozumel-raccoon",
     threats: ["building"]
@@ -445,7 +445,7 @@ db.continents.insertMany([
   {
     name: "Axolotl",
     continent: "North America",
-    fun_fact: "Even though it's often called the 'Mexican Walking Fish', it's actually a type of salamander.",
+    fun_fact: "Even though it is often called the 'Mexican Walking Fish', it is actually a type of salamander.",
     image: "https://miro.medium.com/max/4000/0*iuIOwN_3ImJ3KLEK.jpg",
     conservation_status: "Critically Endangered",
     number_remaining: null,
@@ -519,7 +519,7 @@ db.continents.insertMany([
     quiz_question: "What do the sawfish NOT use their saws for?",
     correct_answer: "Cutting through seaweed and nets",
     answers: ["Cutting through seaweed and nets", "Sensing where fish are in murky water", "Injuring prey to make them easier to eat", "Digging for buried prey"],
-    answer_fact: "Smalltoth sawfish are often accidentally caught by fishing nets, and are then killed instead of being released back into the ocean.",
+    answer_fact: "Smalltooth sawfish are often accidentally caught by fishing nets, and are then killed instead of being released back into the ocean.",
     further_details: "https://oceana.org/marine-life/ocean-fishes/smalltooth-sawfish",
     threats: ["fishing", "climate change", "deforestation"]
   },
@@ -565,7 +565,7 @@ db.continents.insertMany([
     correct_answer: "85–90 cm",
     answers: ["85–90 cm", "45-50cm", "145-150cm", "10-15cm"],
     answer_fact: "The Balearic Shearwater is under severe threat from the development of holiday resorts near its breeding sites, which can destroy or alter their natural breeding habitat",
-    further_details: "",
+    further_details: "https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/balearic-shearwater/",
     threats: ["building"]
   }
 ]
@@ -599,7 +599,7 @@ db.continents.insertMany([
     locations: ["Southern Ocean"],
     quiz_question: "Which of these facts about the Blue Whale is NOT true?",
     correct_answer: "It can swim at 40 miles per hour",
-    answers: ["It can swim at 40 miles per hour","It's calls can be heard underwater for hundreds of kilometres","It’s tongue weighs as much as an elephant","It is longer than three buses"],
+    answers: ["It can swim at 40 miles per hour","Its calls can be heard underwater for hundreds of kilometres","Its tongue weighs as much as an elephant","It is longer than three buses"],
     answer_fact: "The world's largest problem, global warming, could mean extinction in the Antarctic for the world's largest animal. Sea ice provides a habitat for algae, which are fed upon by krill, the main food supply for blue whales. As the temperature has increased in recent decades, sea ice has diminished rapidly and thus food supplies are getting scarcer.",
     further_details: "https://wwf.panda.org/knowledge_hub/endangered_species/cetaceans/about/blue_whale/",
     threats: ["poaching", "climate change", "fishing"]
