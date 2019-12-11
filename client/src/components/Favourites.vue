@@ -4,7 +4,7 @@
      <p>Favourites</p>
      <img class="navImg" :src="favPic" alt="">
      <img class="navImg" :src="favPic1" alt="">
-     <img class="navImg" :src="favPic" alt="">
+     <img class="navImg" :src="favPic2" alt="">
 
 
   <button @click="clearFavourites()" class="myButton"type="button">Reset</button>
@@ -46,7 +46,18 @@ methods: {
       }
     },
     favPic1(){
-      for (let i = 0; i < this.favouriteAnimals.length; i ++){
+      for (let i = 1; i < this.favouriteAnimals.length; i ++){
+        if (this.favouriteAnimals[i]){
+          console.log('fav')
+          return this.favouriteAnimals[i].image
+        } else {
+          console.log('white')
+          return './assets/black.gif'
+        }
+      }
+    },
+    favPic2(){
+      for (let i = 2; i < this.favouriteAnimals.length; i ++){
         if (this.favouriteAnimals[i]){
           console.log('fav')
           return this.favouriteAnimals[i].image
@@ -66,7 +77,7 @@ methods: {
 p {
   text-align: center;
   text-decoration: underline;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: #FC766AFF;
 }
@@ -104,7 +115,7 @@ p {
     height: 45px;
     width: 65px;
     border-style: solid;
-
+    object-fit: cover;
 }
 
 .sidenav {
