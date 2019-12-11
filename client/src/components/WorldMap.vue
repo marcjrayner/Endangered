@@ -56,7 +56,6 @@ methods: {
     this.threats = []
     this.favouriteAnimals.forEach(animal => this.threats.push(animal.threats))
     const newArray = [].concat.apply([], this.threats)
-    console.log(newArray);
     this.biggestThreat = this.findThreat(newArray);
 
   },
