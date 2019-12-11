@@ -4,7 +4,7 @@
       <div v-if="isOpen">
         <div class="overlay" @click.self="isOpen = false;">
           <div class="modal">
-            <h1>{{this.continent.name}}</h1>
+            <h1>{{this.continent.display_name}}</h1>
             <ul v-for="animal in this.continent.animals">
               <img @click="selectAnimal(animal)" :src="animal.image" height="90" width="90" class="circularImg" >
             </ul>

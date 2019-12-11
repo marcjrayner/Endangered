@@ -36,7 +36,7 @@ mounted(){
       if (this.favouriteAnimals.length < 3 && !this.favouriteAnimals.includes(animal))
       this.favouriteAnimals.push(animal)
       else if (this.favouriteAnimals.includes(animal))
-      this.favouriteAnimals.splice(this.favouriteAnimals.indexOf(animal, 1))
+      this.favouriteAnimals.splice(this.favouriteAnimals.indexOf(animal),1)
   })
 
   eventBus.$on("clear-animals", () => {

@@ -40,6 +40,8 @@ export default {
     border-radius: 2px;
     border-style: solid;
     border-color: #FFFBF3;
-    position: inherit;
+    position: absolute;
+    top: 500px;
+    left: 200px;
 }
 </style>

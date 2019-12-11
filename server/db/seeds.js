@@ -5,12 +5,13 @@ db.continents.insertMany([
 
   {
     name:"Africa",
+    display_name: "Africa",
     animals:[
       {
         name: "Waldrapp Ibis",
         continent: "Africa",
         fun_fact: "Thoth, the ancient Egyptian god of writing, magic and wisdom was drawn with the head of an Ibis and the body of a man.",
-        image: "http://s3.amazonaws.com/mongabay-images/13/1202.baldibis.IMG_3381.600.jpg",
+        image: "https://live.staticflickr.com/1765/41244603460_b18c5c018c_b.jpg",
         conservation_status: "Endangered",
         number_remaining: 500,
         locations: ["Morocco", "Syria"],
@@ -25,7 +26,7 @@ db.continents.insertMany([
         name: "Okapi",
         continent: "Africa",
         fun_fact: "Okapi are related to giraffes. Their long black tongues are about 14 inches long, and they can use them to lick their own ears and eyelids.",
-        image: "http://animalia.bio/uploads/animals/photos/full/1.25x1/okapi.jpg",
+        image: "https://kids.sandiegozoo.org/sites/default/files/2017-07/okapi-02.jpg",
         conservation_status: "Endangered",
         number_remaining: 4500,
         locations: ["Democratic Republic of the Congo"],
@@ -40,7 +41,7 @@ db.continents.insertMany([
         name: "Mountain Gorilla",
         continent: "Africa",
         fun_fact: "Gorillas hate getting wet!",
-        image: "https://ichef.bbci.co.uk/news/320/cpsprodpb/DF62/production/_101868175_hi018106787.jpg",
+        image: "https://www.wwf.org.uk/sites/default/files/styles/hero_s/public/2016-09/Medium_WW22557_0.jpg?h=6c69e056&itok=whezEuT3",
         conservation_status: "Endangered",
         number_remaining: 1000,
         locations: ["Uganda", "Rwanda"],
@@ -54,12 +55,12 @@ db.continents.insertMany([
       {
         name: "African Penguin",
         continent: "Africa",
-        fun_fact: "Afircan Penguins can hold their breath for up to 2 and a half minutes when diving",
+        fun_fact: "African Penguins can hold their breath for up to 2 and a half minutes when diving",
         image: "https://upload.wikimedia.org/wikipedia/commons/6/63/African_penguin_side_profile.jpg",
         conservation_status: "Endangered",
         number_remaining: 21000,
         locations: ["South Africa","Namibia"],
-        quiz_question: "African penguins are clumsy on land but excellent at swinning. How fast do you think they can swim?",
+        quiz_question: "African penguins are clumsy on land but excellent at swimming. How fast do you think they can swim?",
         correct_answer: "20 km per hour",
         answers: ["20 km per hour","5 km per hour","10 km per hour","30 km per hour"],
         answer_fact: "The African Penguin population is declining rapidly, they suffer from pollution of their habitat by petrochemicals from spills, shipwrecks and cleaning of tankers while at sea",
@@ -85,6 +86,7 @@ db.continents.insertMany([
   },
   {
     name:"Europe",
+    display_name: "Europe",
     animals:[
       {
         name: "Iberian Lynx",
@@ -120,13 +122,13 @@ db.continents.insertMany([
         name: "Marsican Brown Bear",
         continent: "Europe",
         fun_fact: "Marsican brown bears typically give birth to twins.",
-        image: "http://www.bearconservation.org.uk/wp-content/uploads/2017/08/1024x768-Marsican_Brown_Bear_jpg1.jpg",
+        image: "https://rewildingeurope.com/wp-content/uploads/2014/02/101-BDA-20090310-6866.jpg",
         conservation_status: "Critically Endangered",
         number_remaining: 50,
         locations: ["Italy"],
         quiz_question: "Why has the Marsican brown bear evolved a really powerful lower jaw?",
         correct_answer: "To crunch nuts",
-        answers: ["To crunch nuts", "Do defend against other bears", "To attack prey", "To look scarier"],
+        answers: ["To crunch nuts", "To defend against other bears", "To attack prey", "To look scarier"],
         answer_fact: "The bears live in Abruzzo National Park in Italy where they are protected, and hopefully can grow in numbers.",
         further_details: "https://theeuropeannaturetrust.com/animal-profile-marsican-brown-bear/",
         threats: ["poaching"]
@@ -165,11 +167,12 @@ db.continents.insertMany([
   },
   {
     name:"Asia",
+    display_name: "Asia",
     animals: [
     {
       name: "Visayan Warty Pig",
       continent: "Asia",
-      fun_fact: "Males have 3 pairs warts on their face to protect their eyes and faces during fights.",
+      fun_fact: "Males have 3 pairs of warts on their face to protect their eyes and faces during fights.",
       image: "http://michaelnoonanphotography.com/wp-content/uploads/2016/04/Artiodactyla-Suidae-Sus-cebifrons-Visayan-Warty-Pig-1V5Z4045.jpg",
       conservation_status: "Critically Endangered",
       number_remaining: null,
@@ -185,7 +188,7 @@ db.continents.insertMany([
       name: "Javan Rhinoceros",
       continent: "Asia",
       fun_fact: "Rhinos like to wallow in mud, the activity allows them to maintain cool body temperatures and also helps prevent disease",
-      image: "https://c402277.ssl.cf1.rackcdn.com/photos/9496/images/hero_full/_H9A0249.jpg?1436885827",
+      image: "https://c402277.ssl.cf1.rackcdn.com/photos/10702/images/magazine_large/rhino_update.jpg?1453407444",
       conservation_status: "Critically Endangered",
       number_remaining: 67,
       locations: ["Indonesia"],
@@ -245,11 +248,12 @@ db.continents.insertMany([
 },
 {
   name:"Australia",
+  display_name: "Australia",
   animals: [
     {
       name: "Kakapo",
       continent: "Australia",
-      fun_fact: "They are the only parrot in the world that can't fly.",
+      fun_fact: "Kakapo are the only parrot in the world that can't fly.",
       image: "https://www.motherjones.com/wp-content/uploads/2019/08/20190818-fat-parrot-2000px-2.jpg?w=990",
       conservation_status: "Critically Endangered",
       number_remaining: 213,
@@ -279,23 +283,23 @@ db.continents.insertMany([
     {
       name: "Mary River Turtle",
       continent: "Australia",
-      fun_fact: "Its green hair is actually made up of growning strands of algae.",
-      image: "https://i1.wp.com/metro.co.uk/wp-content/uploads/2018/04/elusor-macrurus_chris-van-wyk_10-1000x667-e1523524757991.jpg?quality=90&strip=all&zoom=1&resize=644%2C440&ssl=1",
+      fun_fact: "Its green hair is actually made up of growing strands of algae.",
+      image: "https://www.thesun.co.uk/wp-content/uploads/2018/04/nintchdbpict000000584351.jpg",
       conservation_status: "Endangered",
       number_remaining: null,
       locations: ["Australia"],
       quiz_question: "How long can Mary River Turtles stay underwater without coming up for air?",
       correct_answer: "72 hours",
       answers: ["72 hours", "24 hours", "10 hours", "120 hours"],
-      answer_fact: "These turtles used to be popular pets in Australia, with about 15000 sent to pet shops every year. This has led to a a decline in numbers in the wild. Today, it's protected by the Australian government.",
+      answer_fact: "These turtles used to be popular pets in Australia, with about 15000 sent to pet shops every year. This has led to a a decline in numbers in the wild. Today, it is protected by the Australian government.",
       further_details: "http://www.edgeofexistence.org/species/mary-river-turtle/",
       threats: ["poaching"]
     },
     {
       name: "Goodfellow's Tree Kangaroo",
       continent: "Australia",
-      fun_fact: "It's very clumsy on the ground, but can jump up to 30 feet from one tree to another.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/5/56/Tree_kangaroo2.jpg",
+      fun_fact: "It is very clumsy on the ground, but can jump up to 30 feet from one tree to another.",
+      image: "https://www.waza.org/wp-content/uploads/2019/02/Tree-Kangaroo2%C2%A9Perth-Zoo.jpeg",
       conservation_status: "Endangered",
       number_remaining: null,
       locations: ["Papua New Guinea"],
@@ -317,7 +321,7 @@ db.continents.insertMany([
       quiz_question: "What are baby sea lions called?",
       correct_answer: "Pups",
       answers: ["Pups", "Cubs", "Calfs", "Kittens"],
-      answer_fact: "Fisheries are a major problem for sea lions. Sea lions can get trapped in fishing nets and drown. A lot of fishing near sea lions can also mean it's harder for sea lions to find good food.",
+      answer_fact: "Fisheries are a major problem for sea lions. Sea lions can get trapped in fishing nets and drown. A lot of fishing near sea lions can also mean it is harder for sea lions to find good food.",
       further_details: "https://www.wwf.org.nz/what_we_do/species/sealions2/",
       threats: ["fishing", "disease"]
     },
@@ -325,6 +329,7 @@ db.continents.insertMany([
 },
 {
   name:"SouthAmerica",
+  display_name: "South America",
   animals: [
   {
     name: "Lehmann's Poison Frog",
@@ -335,8 +340,8 @@ db.continents.insertMany([
     number_remaining: null,
     locations: ["Colombia"],
     quiz_question: "Why are some frogs so brightly coloured?",
-    correct_answer: "To warn predators that they're poisonous",
-    answers: ["To warn predators that they're poisonous", "Because they want to stand out from the crowd", "They get their colour from what they eat", "So they blend in with bright flowers in the rainforest"],
+    correct_answer: "To warn predators that they are poisonous",
+    answers: ["To warn predators that they are poisonous", "Because they want to stand out from the crowd", "They get their colour from what they eat", "So they blend in with bright flowers in the rainforest"],
     answer_fact: "Rare frogs in Colombia are under risk from smugglers who want to capture them to sell as pets on the black market. To try and stop this a frog farm has been set up to breed and sell frogs at lower prices than the smuggler's charge.",
     further_details: "https://amphibiaweb.org/species/1637",
     threats: ["poaching"]
@@ -375,7 +380,7 @@ db.continents.insertMany([
     name: "Golden Lion Tamarin",
     continent: "South America",
     fun_fact: "Lion tamarins take their name from their impressive golden, red and orange manes of hair.",
-    image: "https://www.monkeyworlds.com/wp-content/uploads/golden_lion.jpg",
+    image: "http://www.thealexandriazoo.com/images/animals/full/GoldenLionTamarin.jpg",
     conservation_status: "Endangered",
     number_remaining: 3200,
     locations: ["Brazil"],
@@ -405,6 +410,7 @@ db.continents.insertMany([
 },
 {
   name:"NorthAmerica",
+  display_name: "North America",
   animals: [
   {
     name: "Pygmy Raccoon",
@@ -415,17 +421,17 @@ db.continents.insertMany([
     number_remaining: 300,
     locations: ["Mexico"],
     quiz_question: "What is the Pygmy Raccoon's favourite food?",
-    correct_answer: "crabs",
-    answers: ["crabs", "fruit", "frogs", "insects"],
+    correct_answer: "Crabs",
+    answers: ["Crabs", "Fruit", "Frogs", "Insects"],
     answer_fact: "The Pygmy Raccoon can only be found on Cozumel Island off the coast of Mexico. Now, because of the expanding tourism industry on the island, the raccoon's habitat is getting smaller and smaller.",
     further_details: "http://animalia.bio/cozumel-raccoon",
-    threats: [""]
+    threats: ["building"]
   },
   {
     name: "Vancouver Island Marmot",
     continent: "North America",
     fun_fact: "When surprised, the Vancouver Island Marmot makes a really loud whistling sound, which has earned them the nickname 'Whistle Pig'.",
-    image: "https://images.glaciermedia.ca/polopoly_fs/1.15164927.1492149428!/fileImage/httpImage/image.jpg_gen/derivatives/landscape_804/v-i-marmot-jpg.jpg",
+    image: "https://wxv73zw8wg-flywheel.netdna-ssl.com/wp-content/uploads/2018/10/Vancouver-Island-Marmot.png",
     conservation_status: "Critically Endangered",
     number_remaining: 200,
     locations: ["Canada"],
@@ -439,7 +445,7 @@ db.continents.insertMany([
   {
     name: "Axolotl",
     continent: "North America",
-    fun_fact: "Even though it's often called the 'Mexican Walking Fish', it's actually a type of salamander.",
+    fun_fact: "Even though it is often called the 'Mexican Walking Fish', it is actually a type of salamander.",
     image: "https://miro.medium.com/max/4000/0*iuIOwN_3ImJ3KLEK.jpg",
     conservation_status: "Critically Endangered",
     number_remaining: null,
@@ -455,7 +461,7 @@ db.continents.insertMany([
     name: "Red Wolf",
     continent: "North America",
     fun_fact: "Red wolf cubs are raised by the entire pack.",
-    image: "https://live.staticflickr.com/8641/16478011948_6a2eef40e3_b.jpg",
+    image: "https://defenders.org/sites/default/files/styles/meta_image/public/2019-04/red_wolf_rebecca_bose_wcc_header.jpg?itok=8wNZFQ2n",
     conservation_status: "Critically Endangered",
     number_remaining: 240,
     locations: ["USA"],
@@ -485,12 +491,13 @@ db.continents.insertMany([
 },
 {
   name:"Oceans",
+  display_name: "Oceans",
   animals: [
   {
     name: "Vaquita",
     continent: "Oceans",
     fun_fact: "Vaquita means little cow in Spanish.",
-    image: "https://i0.wp.com/ladyfreethinker.org/wp-content/uploads/2018/04/vaquita.jpg?zoom=2.625&resize=382%2C228&ssl=1",
+    image: "https://www.wwf.org.uk/sites/default/files/styles/hero_s/public/2017-06/Credit-%20Greenpeace%252F%20Marcelo%20Otero_2.jpg?h=e7c891e8&itok=fZmzri5C",
     conservation_status: "Critically Endangered",
     number_remaining: 19,
     locations: ["Mexico"],
@@ -512,7 +519,7 @@ db.continents.insertMany([
     quiz_question: "What do the sawfish NOT use their saws for?",
     correct_answer: "Cutting through seaweed and nets",
     answers: ["Cutting through seaweed and nets", "Sensing where fish are in murky water", "Injuring prey to make them easier to eat", "Digging for buried prey"],
-    answer_fact: "Smalltoth sawfish are often accidentally caught by fishing nets, and are then killed instead of being released back into the ocean.",
+    answer_fact: "Smalltooth sawfish are often accidentally caught by fishing nets, and are then killed instead of being released back into the ocean.",
     further_details: "https://oceana.org/marine-life/ocean-fishes/smalltooth-sawfish",
     threats: ["fishing", "climate change", "deforestation"]
   },
@@ -535,7 +542,7 @@ db.continents.insertMany([
     name: "Polar Bear",
     continent: "Oceans",
     fun_fact: "Because they spend most of their lives on the sea ice of the Arctic Ocean and depend on the ocean for their food and habitat, polar bears are the only bear species to be considered marine mammals",
-    image: "https://c402277.ssl.cf1.rackcdn.com/photos/2330/images/hero_full/polar-bear-hero.jpg?1345901694",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg",
     conservation_status: "Vulnerable",
     number_remaining: 31000,
     locations: ["Arctic Ocean"],
@@ -550,7 +557,7 @@ db.continents.insertMany([
     name: "Balearic Shearwater",
     continent: "Oceans",
     fun_fact: "Shearwaters nest in burrows which are only visited at night to avoid predators like large gulls.",
-    image: "http://www.marine-life.org.uk/media/49390/balearicshearwater4%20brereton%20edit_345x230.jpg",
+    image: "https://cdn.britannica.com/75/137375-004-1A673403/Greater-shearwater.jpg",
     conservation_status: "Critically Endangered",
     number_remaining: 19000,
     locations: ["Balearic Islands"],
@@ -558,13 +565,14 @@ db.continents.insertMany([
     correct_answer: "85–90 cm",
     answers: ["85–90 cm", "45-50cm", "145-150cm", "10-15cm"],
     answer_fact: "The Balearic Shearwater is under severe threat from the development of holiday resorts near its breeding sites, which can destroy or alter their natural breeding habitat",
-    further_details: "",
+    further_details: "https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/balearic-shearwater/",
     threats: ["building"]
   }
 ]
 },
 {
   name:"Antarctica",
+  display_name: "Antarctica",
   animals: [
   {
     name: "Emperor Penguin",
@@ -585,13 +593,13 @@ db.continents.insertMany([
     name: "Antarctic Blue Whale",
     continent: "Antarctica",
     fun_fact: "Blue whales are the largest mammal to have ever lived on the Earth, but their main diet is tiny krill, a small aquatic lifeform resembling a prawn",
-    image: "https://cdn.britannica.com/90/150290-050-C96E4444/Illustration-blue-whale.jpg",
+    image: "https://www.eurekalert.org/multimedia/pub/web/167291_web.jpg",
     conservation_status: "Endangered",
     number_remaining: 25000,
     locations: ["Southern Ocean"],
     quiz_question: "Which of these facts about the Blue Whale is NOT true?",
     correct_answer: "It can swim at 40 miles per hour",
-    answers: ["It can swim at 40 miles per hour","It's calls can be heard underwater for hundreds of kilometres","It’s tongue weighs as much as an elephant","It is longer than three buses"],
+    answers: ["It can swim at 40 miles per hour","Its calls can be heard underwater for hundreds of kilometres","Its tongue weighs as much as an elephant","It is longer than three buses"],
     answer_fact: "The world's largest problem, global warming, could mean extinction in the Antarctic for the world's largest animal. Sea ice provides a habitat for algae, which are fed upon by krill, the main food supply for blue whales. As the temperature has increased in recent decades, sea ice has diminished rapidly and thus food supplies are getting scarcer.",
     further_details: "https://wwf.panda.org/knowledge_hub/endangered_species/cetaceans/about/blue_whale/",
     threats: ["poaching", "climate change", "fishing"]
