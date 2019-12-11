@@ -7,8 +7,8 @@
      <img class="navImg" :src="favPic" alt="">
 
 
-  <button @click="clearFavourites()" type="button">Reset</button>
-  <button @click="moreInfo()"  type="button">More Info</button>
+  <button @click="clearFavourites()" class="myButton"type="button">Reset</button>
+  <button @click="moreInfo()" class="myButton" type="button">More Info</button>
   </div>
 
 
@@ -63,6 +63,35 @@ methods: {
 
 <style lang="css" scoped>
 
+p {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FC766AFF;
+}
+
+.myButton {
+	background-color:#FC766AFF;
+	border-radius:15px;
+	border:2px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:5px 20px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 .navImg {
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
@@ -70,25 +99,26 @@ methods: {
     border-bottom-left-radius: 50% 50%;
     display:block;
     float: left;
-    margin: 2px;
-    padding-left: 2px;
+    margin: 5px;
+    padding-left: 0px;
     height: 45px;
-    width: 45px;
+    width: 65px;
     border-style: solid;
 
 }
 
 .sidenav {
-  height: auto%;
-  width: 140px;
+  height: 360px;
+  width: 127px;
   position: absolute;
   z-index: 1;
   top: 500px;
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
+  padding-left: 5px;
   color: #black;
-  background-color: #DCDCDC;
+  background-color: #5B84B1FF;
 }
 
 .sidenav a {
