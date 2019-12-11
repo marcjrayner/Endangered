@@ -14,7 +14,7 @@
 
 
 <world-map :continents="continents" :threatObjects="threatObjects"></world-map>
->>>>>>> develop
+
 
   </div>
 </template>
@@ -35,7 +35,7 @@ export default {
 
       threatObjects:[]
 
-    };
+    }
   },
   mounted(){
     ContinentsService.getContinents()
@@ -43,7 +43,7 @@ export default {
     ThreatsService.getThreats()
     .then(threats => this.threatObjects = threats)
 }
-
+}
 
 </script>
 
