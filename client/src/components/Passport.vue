@@ -16,7 +16,7 @@
       </div>
       <div class="right-page">
         <h3>{{selectedAnimal.quiz_question}}</h3>
-        <ul id="quiz" v-for="answer in selectedAnimal.answers">
+        <ul class="quiz" v-for="answer in selectedAnimal.answers">
           <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
         </ul>
 
@@ -74,6 +74,11 @@ export default {
 
 <style lang="css" scoped>
 
+  .quiz {
+    height: 100%;
+    margin: 0;
+  }
+
   .trivia {
     font-family: sans-serif;
     font-size: 20px;
@@ -110,18 +115,19 @@ export default {
     grid-template-rows: auto 1fr 1fr;
     align-items: stretch;
     font-size: 20px;
+    grid-gap: 1em;
   }
   .right-page h3{
     grid-column: 1 / span 2;
 
   }
   .right-page li{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    padding: 5px;
-    margin: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 3px;
     border: 4px solid black;
   }
 

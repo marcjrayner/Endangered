@@ -14,17 +14,20 @@
               </div>
             </section>
 
-            <section id="passport-section">
-              <div v-if="selectedAnimal !== ''">
+            <section v-if="selectedAnimal !== ''" id="passport-section">
+              <div>
                 <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
-                <div v-if="answer_class === 'correct'">
-                  <font-awesome-icon icon="check-circle" color="green"/>
-                  <div id="fact">
+                <div class="result-of-answer" v-if="answer_class === 'correct'">
+                  <font-awesome-icon class="fact-icon" icon="check-circle" color="green" size="3x"/>
+                  <div class="fact">
                     <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
                   </div>
                 </div>
-                <div v-if="answer_class === 'incorrect'">
-                  <font-awesome-icon icon="times-circle" color="red"/>
+                <div class="result-of-answer" v-if="answer_class === 'incorrect'">
+                  <font-awesome-icon class="fact-icon" icon="times-circle" color="red" size="3x"/>
+                  <div class="fact">
+                    <p>Incorrect answer</p>
+                  </div>
                 </div>
               </div>
             </section>
@@ -97,6 +100,13 @@ export default {
 
 }
 
+.result-of-answer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  grid-gap: 0.5em;
+}
+
 #continent-animals {
   display: flex;
 }
@@ -133,6 +143,10 @@ export default {
   border-style: solid;
   border-color: #FFFBF3;
   box-shadow: 0 2px 8px 3px;
+}
+
+.fact {
+  font-size: 20px;
 }
 
 .modal {
@@ -287,7 +301,5 @@ button {
   left: 1600px;
   top: 620px;
 }
-
-
 
 </style>
