@@ -90,22 +90,22 @@ export default {
     cursor: pointer;
   }
   .trivia{
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding: 10px;
+    display: flex;
   }
 
   .left-page{
     width: 50%;
-    float: left;
+    box-sizing: border-box;
     border-right: solid;
   }
 
   .right-page{
-    float: right;
     display: grid;
+    box-sizing: border-box;
     padding: 10px;
-    width: 45%;
+    width: 50%;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto 1fr 1fr;
     align-items: stretch;
@@ -128,8 +128,8 @@ export default {
   .recImg{
     height: 225px;
     width: 175px;
-    border-style: solid;
-    border-color: blue;
+    /* border-style: solid; */
+    /* border-color: blue; */
     object-fit: cover;
   }
 

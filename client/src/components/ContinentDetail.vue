@@ -107,6 +107,11 @@ export default {
 
 #passport-section {
   width: 700px;
+  margin: 20px auto 0;
+  background-image: url('https://img.freepik.com/free-photo/cardboard-sheet-paper-abstract-texture-background_7182-2191.jpg?size=626&ext=jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
 }
 
 .circularImg{
@@ -124,16 +129,16 @@ export default {
 .modal > section {
   background-color: #FFFDD1;
   padding: 10px;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #FFFBF3;
+  box-shadow: 0 2px 8px 3px;
 }
 
 .modal {
   min-width: 700px;
   /* height: 400px; */
   margin: 0px auto;
-  border-radius: 2px;
-  border-style: solid;
-  border-color: #FFFBF3;
-  box-shadow: 0 2px 8px 3px;
   transition: all 0.2s ease-in;
   /* font-family: Helvetica, Arial, sans-serif; */
 
