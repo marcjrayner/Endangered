@@ -106,10 +106,11 @@ export default {
   }
 
   .recImg{
-    height: 150px;
-    width: 100px;
+    height: 225px;
+    width: 175px;
     border-style: solid;
     border-color: blue;
+    object-fit: cover;
   }
 
   #passport {
