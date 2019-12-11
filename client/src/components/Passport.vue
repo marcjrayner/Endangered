@@ -32,8 +32,10 @@ export default {
     return{
       answers: "",
       answer_class: "",
-      fav_heart: this.isFavourited()
     }
+  },
+  computed: {
+    fav_heart() { return this.isFavourited() }
   },
   methods: {
 
@@ -56,10 +58,10 @@ export default {
       const favourited = (favElement) => favElement.name === this.selectedAnimal.name
       const heart = this.favouriteAnimals.some(favourited)
       if(heart){
-        this.fav_heart = "pink"
+        return "pink"
       }
       else{
-        this.fav_heart = "black"
+        return "black"
       }
     }
     }
