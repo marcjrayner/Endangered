@@ -1,28 +1,31 @@
 
 <template lang="html">
-  <div v-if="selectedAnimal"id="passport">
+  <section v-if="selectedAnimal" id="passport">
 
-    <section class="trivia">
+    <div class="trivia">
 
       <div class="left-page">
-        <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
-
         <div>
-          <font-awesome-icon @click="selectFav" icon="heart" :color="fav_heart" size="2x"/>
+          <img :src="selectedAnimal.image" :alt="selectedAnimal.name" class="recImg">
+          <font-awesome-icon @click="selectFav" icon="heart" class="heart" :color="fav_heart" size="3x"/>
         </div>
+        <h4>{{selectedAnimal.name}}</h4>
 
-        <h3>{{selectedAnimal.name}}</h3>
-        <p>{{selectedAnimal.fun_fact}}</p>
+        <div class="fact">
+          <h2>Fun Fact:</h2>
+          <p>{{selectedAnimal.fun_fact}}</p>
+        </div>
       </div>
+
       <div class="right-page">
         <h3>{{selectedAnimal.quiz_question}}</h3>
-        <ul id="quiz" v-for="answer in selectedAnimal.answers">
+        <ul class="quiz" v-for="answer in selectedAnimal.answers">
           <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
         </ul>
-
       </div>
-    </section>
-  </div>
+
+    </div>
+  </section>
 </template>
 
 <script>
@@ -61,87 +64,166 @@ export default {
       const favourited = (favElement) => favElement.name === this.selectedAnimal.name
       const heart = this.favouriteAnimals.some(favourited)
       if(heart){
-       return "pink"
+        return "#FF879D"
       }
       else{
-       return "black"
-     }
-    }
+        return "#E5DEDF"
+      }
     }
   }
+}
 
 </script>
 
 <style lang="css" scoped>
 
-  #passport{
-    font-family: sans-serif;
-    font-size: 20px;
-    /* background-image: url("../../public/passport_page.jpeg"); */
-  }
 
-  .heart{
-    padding: 10px;
-  }
-  .trivia{
-    width: 90%;
-    margin: auto;
-    padding: 10px;
-  }
+/* .quiz {
+height: 100%;
+margin: 0;
+}
 
-  .left-page{
-    width: 50%;
-    float: left;
-    border-right: solid;
-  }
+.trivia {
+font-family: sans-serif;
+font-size: 20px; */
+/* display: block; */
+/* margin-block-start: 1em;
+margin-block-end: 1em;
+}
 
-  .right-page{
-    float: right;
-    display: grid;
-    padding: 10px;
-    width: 45%;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto 1fr 1fr;
-    align-items: stretch;
-    font-size: 20px;
-  }
-  .right-page h3{
-    grid-column: 1 / span 2;
+.heart{
+padding: 10px;
+cursor: pointer;
+position: relative;
+left: 14em;
+top: 3.2em;
+filter: drop-shadow(1px 1px 1px #AB9397); */
 
-  }
-  .right-page li{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    padding: 5px;
-    margin: 5px;
-    border: 4px solid black;
-  }
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
-  .recImg{
-    height: 225px;
-    width: 175px;
-    border-style: solid;
-    border-color: blue;
-    object-fit: cover;
-  }
+#passport{
+  font-family: sans-serif;
+  font-size: 18px;
+  /* background-image: url("../../public/passport_page.jpeg"); */
+  /* background-color: green; */
+}
 
-  ul {
-    list-style: none;
-    padding: 0;
-  }
+.heart{
+  padding: 20px;
+  position: relative;
+  top: -8px;
+  left: 150px;
+}
 
-  p.hidden {
-    visibility: hidden;
-  }
+.heart:hover {
+  cursor: pointer;
+}
 
-  p.correct {
-    visibility: visible;
-  }
+h4  {
+  position: relative;
+  top: 50px;
+  left: -30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.fact {
+  grid-column: 1 / span 2;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  font-size: 22px;
+  width: 90%;
+}
+
+.quiz {
+  height: 100%;
+  margin: 0;
+}
+
+.trivia{
+  border-radius: 5%;
+  background-image: url("../assets/passport_page.jpeg");
+  object-fit: fill;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.left-page{
+  display: grid;
+  width: 50%;
+  /* height: 100%; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-right: 0px;
+
+}
+
+.right-page{
+  display: grid;
+  box-sizing: border-box;
+  padding: 15px;
+  width: 48%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 1fr 1fr;
+  align-items: stretch;
+  font-size: 20px;
+  grid-gap: 0.75em;
+  font-family: 'Josefin Sans', sans-serif;
+  /* z-index: 4; */
+  /* background-color: dodgerblue; */
+
+}
+
+.right-page h3{
+  grid-column: 1 / span 2;
+  text-align: bottom;
+  margin-bottom: 0px;
+  margin-top: 10%;
+  /* border: 2px solid black;
+  border-radius: 5%; */
+  /* height: 160px;
+  width: 330px;
+  text-align: center;
+  position: relative;
+  left: 18%;
+  top: 15%; */
+}
+
+.right-page li{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 3px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.recImg{
+  height: 225px;
+  width: 175px;
+  /* border: solid 3px black; */
+  object-fit: cover;
+  position: relative;
+  left: 20px;
+  top: 50px;
+  filter: drop-shadow(1px 2px 3px #808788);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
 
 li:hover{
-  border: 4px solid grey;
+  border: 2px solid #4B545A;
+  cursor: pointer;
 }
 
 </style>
