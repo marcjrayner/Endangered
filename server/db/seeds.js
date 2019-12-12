@@ -660,7 +660,7 @@ db.threats.insertMany([
   },
   {
     name: "pollution",
-    displayName: "Pollution"
+    displayName: "Pollution",
     issue: "Pollution is separate from Climate Change any time humans throw away any waste into the environment. Like Plastic Pollution or Water Contamination from factories or power stations. Pollution is one of the things which lead to Climate Change."
   }
 ])
