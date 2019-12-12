@@ -3,7 +3,7 @@
   <button class="myButton" @click="moreInfo(); isOpen = true;"  type="button">Biggest Threat</button>
   <div id="threat-window" v-if="biggestThreatObject && isOpen">
     <button @click="isOpen = false" type="button" name="button">Close</button>
-    {{biggestThreatObject.name}}
+    {{biggestThreatObject.displayName}}
     <hr>
     {{biggestThreatObject.issue}}
   </div>

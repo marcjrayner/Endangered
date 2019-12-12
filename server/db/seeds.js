@@ -636,12 +636,12 @@ db.threats.insertMany([
   {
     name: "fishing",
     displayName: "Fishing",
-    issue: "Overfishing occurs due to large fishing trawler boats dragging huge nets along the sea floor, the size of a football pitch. This upsets the balance of the seas as the fish don't have time to reproduce offspring before they get swept up in the huge nets, so the fish population declines. That leaves less food for Sharks and many Whales too. "
+    issue: "Overfishing occurs due to large fishing trawler boats dragging huge nets along the sea floor, the size of a football pitch. This upsets the balance of the seas as the fish don't have time to produce offspring before they get swept up in the huge nets, so the fish population declines. That leaves less food for Sharks and many Whales too. "
   },
   {
     name: "poaching",
     displayName: "Poaching",
-    issue: "Perhaps the cruelest threat to many species of the world, is caused directly by the hands of cruel poachers. They selfishly kill animals to take their skins or horns to sell for money."
+    issue: "A cruel threat to many species of the world, is caused directly by the hands of poachers. They selfishly kill animals to take their skins or horns to sell for money."
   },
   {
     name: "building",
@@ -661,6 +661,6 @@ db.threats.insertMany([
   {
     name: "pollution",
     displayName: "Pollution",
-    issue: "Pollution is separate from Climate Change any time humans throw away any waste into the environment. Like Plastic Pollution or Water Contamination from factories or power stations. Pollution is one of the things which lead to Climate Change."
+    issue: "Pollution is separate from Climate Change - it means any time humans throw away waste into the environment. Like Plastic Pollution or Water Contamination from factories or power stations, or also Carbon Emissions."
   }
 ])
