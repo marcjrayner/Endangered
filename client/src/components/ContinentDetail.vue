@@ -12,7 +12,10 @@
             <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
             <div v-if="answer_class === 'correct'">
               <font-awesome-icon id="tick" icon="check-circle" color="green" size="6x"/>
-              <animal-fact id="answer-fact" :selectedAnimal="selectedAnimal"></animal-fact>
+              <div id="answer-fact">
+                <p>Science Fact:</p>
+                <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
+              </div>
             </div>
             <div v-if="answer_class === 'incorrect'">
               <font-awesome-icon id="cross" icon="times-circle" color="red" size="6x"/>
@@ -83,31 +86,32 @@ export default {
 .pawH:hover {
   background-color: yellow;
   cursor: pointer;
-
 }
 
 
 .circularImg{
-
   border-radius: 50% 50%;
   display:block;
   float: left;
   margin: 10px;
   padding-left: 10px;
   object-fit: cover;
+  align-items: center;
 }
 
 .modal {
   width: 1000px;
-  /* height: 400; */
+  max-height: 850px;
   margin: 0px auto;
   padding: 20px;
-  background-color: #FFFDD1;
+  background-color: #A9A587;
   border-radius: 10px;
-  border-style: solid;
-  border-color: #FFFBF3;
+  border-style: solid 1px;
+  border-color: black;
   box-shadow: 0 2px 8px 3px;
   transition: all 0.2s ease-in;
+  position: fixed;
+  top: 0px;
   /* font-family: Helvetica, Arial, sans-serif; */
 }
 .fadeIn-enter {
@@ -162,8 +166,14 @@ h1 {
 #answer-fact {
   font-size: 25px;
   position: relative;
-
-  top: -100px;
+  top: -450px;
+  background-color: #A9A587;
+  border: 2px solid;
+  width: 47%;
+  height: 330px;
+  border-radius: 10px;
+  left: 20px;
+  text-align: center;
 }
 
 .SouthAmerica {

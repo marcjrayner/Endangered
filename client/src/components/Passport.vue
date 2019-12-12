@@ -108,11 +108,12 @@ export default {
   }
 
 .fact {
-  grid-column: 1 ;
+  grid-column: 1 / span 2;
   position: relative;
   top: 20px;
   left: 20px;
-  font-size: 22px
+  font-size: 22px;
+  width: 90%;
 }
 
   .trivia{
