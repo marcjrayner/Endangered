@@ -87,16 +87,15 @@ biggest-threat {
 
 p {
   text-align: center;
-  text-decoration: underline;
   font-size: 25px;
   font-weight: bold;
-  color: #FC766AFF;
+  color: #274769;
 }
 
 .myButton {
-	background-color:#FC766AFF;
+	background-color:#274769;
 	border-radius:15px;
-	border:2px solid #18ab29;
+	border:2px solid white;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -119,9 +118,9 @@ p {
     display:block;
     margin: 5px;
     padding-left: 0px;
-    height: 60px;
-    width: 60px;
-    border: solid 3px black;
+    height: 70px;
+    width: 70px;
+    border: solid 3px 274769;
     object-fit: cover;
 }
 

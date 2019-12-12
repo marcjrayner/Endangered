@@ -82,7 +82,7 @@ export default {
   .trivia {
     font-family: sans-serif;
     font-size: 20px;
-    display: block;
+    /* display: block; */
     margin-block-start: 1em;
     margin-block-end: 1em;
   }
