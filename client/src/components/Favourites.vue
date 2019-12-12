@@ -87,16 +87,15 @@ biggest-threat {
 
 p {
   text-align: center;
-  text-decoration: underline;
   font-size: 25px;
   font-weight: bold;
-  color: #FC766AFF;
+  color: #274769;
 }
 
 .myButton {
-	background-color:#FC766AFF;
+	background-color:#274769;
 	border-radius:15px;
-	border:2px solid #18ab29;
+	border:1px solid white;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -115,17 +114,14 @@ p {
 }
 
 .navImg {
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 50%;
-    border-bottom-right-radius: 50% 50%;
-    border-bottom-left-radius: 50% 50%;
+    border-radius: 50%;
     display:block;
     float: left;
     margin: 5px;
     padding-left: 0px;
-    height: 55px;
-    width: 55px;
-    border-style: solid;
+    height: 70px;
+    width: 70px;
+    border: solid 2px #274769;
     object-fit: cover;
 }
 
@@ -136,17 +132,16 @@ p {
 
 }
 .sidenav {
-  height: 300px;
+  height: 350px;
   width: 127px;
   position: absolute;
   z-index: 1;
-  top: 480px;
+  top: 430px;
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
   padding-left: 5px;
   color: #black;
-  background-color: #5B84B1FF;
 }
 
 .sidenav a {

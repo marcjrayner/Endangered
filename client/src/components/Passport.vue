@@ -68,10 +68,10 @@ export default {
       const favourited = (favElement) => favElement.name === this.selectedAnimal.name
       const heart = this.favouriteAnimals.some(favourited)
       if(heart){
-       return "pink"
+       return "#FF879D"
       }
       else{
-       return "black"
+       return "#E5DEDF"
      }
     }
     }
@@ -80,6 +80,8 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
   #passport{
     font-family: sans-serif;
@@ -116,62 +118,84 @@ export default {
   width: 90%;
 }
 
+.quiz {
+  height: 100%;
+  margin: 0;
+}
+
   .trivia{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr 1fr;
-    width: 100%;
+    /* display: block; */
+    /* grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr; */
+    /* width: 100%;
     height: 100%;
-    padding: 5px;
-    background-color: blue;
+    padding: 5px; */
+    /* background-color: blue; */
     border-radius: 5%;
     background-image: url("../../public/passport_page.jpeg");
     object-fit: fill;
     background-size: 100%;
     background-repeat: no-repeat;
-
+    width: 100%;
+    display: flex;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
   }
 
  .left-page{
     display: grid;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    /* height: 100%; */
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-right: 0px;
 
   }
 
  .right-page{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: none;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 48%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 1fr 1fr;
+    align-items: stretch;
     font-size: 20px;
+    grid-column-gap: 0.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    /* z-index: 4; */
+    /* background-color: dodgerblue; */
+
   }
 
   .right-page h3{
     grid-column: 1 / span 2;
+    text-align: bottom;
+    margin-bottom: 0px;
+    margin-top: 10%;
     /* border: 2px solid black;
     border-radius: 5%; */
-    height: 160px;
+    /* height: 160px;
     width: 330px;
     text-align: center;
     position: relative;
     left: 18%;
-    top: 15%;
+    top: 15%; */
   }
 
  .right-page li{
-    /* padding: 3px;
-    margin: 3px;
-    border: 2px solid; */
-    height: 160px;
-    width: 150px;
-    border-radius: 5%;
+   height: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    position: relative;
-    left: 40px;
-    top: -50px;
+    align-items: center;
+    padding: 3px;
+    border: 2px solid;
+    border-radius: 10px;
+
+    /* position: relative; */
+    /* left: 40px;
+    top: -50px; */
   }
 
   .recImg{

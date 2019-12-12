@@ -26,7 +26,7 @@
       </div>
     </transition>
     <div >
-    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 3em; background: none; color: Blue; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
+    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 4em; background: none; color: #274769; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
   </button>
   </div>
 </div>
@@ -84,7 +84,7 @@ export default {
 
 
 .pawH:hover {
-  background-color: yellow;
+  color: #DAF2CB;
   cursor: pointer;
 }
 

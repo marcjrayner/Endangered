@@ -34,9 +34,9 @@ export default {
 
 
 .myButton {
-	background-color:#FC766AFF;
+  background-color:#274769;
 	border-radius:15px;
-	border:2px solid #18ab29;
+	border:1px solid white;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -45,6 +45,10 @@ export default {
 	padding:5px 20px;
 	text-decoration:none;
 	text-shadow:0px 0px 0px #2f6627;
+}
+
+.myButton:hover {
+  cursor: pointer;
 }
 
 #threat-window {
