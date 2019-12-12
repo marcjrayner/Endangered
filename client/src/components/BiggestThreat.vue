@@ -2,13 +2,8 @@
 <div>
   <button class="myButton" @click="moreInfo(); isOpen = true;"  type="button">Biggest Threat ?</button>
   <div id="threat-window" v-if="biggestThreatObject && isOpen">
-<<<<<<< HEAD
-    <button @click="isOpen = false" type="button" name="button">Close</button>
-    {{biggestThreatObject.displayName}}
-=======
     <button @click="isOpen = false" type="button" name="button"><font-awesome-icon icon="times" size="2x"/></button>
-    {{biggestThreatObject.name}}
->>>>>>> develop
+    {{biggestThreatObject.displayName}}
     <hr>
     {{biggestThreatObject.issue}}
     <hr>
