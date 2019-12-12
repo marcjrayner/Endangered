@@ -153,7 +153,7 @@ ul {
 
 .modal {
   width: 1000px;
-  max-height: 850px;
+  max-height: 250px;
   margin: 0px auto;
   padding: 20px;
   background-color: #F5F7F7;
