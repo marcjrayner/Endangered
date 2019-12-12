@@ -263,7 +263,7 @@ db.continents.insertMany([
       answers: ["60 years", "30 years", "10 years", "100 years"],
       answer_fact: "When European settlers came to New Zealand, they brought with them animals like cats and weasles that hunted the Kakapo to near extinction. In the 1990s there were as little as 50 Kakapo left in the world, but thanks to conservation efforts that number has now gone up to 213 in 2019.",
       further_details: "https://www.doc.govt.nz/kakapo-recovery",
-      threats: ["invasive species"]
+      threats: ["building"]
     },
     {
       name: "Far Eastern Curlew",
@@ -440,7 +440,7 @@ db.continents.insertMany([
     answers: ["Squirrel", "Cat", "Rat", "Pig"],
     answer_fact: "Marmots are being hunted by predators more than they used to be, because of a reduced number of prey on the island. With a lot of help, their population has grown in recent years, going from 30 wild marmots left in 2003, to over 200 now.",
     further_details: "https://marmots.org/",
-    threats: ["deforestation", "disease", "invasive species"]
+    threats: ["deforestation", "disease"]
   },
   {
     name: "Axolotl",
@@ -455,7 +455,7 @@ db.continents.insertMany([
     answers: ["They can re-grow injured limbs and organs", "They are 1000 times more resistent to cancer than mammals", "Legend says the Aztec god of death and lightning disguised himself as one to avoid sacrifice", "They can eat fish twice their size"],
     answer_fact: "Water pollution and being caught to be sold as pets or food are some of the main reasons the number of axolotl are going down. Scientists have started making shelters for the axolotl with clean water pumped in, to help give them better living conditions.",
     further_details: "https://factanimal.com/axolotl/",
-    threats: ["pollution", "climate change", "poaching", "building", "invasive species"]
+    threats: ["pollution", "climate change", "poaching", "building"]
   },
   {
     name: "Red Wolf",
