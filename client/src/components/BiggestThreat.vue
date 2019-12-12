@@ -6,6 +6,11 @@
     {{biggestThreatObject.displayName}}
     <hr>
     {{biggestThreatObject.issue}}
+    <hr>
+    <p>What can I do to help?</p>
+    {{biggestThreatObject.action}}
+    <hr>
+    {{biggestThreatObject.link}}
   </div>
 </div>
 </template>
