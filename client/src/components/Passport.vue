@@ -14,7 +14,11 @@
         <div class="fact">
           <h2>Fun Fact:</h2>
           <p>{{selectedAnimal.fun_fact}}</p>
+          <h2>Conservation Status:</h2>
+          <p>{{selectedAnimal.conservation_status}}</p>
         </div>
+
+
       </div>
 
       <div class="right-page">
@@ -77,35 +81,11 @@ export default {
 
 <style lang="css" scoped>
 
-
-/* .quiz {
-height: 100%;
-margin: 0;
-}
-
-.trivia {
-font-family: sans-serif;
-font-size: 20px; */
-/* display: block; */
-/* margin-block-start: 1em;
-margin-block-end: 1em;
-}
-
-.heart{
-padding: 10px;
-cursor: pointer;
-position: relative;
-left: 14em;
-top: 3.2em;
-filter: drop-shadow(1px 1px 1px #AB9397); */
-
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
 #passport{
   font-family: sans-serif;
   font-size: 18px;
-  /* background-image: url("../../public/passport_page.jpeg"); */
-  /* background-color: green; */
 }
 
 .heart{
@@ -130,7 +110,7 @@ h4  {
 .fact {
   grid-column: 1 / span 2;
   position: relative;
-  top: 20px;
+  top: -40px;
   left: 20px;
   font-size: 22px;
   width: 90%;
