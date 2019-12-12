@@ -4,7 +4,7 @@
 <div class="navB">
 
 
-  <button @click="clearFavourites()" class="myButton"type="button">Reset</button>
+  <button @click="clearFavourites()" class="myButton"type="button">Reset Favourites</button>
   <biggest-threat :biggestThreatObject="biggestThreatObject" ></biggest-threat>
 </div>
 
@@ -90,6 +90,8 @@ p {
   font-size: 25px;
   font-weight: bold;
   color: #274769;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
 }
 
 .myButton {
@@ -106,7 +108,7 @@ p {
 	text-shadow:0px 0px 0px #2f6627;
 }
 .myButton:hover {
-	background-color:#5cbf2a;
+	background-color:#447DBA;
 }
 .myButton:active {
 	position:relative;
@@ -132,7 +134,7 @@ p {
 }
 .sidenav {
   height: 350px;
-  width: 127px;
+  width: 150px;
   position: absolute;
   z-index: 1;
   top: 430px;

@@ -1,6 +1,6 @@
 <template lang="html">
   <div id="world_map">
-    <h1>My Endangered Wildlife</h1>
+    <h1><b>My Endangered Wildlife</b></h1>
     <favourites :biggestThreatObject="biggestThreatObject" :favouriteAnimals="favouriteAnimals"></favourites
     <ul>
       <continent-detail v-for="(continent, index) in continents" :key="index" :continent="continent" :favouriteAnimals="favouriteAnimals"></continent-detail>
@@ -78,17 +78,17 @@ methods: {
 <style lang="css" scoped>
 
 h1{
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 45px;
   letter-spacing: 2px;
   word-spacing: 2px;
-  color: #000000;
+  color: #274769;
   font-weight: normal;
   text-decoration: none;
   font-style: normal;
   font-variant: normal;
   text-transform: none;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 
 }
 

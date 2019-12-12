@@ -111,7 +111,7 @@ filter: drop-shadow(1px 1px 1px #AB9397); */
 .heart{
   padding: 20px;
   position: relative;
-  top: 0px;
+  top: -8px;
   left: 150px;
 }
 
@@ -142,13 +142,6 @@ h4  {
 }
 
 .trivia{
-  /* display: block; */
-  /* grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 1fr 1fr; */
-  /* width: 100%;
-  height: 100%;
-  padding: 5px; */
-  /* background-color: blue; */
   border-radius: 5%;
   background-image: url("../assets/passport_page.jpeg");
   object-fit: fill;
@@ -179,7 +172,7 @@ h4  {
   grid-template-rows: auto 1fr 1fr;
   align-items: stretch;
   font-size: 20px;
-  grid-column-gap: 0.5em;
+  grid-gap: 0.75em;
   font-family: 'Josefin Sans', sans-serif;
   /* z-index: 4; */
   /* background-color: dodgerblue; */
@@ -210,21 +203,17 @@ h4  {
   padding: 3px;
   border: 2px solid;
   border-radius: 10px;
-
-  /* position: relative; */
-  /* left: 40px;
-  top: -50px; */
 }
 
 .recImg{
   height: 225px;
   width: 175px;
-  border-style: solid;
-  border-color: black;
+  /* border: solid 3px black; */
   object-fit: cover;
   position: relative;
   left: 20px;
   top: 50px;
+  filter: drop-shadow(1px 2px 3px #808788);
 }
 
 ul {

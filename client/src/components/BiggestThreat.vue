@@ -1,6 +1,6 @@
 <template lang="html">
 <div>
-  <button class="myButton" @click="moreInfo(); isOpen = true;"  type="button">Biggest Threat</button>
+  <button class="myButton" @click="moreInfo(); isOpen = true;"  type="button">Biggest Threat ?</button>
   <div id="threat-window" v-if="biggestThreatObject && isOpen">
     <button @click="isOpen = false" type="button" name="button"><font-awesome-icon icon="times" size="2x"/></button>
     {{biggestThreatObject.name}}
@@ -49,6 +49,7 @@ export default {
 
 .myButton:hover {
   cursor: pointer;
+  background-color:#447DBA;
 }
 
 #threat-window {

@@ -156,7 +156,7 @@ ul {
   max-height: 850px;
   margin: 0px auto;
   padding: 20px;
-  background-color: #A9A587;
+  background-color: #F5F7F7;
   border-radius: 10px;
   border-style: solid 1px;
   border-color: black;
@@ -164,7 +164,6 @@ ul {
   transition: all 0.2s ease-in;
   position: fixed;
   top: 0px;
-  /* font-family: Helvetica, Arial, sans-serif; */
 
 }
 .fadeIn-enter {
@@ -202,79 +201,84 @@ button {
 
 h1 {
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 #tick {
   position: relative;
   left: 300px;
-  top: -500px;
+  top: -480px;
 }
 
 #cross {
   position: relative;
   left: 300px;
-  top: -500px;
+  top: -480px;
 }
 
 #answer-fact {
   font-size: 25px;
   position: relative;
   top: -450px;
-  background-color: #A9A587;
+  background-color: #F5F7F7;
   border: 2px solid;
   width: 47%;
   height: 330px;
   border-radius: 10px;
   left: 20px;
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .SouthAmerica {
   position: absolute;
   left: 30%;
-  top: 800%;
+  top: 600%;
 
 }
 .NorthAmerica {
   position: absolute;
   left: 19%;
-  top: 450%;
+  top: 300%;
 }
 
 .Europe {
   position: absolute;
   left: 48%;
-  top: 370%;
+  top: 280%;
 }
 
 .Oceans {
   position: absolute;
   left: 65%;
-  top: 800%;
+  top: 700%;
 }
 
 .Africa {
   position: absolute;
   left: 51%;
-  top: 650%;
+  top: 500%;
 }
 
 .Asia {
   position: absolute;
-  left: 68%;
-  top: 340%;
+  left: 67%;
+  top: 286%;
 }
 
 .Antarctica {
   position: absolute;
   left: 45%;
-  top: 1170%;
+  top: 890%;
 }
 
 .Australia {
   position: absolute;
   left: 80%;
-  top: 890%;
+  top: 675%;
 }
 
 
