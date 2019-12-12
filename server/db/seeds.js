@@ -626,41 +626,57 @@ db.threats.insertMany([
   {
     name: "farming",
     displayName: "Farming",
-    issue: "As the human population of Earth has grown, so has our appetite. Farming, the source of all of our food and much of our clothing, takes up more and more land each year leaving less room for wildlife."
+    issue: "As the human population of Earth has grown, so has our appetite. Farming, the source of all of our food and much of our clothing, takes up more and more land each year leaving less room for wildlife.",
+    action: "Make sure to eat plenty of Veg! Why not try Meat Free Mondays? Farming for meat takes up a lot of land. A carrot only takes up a small patch of earth to grow, but a cow can roam miles every day!",
+    link: ""
   },
   {
     name: "deforestation",
     displayName: "Deforestation",
-    issue: "Wood is a crucial material for all sorts of things from buildings to furniture. Since it's easy to chop a tree down, wood is cheap. Deforestation can sometimes be closely related to farming, as jungles and forest lands are cleared to make way for farmland. "
+    issue: "Wood is a crucial material for all sorts of things from buildings to furniture. Since it's easy to chop a tree down, wood is cheap. Deforestation can sometimes be closely related to farming, as jungles and forest lands are cleared to make way for farmland. ",
+    action: "Plant trees! Also, you can look out for RainForest Alliance certified products.",
+    link: "https://www.rainforest-alliance.org/"
   },
   {
     name: "fishing",
     displayName: "Fishing",
-    issue: "Overfishing occurs due to large fishing trawler boats dragging huge nets along the sea floor, the size of a football pitch. This upsets the balance of the seas as the fish don't have time to produce offspring before they get swept up in the huge nets, so the fish population declines. That leaves less food for Sharks and many Whales too. "
+    issue: "Overfishing occurs due to large fishing trawler boats dragging huge nets along the sea floor, the size of a football pitch. This upsets the balance of the seas as the fish don't have time to produce offspring before they get swept up in the huge nets, so the fish population declines. That leaves less food for Sharks and many Whales too. ",
+    action: "Visit your local aquarium to learn more about Sea Life. These organizations help to create Marine Protected Areas.",
+    link: "https://www.wildlifetrusts.org/marine-protected-areas"
   },
   {
     name: "poaching",
     displayName: "Poaching",
-    issue: "A cruel threat to many species of the world, is caused directly by the hands of poachers. They selfishly kill animals to take their skins or horns to sell for money."
+    issue: "A cruel threat to many species of the world, is caused directly by the hands of poachers. They selfishly kill animals to take their skins or horns to sell for money.",
+    action: "Support the World Wildlife Federation - along with other organisations, they take steps to protect animals in the wild.",
+    link: "https://wwf.panda.org/?199903/Stopping-poaching"
   },
   {
     name: "building",
     displayName: "Construction",
-    issue: "With human population growth, everyone needs a house, school, hospitals etc - all the things we have in our towns. But those towns and cities can expand construction out of control to become ever-growing giant cities."
+    issue: "With human population growth, everyone needs a house, school, hospitals etc - these expand and take up land. Roads and fences also get built, which can cut off animal's territory and harm them.",
+    action: "Visit our wild places. Britain has many wonderful National Parks and Local Nature Reserves - where human construction is not allowed.",
+    link: "https://nationalparks.uk/"
   },
   {
     name: "disease",
     displayName: "Disease",
-    issue: "Not all threats to Earth's endangered species come from humankind. Diseases are always evolving around the world, in different strains for different animals, sometimes they can morph into more serious illnesses that spread quickly through an animal population. They can even morph again and become a threat to humans!"
+    issue: "Not all threats to Earth's endangered species come from humankind. Diseases are always evolving around the world, in different strains for different animals, sometimes they can morph into more serious illnesses that spread quickly through an animal population. They can even morph again and become a threat to humans!",
+    action: "People need doctors and scientists to look after our health. So do animals! If you like animals, why don't you become a Vet?",
+    link: ""
   },
   {
     name: "climate change",
     displayName: "Climate Change",
-    issue: "Earth's climate always changes, it never stays the same, it always gets hotter or colder, like the Ice Age. But today, the climate is warming up, leading to big changes in the environment for many animals (and humans too). Climate change is partially caused by humans producing carbon dioxide and other greenhouse gases."
+    issue: "Earth's climate always changes, it never stays the same, it always gets hotter or colder, like the Ice Age. But today, the climate is warming up, leading to big changes in the environment for many animals (and humans too). Climate change is partially caused by humans producing carbon dioxide and other greenhouse gases.",
+    action: "There are many ways you can help fight Climate Change. From planting trees to travelling in electric cars.",
+    link: "https://climatekids.nasa.gov/how-to-help/"
   },
   {
     name: "pollution",
     displayName: "Pollution",
-    issue: "Pollution is separate from Climate Change - it means any time humans throw away waste into the environment. Like Plastic Pollution or Water Contamination from factories or power stations, or also Carbon Emissions."
+    issue: "Pollution is separate from Climate Change - it means any time humans throw away waste into the environment. Like Plastic Pollution or Water Contamination from factories or power stations, or also Carbon Emissions.",
+    action: "At home, one big thing is the waste we produce from our food, or packaging from new things we've bought. Make sure to Recycle all you can!",
+    link: ""
   }
 ])
