@@ -1,16 +1,16 @@
 <template lang="html">
-<div>
-  <button class="myButton" @click="moreInfo(); isOpen = true;"  type="button">Biggest Threat ?</button>
-  <div id="threat-window" v-if="biggestThreatObject && isOpen">
-    <button @click="isOpen = false" type="button" name="button"><font-awesome-icon icon="times" size="2x"/></button>
-    <h3>{{biggestThreatObject.displayName}}</h3>
-    <hr>
-    {{biggestThreatObject.issue}}
-    <hr>
-    <h3><b>What can I do to help?</b></h3>
-    {{biggestThreatObject.action}}
+  <div>
+    <button class="myButton" @click="moreInfo(); isOpen = true;"  type="button">Biggest Threat ?</button>
+    <div id="threat-window" v-if="biggestThreatObject && isOpen">
+      <button @click="isOpen = false" type="button" name="button"><font-awesome-icon icon="times" size="2x"/></button>
+      <h3>{{biggestThreatObject.displayName}}</h3>
+      <hr>
+      {{biggestThreatObject.issue}}
+      <hr>
+      <h3><b>What can I do to help?</b></h3>
+      {{biggestThreatObject.action}}
+    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ export default {
   props: ["biggestThreatObject"],
   data() {
     return {
-        isOpen: true,
+      isOpen: true,
     }
   },
   methods: {
@@ -38,16 +38,16 @@ export default {
 
 .myButton {
   background-color:#274769;
-	border-radius:15px;
-	border:1px solid white;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:5px 20px;
-	text-decoration:none;
-	text-shadow:0px 0px 0px #2f6627;
+  border-radius:15px;
+  border:1px solid white;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:5px 20px;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #2f6627;
 }
 
 .myButton:hover {
@@ -56,19 +56,19 @@ export default {
 }
 
 #threat-window {
-    width: 400px;
-    height: auto;
-    margin: 0px;
-    padding: 15px;
-    background-color: #F5F7F7;
-    border-radius: 10px;
-    filter: drop-shadow(2px 2px 1px #AB9397);
-    position: absolute;
-    top: -380px;
-    left: 193px;
-    z-index: 2;
-    font-size: 25px;
-    font-family: 'Josefin Sans', sans-serif;
+  width: 400px;
+  height: auto;
+  margin: 0px;
+  padding: 15px;
+  background-color: #F5F7F7;
+  border-radius: 10px;
+  filter: drop-shadow(2px 2px 1px #AB9397);
+  position: absolute;
+  top: -380px;
+  left: 193px;
+  z-index: 2;
+  font-size: 25px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #threat-window > button {

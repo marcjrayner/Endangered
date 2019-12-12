@@ -1,23 +1,19 @@
 <template lang="html">
 
-<div class="">
-<div class="navB">
+  <div class="">
+    <div class="navB">
+      <button @click="clearFavourites()" class="myButton"type="button">Reset Favourites</button>
+      <biggest-threat :biggestThreatObject="biggestThreatObject" ></biggest-threat>
+    </div>
 
-
-  <button @click="clearFavourites()" class="myButton"type="button">Reset Favourites</button>
-  <biggest-threat :biggestThreatObject="biggestThreatObject" ></biggest-threat>
-</div>
-
-  <div class="sidenav">
-  <p>Favourites</p>
-     <img class="navImg" :src="favPic" alt="">
-     <img class="navImg" :src="favPic1" alt="">
-     <img class="navImg" :src="favPic2" alt="">
-  <!-- <button @click="moreInfo()" class="myButton" type="button">More Info</button> -->
+    <div class="sidenav">
+      <p>Favourites</p>
+      <img class="navImg" :src="favPic" alt="">
+      <img class="navImg" :src="favPic1" alt="">
+      <img class="navImg" :src="favPic2" alt="">
+    </div>
   </div>
-</div>
-
-
+  
 </template>
 
 <script>
@@ -26,20 +22,20 @@ import BiggestThreat from "./BiggestThreat.vue"
 import WorldMap from "./WorldMap.vue"
 
 export default {
-name: "favourites",
-props: ["biggestThreatObject", "favouriteAnimals"],
-data(){
-  return {
-}
-},
-methods: {
-  clearFavourites() {
-    eventBus.$emit("clear-animals")
-  }
-},
-components: {
-  'biggest-threat': BiggestThreat
-},
+  name: "favourites",
+  props: ["biggestThreatObject", "favouriteAnimals"],
+  data(){
+    return {
+    }
+  },
+  methods: {
+    clearFavourites() {
+      eventBus.$emit("clear-animals")
+    }
+  },
+  components: {
+    'biggest-threat': BiggestThreat
+  },
   computed: {
     favPic(){
       for (let i = 0; i < this.favouriteAnimals.length; i ++){
@@ -95,35 +91,35 @@ p {
 }
 
 .myButton {
-	background-color:#274769;
-	border-radius:15px;
-	border:1px solid white;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:5px 20px;
-	text-decoration:none;
-	text-shadow:0px 0px 0px #2f6627;
+  background-color:#274769;
+  border-radius:15px;
+  border:1px solid white;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:5px 20px;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #2f6627;
 }
 .myButton:hover {
-	background-color:#447DBA;
+  background-color:#447DBA;
 }
 .myButton:active {
-	position:relative;
-	top:1px;
+  position:relative;
+  top:1px;
 }
 
 .navImg {
-    border-radius: 50%;
-    display:block;
-    margin: 5px;
-    padding-left: 0px;
-    height: 70px;
-    width: 70px;
-    border: solid 2px #274769;
-    object-fit: cover;
+  border-radius: 50%;
+  display:block;
+  margin: 5px;
+  padding-left: 0px;
+  height: 70px;
+  width: 70px;
+  border: solid 2px #274769;
+  object-fit: cover;
 }
 
 .navB {

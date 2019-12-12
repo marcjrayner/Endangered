@@ -1,4 +1,3 @@
-
 <template lang="html">
   <section v-if="selectedAnimal" id="passport">
 
@@ -17,7 +16,6 @@
           <h2>Conservation Status:</h2>
           <p>{{selectedAnimal.conservation_status}}</p>
         </div>
-
 
       </div>
 
@@ -136,7 +134,6 @@ h4  {
 .left-page{
   display: grid;
   width: 50%;
-  /* height: 100%; */
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin-right: 0px;
@@ -154,9 +151,6 @@ h4  {
   font-size: 20px;
   grid-gap: 0.75em;
   font-family: 'Josefin Sans', sans-serif;
-  /* z-index: 4; */
-  /* background-color: dodgerblue; */
-
 }
 
 .right-page h3{
@@ -164,14 +158,6 @@ h4  {
   text-align: bottom;
   margin-bottom: 0px;
   margin-top: 10%;
-  /* border: 2px solid black;
-  border-radius: 5%; */
-  /* height: 160px;
-  width: 330px;
-  text-align: center;
-  position: relative;
-  left: 18%;
-  top: 15%; */
 }
 
 .right-page li{
@@ -188,7 +174,6 @@ h4  {
 .recImg{
   height: 225px;
   width: 175px;
-  /* border: solid 3px black; */
   object-fit: cover;
   position: relative;
   left: 20px;
