@@ -47,6 +47,7 @@ html {
 body{
   background: url('./assets/continent.png') no-repeat center center fixed;
   background-size: cover;
+  overflow: hidden;
 }
 
 .main {

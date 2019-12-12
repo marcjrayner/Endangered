@@ -3,14 +3,12 @@
   <button class="myButton" @click="moreInfo(); isOpen = true;"  type="button">Biggest Threat ?</button>
   <div id="threat-window" v-if="biggestThreatObject && isOpen">
     <button @click="isOpen = false" type="button" name="button"><font-awesome-icon icon="times" size="2x"/></button>
-    {{biggestThreatObject.displayName}}
+    <h3>{{biggestThreatObject.displayName}}</h3>
     <hr>
     {{biggestThreatObject.issue}}
     <hr>
-    <p>What can I do to help?</p>
+    <h3><b>What can I do to help?</b></h3>
     {{biggestThreatObject.action}}
-    <hr>
-    {{biggestThreatObject.link}}
   </div>
 </div>
 </template>
@@ -65,9 +63,9 @@ export default {
     background-color: #F5F7F7;
     border-radius: 10px;
     filter: drop-shadow(2px 2px 1px #AB9397);
-    position: relative;
-    top: -280px;
-    left: 133px;
+    position: absolute;
+    top: -380px;
+    left: 193px;
     z-index: 2;
     font-size: 25px;
     font-family: 'Josefin Sans', sans-serif;
