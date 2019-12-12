@@ -4,42 +4,30 @@
       <div v-if="isOpen">
         <div class="overlay" @click.self="isOpen = false;">
           <div class="modal">
-
-            <section id="top-bar">
-              <h1>{{this.continent.display_name}}</h1>
-              <div id="continent-animals">
-              <ul v-for="animal in this.continent.animals">
-                <img @click="selectAnimal(animal)" :src="animal.image" height="130" width="130" class="circularImg" >
-              </ul>
+            <h1 class="name">{{this.continent.display_name}}</h1>
+            <ul v-for="animal in this.continent.animals">
+              <img @click="selectAnimal(animal)" :src="animal.image" height="150em" width="150em" class="circularImg" >
+            </ul>
+            <div v-if="selectedAnimal !== ''">
+            <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
+            <div v-if="answer_class === 'correct'">
+              <font-awesome-icon id="tick" icon="check-circle" color="green" size="6x"/>
+              <div id="answer-fact">
+                <p>Science Fact:</p>
+                <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
               </div>
-            </section>
-
-            <section v-if="selectedAnimal !== ''" id="passport-section">
-              <div>
-                <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
-                <div class="result-of-answer" v-if="answer_class === 'correct'">
-                  <font-awesome-icon class="fact-icon" icon="check-circle" color="green" size="3x"/>
-                  <div class="fact">
-                    <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
-                  </div>
-                </div>
-                <div class="result-of-answer" v-if="answer_class === 'incorrect'">
-                  <font-awesome-icon class="fact-icon" icon="times-circle" color="red" size="3x"/>
-                  <div class="fact">
-                    <p>Incorrect answer</p>
-                    <br>
-                  </div>
-                </div>
-              </div>
-            </section>
-
+            </div>
+            <div v-if="answer_class === 'incorrect'">
+              <font-awesome-icon id="cross" icon="times-circle" color="red" size="6x"/>
+            </div>
+          </div>
           </div>
         </div>
       </div>
     </transition>
     <div >
-      <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 4em; background: none; color: #274769; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
-    </button>
+    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 4em; background: none; color: #274769; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
+  </button>
   </div>
 </div>
 </template>
@@ -98,7 +86,6 @@ export default {
 .pawH:hover {
   color: #DAF2CB;
   cursor: pointer;
-
 }
 
 .result-of-answer {
@@ -108,15 +95,15 @@ export default {
   grid-gap: 0.5em;
 }
 
-#continent-animals {
+/* #continent-animals {
   display: flex;
 }
 
 #top-bar h1 {
   text-align: center;
-  font-size: 35px;
-  margin: 10px;
-}
+  font-size: 35px; */
+  /* margin: 10px;
+} */
 
 #passport-section {
   width: 700px;
@@ -128,14 +115,15 @@ export default {
 
 .circularImg{
   border-radius: 50%;
-  display:block;
+  display: block;
+  float: left;
   margin: 20px;
   padding-left: 0px;
   object-fit: cover;
   cursor: pointer;
   filter: drop-shadow(1px 2px 3px #808788);
 }
-
+/*
 ul {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -159,7 +147,25 @@ ul {
 .modal {
   min-width: 700px;
   margin: 0px auto;
+  transition: all 0.2s ease-in; */
+  /* align-items: center;
+} */
+
+.modal {
+  width: 1000px;
+  max-height: 850px;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #A9A587;
+  border-radius: 10px;
+  border-style: solid 1px;
+  border-color: black;
+  box-shadow: 0 2px 8px 3px;
   transition: all 0.2s ease-in;
+  position: fixed;
+  top: 0px;
+  /* font-family: Helvetica, Arial, sans-serif; */
+
 }
 .fadeIn-enter {
   opacity: 0;
@@ -194,6 +200,34 @@ button {
   transition: opacity 0.2s ease;
 }
 
+h1 {
+  text-align: center;
+}
+
+#tick {
+  position: relative;
+  left: 300px;
+  top: -500px;
+}
+
+#cross {
+  position: relative;
+  left: 300px;
+  top: -500px;
+}
+
+#answer-fact {
+  font-size: 25px;
+  position: relative;
+  top: -450px;
+  background-color: #A9A587;
+  border: 2px solid;
+  width: 47%;
+  height: 330px;
+  border-radius: 10px;
+  left: 20px;
+  text-align: center;
+}
 
 .SouthAmerica {
   position: absolute;

@@ -95,7 +95,7 @@ p {
 .myButton {
 	background-color:#274769;
 	border-radius:15px;
-	border:2px solid white;
+	border:1px solid white;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -120,7 +120,7 @@ p {
     padding-left: 0px;
     height: 70px;
     width: 70px;
-    border: solid 3px 274769;
+    border: solid 2px #274769;
     object-fit: cover;
 }
 
@@ -131,17 +131,16 @@ p {
 
 }
 .sidenav {
-  height: 300px;
+  height: 350px;
   width: 127px;
   position: absolute;
   z-index: 1;
-  top: 480px;
+  top: 430px;
   left: 0;
   overflow-x: hidden;
   padding-top: 20px;
   padding-left: 5px;
   color: #black;
-  /* background-color: ##74ADD2; */
 }
 
 .sidenav a {

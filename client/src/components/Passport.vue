@@ -5,22 +5,25 @@
     <div class="trivia">
 
       <div class="left-page">
-        <img :src="selectedAnimal.image" width="300" :alt="selectedAnimal.name" class="recImg">
-
-        <div class="heart">
-          <font-awesome-icon @click="selectFav" icon="heart" :color="fav_heart" size="2x"/>
+        <div>
+          <img :src="selectedAnimal.image" :alt="selectedAnimal.name" class="recImg">
+          <font-awesome-icon @click="selectFav" icon="heart" class="heart" :color="fav_heart" size="3x"/>
         </div>
+        <h4>{{selectedAnimal.name}}</h4>
 
-        <h3>{{selectedAnimal.name}}</h3>
-        <p>{{selectedAnimal.fun_fact}}</p>
+        <div class="fact">
+          <h2>Fun Fact:</h2>
+          <p>{{selectedAnimal.fun_fact}}</p>
+        </div>
       </div>
+
       <div class="right-page">
         <h3>{{selectedAnimal.quiz_question}}</h3>
         <ul class="quiz" v-for="answer in selectedAnimal.answers">
           <li @click="checkAnswer(answer)" :class="answer_class" type="button">{{answer}}</li>
         </ul>
-
       </div>
+
     </div>
   </section>
 </template>
@@ -61,98 +64,173 @@ export default {
       const favourited = (favElement) => favElement.name === this.selectedAnimal.name
       const heart = this.favouriteAnimals.some(favourited)
       if(heart){
-       return "#FF879D"
+        return "#FF879D"
       }
       else{
-       return "#E5DEDF"
-     }
-    }
+        return "#E5DEDF"
+      }
     }
   }
+}
 
 </script>
 
 <style lang="css" scoped>
 
-  .quiz {
-    height: 100%;
-    margin: 0;
-  }
 
-  .trivia {
-    font-family: sans-serif;
-    font-size: 20px;
-    /* display: block; */
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-  }
+/* .quiz {
+height: 100%;
+margin: 0;
+}
 
-  .heart{
-    padding: 10px;
-    cursor: pointer;
-    position: relative;
-    left: 14em;
-    top: 3.2em;
-    filter: drop-shadow(1px 1px 1px #AB9397);
-  }
-  .trivia{
-    width: 100%;
-    margin: auto;
-    display: flex;
-  }
+.trivia {
+font-family: sans-serif;
+font-size: 20px; */
+/* display: block; */
+/* margin-block-start: 1em;
+margin-block-end: 1em;
+}
 
-  .left-page{
-    width: 50%;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
-    padding-right: 15px;
-  }
+.heart{
+padding: 10px;
+cursor: pointer;
+position: relative;
+left: 14em;
+top: 3.2em;
+filter: drop-shadow(1px 1px 1px #AB9397); */
 
-  .left-page p {
-    padding: 5px;
-  }
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
-  .right-page{
-    display: grid;
-    box-sizing: border-box;
-    padding: 15px;
-    width: 50%;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto 1fr 1fr;
-    align-items: stretch;
-    font-size: 20px;
-    grid-gap: 1em;
-    font-family: 'Josefin Sans', sans-serif;
-  }
-  .right-page h3{
-    grid-column: 1 / span 2;
+#passport{
+  font-family: sans-serif;
+  font-size: 18px;
+  /* background-image: url("../../public/passport_page.jpeg"); */
+  /* background-color: green; */
+}
 
-  }
-  .right-page li{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 3px;
-    border: 2px solid #A4B8C4;
-    border-radius: 10px;
-  }
+.heart{
+  padding: 20px;
+  position: relative;
+  top: 0px;
+  left: 150px;
+}
 
-  .recImg{
-    height: 275px;
-    width: 225px;
-    object-fit: cover;
-    position: relative;
-    left: 0.5em;
-    top: 1.25em;
-    filter: drop-shadow(1px 1px 2px #4B545A);
-  }
+.heart:hover {
+  cursor: pointer;
+}
 
-  ul {
-    list-style: none;
-    padding: 0;
-  }
+h4  {
+  position: relative;
+  top: 50px;
+  left: -30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.fact {
+  grid-column: 1 / span 2;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  font-size: 22px;
+  width: 90%;
+}
+
+.quiz {
+  height: 100%;
+  margin: 0;
+}
+
+.trivia{
+  /* display: block; */
+  /* grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr 1fr; */
+  /* width: 100%;
+  height: 100%;
+  padding: 5px; */
+  /* background-color: blue; */
+  border-radius: 5%;
+  background-image: url("../assets/passport_page.jpeg");
+  object-fit: fill;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.left-page{
+  display: grid;
+  width: 50%;
+  /* height: 100%; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-right: 0px;
+
+}
+
+.right-page{
+  display: grid;
+  box-sizing: border-box;
+  padding: 15px;
+  width: 48%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 1fr 1fr;
+  align-items: stretch;
+  font-size: 20px;
+  grid-column-gap: 0.5em;
+  font-family: 'Josefin Sans', sans-serif;
+  /* z-index: 4; */
+  /* background-color: dodgerblue; */
+
+}
+
+.right-page h3{
+  grid-column: 1 / span 2;
+  text-align: bottom;
+  margin-bottom: 0px;
+  margin-top: 10%;
+  /* border: 2px solid black;
+  border-radius: 5%; */
+  /* height: 160px;
+  width: 330px;
+  text-align: center;
+  position: relative;
+  left: 18%;
+  top: 15%; */
+}
+
+.right-page li{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 3px;
+  border: 2px solid;
+  border-radius: 10px;
+
+  /* position: relative; */
+  /* left: 40px;
+  top: -50px; */
+}
+
+.recImg{
+  height: 225px;
+  width: 175px;
+  border-style: solid;
+  border-color: black;
+  object-fit: cover;
+  position: relative;
+  left: 20px;
+  top: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
 
 li:hover{
   border: 2px solid #4B545A;
