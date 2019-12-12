@@ -66,8 +66,8 @@ export default {
     border-radius: 10px;
     filter: drop-shadow(2px 2px 1px #AB9397);
     position: relative;
-    top: -280px;
-    left: 133px;
+    top: -380px;
+    left: 170px;
     z-index: 2;
     font-size: 25px;
     font-family: 'Josefin Sans', sans-serif;

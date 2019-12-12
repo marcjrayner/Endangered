@@ -235,8 +235,8 @@ h1 {
 
 .SouthAmerica {
   position: absolute;
-  left: 30%;
-  top: 600%;
+  left: 31%;
+  top: 630%;
 
 }
 .NorthAmerica {
@@ -277,8 +277,8 @@ h1 {
 
 .Australia {
   position: absolute;
-  left: 80%;
-  top: 675%;
+  left: 81%;
+  top: 700%;
 }
 
 
