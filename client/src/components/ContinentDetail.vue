@@ -9,25 +9,25 @@
               <img @click="selectAnimal(animal)" :src="animal.image" height="150em" width="150em" class="circularImg" >
             </ul>
             <div v-if="selectedAnimal !== ''">
-            <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
-            <div v-if="answer_class === 'correct'">
-              <font-awesome-icon id="tick" icon="check-circle" color="green" size="6x"/>
-              <div id="answer-fact">
-                <p>Science Fact:</p>
-                <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
+              <passport :selectedAnimal="selectedAnimal" :favouriteAnimals="favouriteAnimals"></passport>
+              <div v-if="answer_class === 'correct'">
+                <font-awesome-icon id="tick" icon="check-circle" color="green" size="6x"/>
+                <div id="answer-fact">
+                  <p>Science Fact:</p>
+                  <animal-fact :selectedAnimal="selectedAnimal"></animal-fact>
+                </div>
+              </div>
+              <div v-if="answer_class === 'incorrect'">
+                <font-awesome-icon id="cross" icon="times-circle" color="red" size="6x"/>
               </div>
             </div>
-            <div v-if="answer_class === 'incorrect'">
-              <font-awesome-icon id="cross" icon="times-circle" color="red" size="6x"/>
-            </div>
-          </div>
           </div>
         </div>
       </div>
     </transition>
     <div >
-    <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 4em; background: none; color: #274769; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
-  </button>
+      <button @click="isOpen = !isOpen, noSelection()" type="button" name="button" :class="continent.name" style="font-size: 4em; background: none; color: #274769; border: none;"><font-awesome-icon icon="paw" class="pawH"/></i></button>
+    </button>
   </div>
 </div>
 </template>
@@ -95,16 +95,6 @@ export default {
   grid-gap: 0.5em;
 }
 
-/* #continent-animals {
-  display: flex;
-}
-
-#top-bar h1 {
-  text-align: center;
-  font-size: 35px; */
-  /* margin: 10px;
-} */
-
 #passport-section {
   width: 700px;
   margin: 20px auto 0;
@@ -122,34 +112,12 @@ export default {
   object-fit: cover;
   cursor: pointer;
   filter: drop-shadow(1px 2px 3px #808788);
-}
-/*
-ul {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 0px;
+  opacity: 80%;
 }
 
-.modal > section {
-  background-color: #F5F7F7;
-  padding: 10px;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #F5F7F7;
-  box-shadow: 0 1px 4px 2px;
-  font-family: 'Josefin Sans', sans-serif;
+.circularImg:hover {
+  opacity: 100%;
 }
-
-.fact {
-  font-size: 20px;
-}
-
-.modal {
-  min-width: 700px;
-  margin: 0px auto;
-  transition: all 0.2s ease-in; */
-  /* align-items: center;
-} */
 
 .modal {
   width: 1000px;

@@ -1,10 +1,7 @@
 <template>
   <div id="app">
 
-
-
-<world-map :continents="continents" :threatObjects="threatObjects"></world-map>
-
+    <world-map :continents="continents" :threatObjects="threatObjects"></world-map>
 
   </div>
 </template>
@@ -22,9 +19,7 @@ export default {
   data(){
     return {
       continents: [],
-
       threatObjects:[]
-
     }
   },
   mounted(){
@@ -32,11 +27,10 @@ export default {
     .then(continents => this.continents = continents)
     ThreatsService.getThreats()
     .then(threats => this.threatObjects = threats)
-}
+  }
 }
 
 </script>
-
 
 <style>
 
